@@ -5,7 +5,7 @@
     # b. make separate columns for start and end dates for potential exposure
 # 3. remove duplicates
 # 4. write a csv with the exposure data
-# 5. join the exposure data to the campus building data & export a json file
+# 5. join the exposure data to the campus building data & export a geojson file
 
 #Worksite Exposure URL: https://campusready.ucdavis.edu/potential-exposure
 
