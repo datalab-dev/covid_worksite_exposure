@@ -1,0 +1,120 @@
+<html>
+	<head>
+		<title>Leaflet.timeline</title>
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+			/>
+		<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+		<script src="./leaflet.timeline.js"></script>
+
+		<style>
+			@import url(https://fonts.googleapis.com/css?family=Open + Sans);
+			html,
+			body {
+				margin: 0;
+				padding: 0;
+				font-family: "Open Sans", sans-serif;
+			}
+			#info {
+				position: fixed;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				width: 20vw;
+				padding: 1em;
+			}
+			#map {
+				position: fixed;
+				top: 0;
+				left: 20vw;
+				bottom: 0;
+				right: 0;
+      }
+      .leaflet-bottom.leaflet-left {
+        width: 100%;
+      }
+      .leaflet-control-container .leaflet-timeline-controls {
+        box-sizing: border-box;
+        width: 100%;
+        margin: 0;
+        margin-bottom: 15px;
+      }
+    </style>
+  
+	</head>
+	
+	
+	<body>
+  
+		<div id="info">
+		<h1>Potential Worksite Exposure Reporting (AB 685)</h1>
+		<h2>UC Davis</h2>
+		<!-- Add this section back in if we want a sidebar with the list of buildings
+		<h3>Currently displayed:</h3>
+		<ul id="displayed-list"></ul>
+		-->
+		</div>
+    
+		<div id="map"></div>
+	
+  	<!-- load the js script that contains the geojson data -->
+	<!-- the object containing the data is named 'exposures' in the script -->
+	<script src="exposures_test_geojson_timeline.js" type="text/javascript"></script>
+
+	<script>
+		//add an empty map to the page
+		var map = L.map('map').setView([38.538592, -121.75], 15);
+
+		//add the base map = Stamen Toner tile layer
+		var Stamen_Toner = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.{ext}', {
+		attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+		subdomains: 'abcd',
+		minZoom: 0,
+		maxZoom: 20,
+		ext: 'png'
+		});
+		map.addLayer(Stamen_Toner);
+		
+		var timeline;
+		var timelineControl;
+
+		function onLoadData(data) {
+			timeline = L.timeline(data, {
+			style: function (data) {
+				return {
+					//stroke: false,
+					color: 'red', //getColorFor(data.properties.Facilities),
+					fillOpacity: 0.5,
+				};
+			},
+			waitToUpdateMap: true,
+			onEachFeature: function (feature, layer) {
+            layer.bindTooltip(feature.properties.Facilities);
+			},
+			});
+
+			
+			timelineControl = L.timelineSliderControl({
+			formatOutput: function (date) {
+				return new Date(date).toLocaleDateString();
+			},
+				enableKeyboardControls: true,
+			});
+        
+			timeline.addTo(map);
+			timelineControl.addTo(map);
+			timelineControl.addTimelines(timeline);
+      }
+	  
+	  //var exposures_poly = L.geoJSON(exposures)
+	  onLoadData(exposures);
+	
+	//L.geoJSON(exposures).addTo(map);
+  
+  </script>
+  
+
+
+	
+  </body>
