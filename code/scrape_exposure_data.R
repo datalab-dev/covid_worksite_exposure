@@ -7,8 +7,9 @@
 # 4. write a csv with the exposure data
 # 5. join the exposure data to the campus building data & export a geojson file
 
-#URL: https://campusready.ucdavis.edu/potential-exposure
+#Worksite Exposure URL: https://campusready.ucdavis.edu/potential-exposure
 
+#Campus Building data URL: https://data-ucda.opendata.arcgis.com/datasets/ucdavis-campus-buildings/explore?location=38.534593%2C-121.792150%2C13.71 
 
 # Setup -------------------------------------------------------------------
 
@@ -99,4 +100,5 @@ scrape_exposure("https://campusready.ucdavis.edu/potential-exposure?page=0&order
 #Worksite Exposure URL: https://campusready.ucdavis.edu/potential-exposure
 
 #Campus Building data URL: https://data-ucda.opendata.arcgis.com/datasets/ucdavis-campus-buildings/explore?location=38.534593%2C-121.792150%2C13.71 
+
 
