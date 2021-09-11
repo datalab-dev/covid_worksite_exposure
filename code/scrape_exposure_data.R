@@ -119,7 +119,7 @@ for (i in 0:number_pages){
 
   #remove the duplicates
   all_exposures<-covid_df[!duplicated(covid_df), ]
-
+  
 }
 
 ## STEPS to scrape newest data- 1) replace the file name on the first line of this section with the correct
