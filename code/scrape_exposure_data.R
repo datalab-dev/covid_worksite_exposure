@@ -17,6 +17,7 @@ library(httr)
 library(jsonlite)
 library(xml2)
 library(rvest)
+library(stringr)
 
 # Fetching the website page 0----------------------------------------------------
 
@@ -85,6 +86,13 @@ scrape_exposure<- function(page0, page1, file_destination){
 scrape_exposure("https://campusready.ucdavis.edu/potential-exposure?page=0&order=field_report_date&sort=desc"
  , "https://campusready.ucdavis.edu/potential-exposure?page=1&order=field_report_date&sort=desc", 
  "C://Users//ERIKA//data_lab_//covid_worksite_exposure//data//exposures.csv")
+
+# How many pages of data are there?
+#extract the node with the last page number = the one that codes the "next" button
+last_page_href<-xml_find_all(data0, "//li[contains(@class, 'pager__item pager__item--next')]")[[1]]
+
+#parse the number of pages from the text; note that it's 0 indexed
+number_pages<-as.numeric(gsub("\"", "", substr(str_split(as.character(last_page_href), "page=")[[1]][2], 1, 2)))+1
 
 ## STEPS to scrape newest data- 1) replace the file name on the first line of this section with the correct
 # file location on your computer 2) run scrape_exposure function. 3) Use the function as written above, replacing
