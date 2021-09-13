@@ -150,8 +150,23 @@ dictionary_join<-merge(
   y=building_dictionary,
   by.x="worksite",
   by.y="variation",
-  all = TRUE
+  all.x = TRUE
 )
 
 #update the NAs to match the worksite name
 campus_building<-dictionary_join$target
+
+for (i in 1:length(campus_building)){
+  if (is.na(campus_building[i])){
+    campus_building[i]<-dictionary_join$worksite[i]
+  }
+}
+
+dictionary_join<-cbind(dictionary_join, campus_building)
+
+#add the campus_building column to the all_exposures dataset
+all_exposures<-merge(
+  x=all_exposures, 
+  y=dictionary_join,
+  by="worksite")
+
