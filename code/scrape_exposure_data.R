@@ -145,3 +145,13 @@ for (i in 0:number_pages){
 building_dictionary<-read.csv("./data/building_dictionary.csv", sep="\t")
 
 
+dictionary_join<-merge(
+  x=all_exposures,
+  y=building_dictionary,
+  by.x="worksite",
+  by.y="variation",
+  all = TRUE
+)
+
+#update the NAs to match the worksite name
+campus_building<-dictionary_join$target
