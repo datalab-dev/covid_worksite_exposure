@@ -178,9 +178,37 @@ names(all_exposures)<-c("report_date", "worksite", "location", "potential_exposu
 
 #the colums MUST be called "start" and "end" and have the format 2021-09-13 (use dashes, not slashes)
 
+#subset first dates in table as start dates
+start <- substr(all_exposures$potential_exposure_dates, 1, 5)
 
+#add year
+for(i in 1:length(start)){
+  start[i] <- paste0("2021-", start[i])
+}
 
+#add start column to df
+all_exposures$start <- start
 
+#create empty list for end dates
+end <- list()
+
+#check if there is only one date -> start and end day the same, otherwise subset second date
+for(i in 1:nrow(all_exposures)){
+  if(nchar(all_exposures$potential_exposure_dates[i]) == 5){
+    end[i] <- substr(all_exposures$potential_exposure_dates[i], 1, 5)
+  }
+  else{
+    end[i] <- substr(all_exposures$potential_exposure_dates[i], 10, nchar(all_exposures$potential_exposure_dates))
+  }
+}
+
+#add year
+for(i in 1:length(end)){
+  end[i] <- paste0("2021-", end[i])
+}
+
+#add end column to df
+all_exposures$end <- end
 
 
 # Join with Campus Buildings GEOJSON --------------------------------------
