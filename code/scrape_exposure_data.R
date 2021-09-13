@@ -142,7 +142,28 @@ write.csv(x=all_exposures, file="./data/exposures.csv", row.names = FALSE)
 building_dictionary<-read.csv("./data/building_dictionary.csv", sep=",")
 
 # make a table of campus name variants
+building_footprints <- st_read("./data/UC_Davis_Building_Footprints_2021-08-18.geojson")
 
+campus_target_names<-building_footprints$arcgisDBObase_bldg_database_12_2017Building_Name
+
+campus_name_variants<-c(
+  building_footprints$arcgisDBObase_bldg_database_12_2017Official_Long,
+  building_footprints$arcgisDBObase_bldg_database_12_2017Abbrev_Short,
+  building_footprints$arcgisDBObase_bldg_database_12_2017FDX_Code
+  )
+
+#a dataframe with the name variations and what the targe (official) name should be
+campus_names<-cbind.data.frame(
+  campus_target_names, 
+  campus_name_variants
+  )
+
+#removing the lines with blanks - because if there's an NA in either column, we don't really want it
+campus_names<-na.omit(campus_names)
+names(campus_names)<-names(building_dictionary)
+
+#add the campus names to the dictionary names
+building_dictionary<-rbind(building_dictionary, campus_names)
 
 #join the exposure data and the building dictionary 
 dictionary_join<-merge(
@@ -162,7 +183,7 @@ for (i in 1:length(campus_building)){
   }
 }
 
-dictionary_join<-cbind(dictionary_join, campus_building)
+dictionary_join$campus_building<-campus_building
 
 #add the campus_building column to the all_exposures dataset
 all_exposures<-merge(
