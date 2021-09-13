@@ -1,27 +1,31 @@
-"report.date","worksite","location","potential.exposure.dates"
-"09-09","Robbins Hall","Davis campus","09-07
+report.date,worksite,location,potential.exposure.dates
+09-09,Robbins Hall,Davis campus,"09-07
  - 09-08"
-"09-09","Walter A Beuhler Alumni Center","Davis campus","09-07
+09-09,Walter A Beuhler Alumni Center,Davis campus,"09-07
  - 09-08"
-"09-09","Vet Med Admin Building","Davis campus","09-08"
-"09-09","King Hall","Davis campus","09-07"
-"09-09","Valley Hall","Davis campus","09-07"
-"09-09","UC Davis Health Stadium","Davis campus","09-07"
-"09-09","Gourley Clinical Teaching Center","Davis campus","09-08"
-"09-08","Unitrans Maintenance Shop","Davis campus","09-05
+09-09,Vet Med Admin Building,Davis campus,09-08
+09-09,King Hall,Davis campus,09-07
+09-09,Valley Hall,Davis campus,09-07
+09-09,UC Davis Health Stadium,Davis campus,09-07
+09-09,Gourley Clinical Teaching Center,Davis campus,09-08
+09-08,Unitrans Maintenance Shop,Davis campus,"09-05
  - 09-07"
-"09-07","VM Mulit-Purpose Teaching Facility","Davis campus","09-03"
-"09-07","Tupper Hall","Davis campus","09-03"
-"09-03","Valley Hall","Davis campus","08-31"
-"09-03","UC Davis Teaching & Learning Complex","Davis campus","08-30"
-"09-03","The Green","Davis campus","08-31
+09-07,VM Mulit-Purpose Teaching Facility,Davis campus,09-03
+09-07,Tupper Hall,Davis campus,09-03
+09-03,Valley Hall,Davis campus,08-31
+09-03,UC Davis Teaching & Learning Complex,Davis campus,08-30
+09-03,The Green,Davis campus,"08-31
  - 09-02"
-"09-03","Vet Med 3A (MPT)","Davis campus","08-31"
-"09-02","Segundo Services Center","Davis campus","08-30
+09-03,Vet Med 3A (MPT),Davis campus,08-31
+09-02,Segundo Services Center,Davis campus,"08-30
  - 09-01"
-"09-01","Center for Neuroscience - CNS","Davis city","08-29
+09-01,Center for Neuroscience - CNS,Davis city,"08-29
  - 08-31"
-"08-27","Physical Plant","Davis campus","08-24
+08-27,Physical Plant,Davis campus,"08-24
  - 08-26"
-"08-27","ARC","Davis campus","08-23
+08-27,ARC,Davis campus,"08-23
  - 08-25"
+09-10,Fire & Police Building,Davis campus,"09-07
+ - 09-09"
+08-25,Activities and Recreation Center (ARC),Davis campus,"08-21
+ - 08-23"
