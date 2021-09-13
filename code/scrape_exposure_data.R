@@ -19,6 +19,7 @@ library(xml2)
 library(rvest)
 library(stringr)
 library(sf)
+library(readtext)
 
 setwd("C:\\Users\\mmtobias\\Documents\\GitHub\\covid_worksite_exposure")
 
@@ -215,7 +216,7 @@ for(i in 1:length(start)){
 all_exposures$start <- start
 
 #create empty list for end dates
-end <- list()
+end <- character()
 
 #check if there is only one date -> start and end day the same, otherwise subset second date
 for(i in 1:nrow(all_exposures)){
@@ -254,3 +255,21 @@ combined <- merge.data.frame(all_exposures, geom, by.x = "campus_building", by.y
 #separate into matched and unmatched building names
 matched <- combined[st_is_empty(combined$geometry) == FALSE, ]
 unmatched <- combined[st_is_empty(combined$geometry) == TRUE, ]
+
+
+#write to geojson to get formatting that leaflet can use
+st_write(matched, "./mapinput.geojson", delete_dsn = TRUE)
+
+#convert to txt file so we can edit the raw text
+file.rename("./mapinput.geojson", "./mapinput.txt")
+
+#read new text file into R
+txt <- readtext("./mapinput.txt")
+
+#adds javascript formatting
+js <- paste0("var exposures = ", txt$text)
+
+#write to js file
+writeLines(js, "~/GitHub/covid_worksite_exposure/example_map/mapinput.js")
+
+#may want to add code to delete already existing mapinput files if we are running this repeatedly
