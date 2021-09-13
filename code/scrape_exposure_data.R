@@ -91,10 +91,14 @@ setwd("C:\\Users\\mmtobias\\Documents\\GitHub\\covid_worksite_exposure")
 #  "C://Users//ERIKA//data_lab_//covid_worksite_exposure//data//exposures.csv")
 
 
+base_url<-"https://campusready.ucdavis.edu/potential-exposure"
+
+exposure_website <- GET(base_url) 
+exposure_html<- read_html(exposure_website)  
 
 # How many pages of data are there?
 #extract the node with the last page number = the one that codes the "next" button
-last_page_href<-xml_find_all(data0, "//li[contains(@class, 'pager__item pager__item--next')]")[[1]]
+last_page_href<-xml_find_all(exposure_html, "//li[contains(@class, 'pager__item pager__item--next')]")[[1]]
 
 #parse the number of pages from the text; note that it's 0 indexed (numbering starts with 0)
 number_pages<-as.numeric(gsub("\"", "", substr(str_split(as.character(last_page_href), "page=")[[1]][2], 1, 2)))
