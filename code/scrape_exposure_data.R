@@ -170,3 +170,6 @@ all_exposures<-merge(
   y=dictionary_join,
   by="worksite")
 
+#remove the repeated columns
+all_exposures<-all_exposures[,c(1:4, 9)]
+names(all_exposures)<-c("report_date", "worksite", "location", "potential_exposure_dates", "campus_building")
