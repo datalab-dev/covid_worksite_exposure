@@ -18,6 +18,7 @@ library(jsonlite)
 library(xml2)
 library(rvest)
 library(stringr)
+library(sf)
 
 setwd("C:\\Users\\mmtobias\\Documents\\GitHub\\covid_worksite_exposure")
 
@@ -171,7 +172,7 @@ all_exposures<-merge(
 
 #remove the repeated columns
 all_exposures<-all_exposures[,c(1:4, 9)]
-names(all_exposures)<-c("report_date", "worksite", "location", "potential_exposure_dates", "campus_building")
+names(all_exposures)<-c("worksite", "report_date", "location", "potential_exposure_dates", "campus_building")
 
 
 
@@ -219,3 +220,16 @@ all_exposures$end <- end
 #join the campus exposures data to the campus buildings layer. 
 
 #The "campus_building" column in the exposure dataframe should match the "arcgisDBObase_bldg_database_12_2017Building_Name" column in the campus building dataset. There are many building name variations in the campus layer, so make sure you match on the correct one.
+
+#read geojson
+footprints <- st_read("./data/UC_Davis_Building_Footprints_2021-08-18.geojson")
+
+#isolate building names and geometries
+geom <- footprints[,c("arcgisDBObase_bldg_database_12_2017Building_Name", "geometry")]
+
+#merge geometries onto all_exposures, all.x=TRUE so we keep all the exposures but unmatched building names have empty geometry 
+combined <- merge.data.frame(all_exposures, geom, by.x = "campus_building", by.y = "arcgisDBObase_bldg_database_12_2017Building_Name", all.x = TRUE)
+
+#separate into matched and unmatched building names
+matched <- combined[st_is_empty(combined$geometry) == FALSE, ]
+unmatched <- combined[st_is_empty(combined$geometry) == TRUE, ]
