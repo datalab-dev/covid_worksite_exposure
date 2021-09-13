@@ -126,8 +126,8 @@ for (i in 0:number_pages){
   
 }
 
-#write.csv(x=all_exposures, file=paste0(getwd(), "/data/exposures.csv"))
-write.csv(x=all_exposures, file="./data/exposures.csv")
+#write the scraped exposure data to a csv without the row numbers
+write.csv(x=all_exposures, file="./data/exposures.csv", row.names = FALSE)
 
 ## STEPS to scrape newest data- 1) replace the file name on the first line of this section with the correct
 # file location on your computer 2) run scrape_exposure function. 3) Use the function as written above, replacing
