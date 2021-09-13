@@ -141,4 +141,7 @@ for (i in 0:number_pages){
 
 #Campus Building data URL: https://data-ucda.opendata.arcgis.com/datasets/ucdavis-campus-buildings/explore?location=38.534593%2C-121.792150%2C13.71 
 
+# load the building dictionary file (it's tab separated, not sure why/how, but we'll roll with it... thanks excel?)
+building_dictionary<-read.csv("./data/building_dictionary.csv", sep="\t")
+
 
