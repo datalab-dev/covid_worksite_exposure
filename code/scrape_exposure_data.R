@@ -138,12 +138,12 @@ write.csv(x=all_exposures, file="./data/exposures.csv", row.names = FALSE)
 # Name matching section ---------------------------------------------------
 
 # load the building dictionary file (it's tab separated, not sure why/how, but we'll roll with it... thanks excel?)
-building_dictionary<-read.csv("./data/building_dictionary.csv", sep="\t")
+building_dictionary<-read.csv("./data/building_dictionary.csv", sep=",")
 
 # make a table of campus name variants
 
 
-
+#join the exposure data and the building dictionary 
 dictionary_join<-merge(
   x=all_exposures,
   y=building_dictionary,
