@@ -134,13 +134,6 @@ for (i in 0:number_pages){
 
 # Name matching section ---------------------------------------------------
 
- 
-## Next steps: make a name matching dictionary
-
-#Worksite Exposure URL: https://campusready.ucdavis.edu/potential-exposure
-
-#Campus Building data URL: https://data-ucda.opendata.arcgis.com/datasets/ucdavis-campus-buildings/explore?location=38.534593%2C-121.792150%2C13.71 
-
 # load the building dictionary file (it's tab separated, not sure why/how, but we'll roll with it... thanks excel?)
 building_dictionary<-read.csv("./data/building_dictionary.csv", sep="\t")
 
@@ -173,3 +166,22 @@ all_exposures<-merge(
 #remove the repeated columns
 all_exposures<-all_exposures[,c(1:4, 9)]
 names(all_exposures)<-c("report_date", "worksite", "location", "potential_exposure_dates", "campus_building")
+
+
+
+# Date Parsing ------------------------------------------------------------
+
+#use the potential_exposure_dates column to create a start and end column. If there is just one date (it's not a range of dates), the start and end should match. 
+
+#the colums MUST be called "start" and "end" and have the format 2021-09-13 (use dashes, not slashes)
+
+
+
+
+
+
+# Join with Campus Buildings GEOJSON --------------------------------------
+
+#join the campus exposures data to the campus buildings layer. 
+
+#The "campus_building" column in the exposure dataframe should match the "arcgisDBObase_bldg_database_12_2017Building_Name" column in the campus building dataset. There are many building name variations in the campus layer, so make sure you match on the correct one.
