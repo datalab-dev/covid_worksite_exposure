@@ -140,6 +140,9 @@ write.csv(x=all_exposures, file="./data/exposures.csv", row.names = FALSE)
 # load the building dictionary file (it's tab separated, not sure why/how, but we'll roll with it... thanks excel?)
 building_dictionary<-read.csv("./data/building_dictionary.csv", sep="\t")
 
+# make a table of campus name variants
+
+
 
 dictionary_join<-merge(
   x=all_exposures,
