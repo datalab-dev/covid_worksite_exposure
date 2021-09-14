@@ -27,19 +27,23 @@
 			#map {
 				position: fixed;
 				top: 0;
-				left: 20vw;
+				left: 22vw;
 				bottom: 0;
 				right: 0;
-      }
+			}
+			h1, h2 {
+				color: #022851;
+			}
+			
       .leaflet-bottom.leaflet-left {
         width: 100%;
-      }
+		}
       .leaflet-control-container .leaflet-timeline-controls {
         box-sizing: border-box;
         width: 100%;
         margin: 0;
         margin-bottom: 15px;
-      }
+		}
     </style>
   
 	</head>
@@ -48,8 +52,8 @@
 	<body>
   
 		<div id="info">
-		<h1>Potential Worksite Exposure Reporting (AB 685)</h1>
-		<h2>UC Davis</h2>
+		<h1>Potential COVID-19 Worksite Exposure Reporting (AB 685)</h1>
+		<h2> At UC Davis</h2>
 		<!-- Add this section back in if we want a sidebar with the list of buildings
 		<h3>Currently displayed:</h3>
 		<ul id="displayed-list"></ul>
@@ -84,20 +88,20 @@
 			style: function (data) {
 				return {
 					//stroke: false,
-					color: 'red', //getColorFor(data.properties.Facilities),
+					color: '#FFBF00', //Aggie Gold #FFBF00 //getColorFor(data.properties.Facilities),
 					fillOpacity: 0.5,
 				};
 			},
 			waitToUpdateMap: true,
 			onEachFeature: function (feature, layer) {
-            layer.bindTooltip(feature.properties.worksite);
+            layer.bindTooltip("<b>Worksite: </b>" + feature.properties.worksite + "<br><b>Potential Exposure Dates: </b>" + feature.properties.potential_exposure_dates);
 			},
 			});
 
 			
 			timelineControl = L.timelineSliderControl({
 			formatOutput: function (date) {
-				return new Date(date).toLocaleDateString();
+				return new Date(date).toLocaleDateString('en-US', { timeZone: 'UTC' });
 			},
 				enableKeyboardControls: true,
 			});

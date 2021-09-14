@@ -270,6 +270,6 @@ txt <- readtext("./mapinput.txt")
 js <- paste0("var exposures = ", txt$text)
 
 #write to js file
-writeLines(js, "~/GitHub/covid_worksite_exposure/example_map/mapinput.js")
+writeLines(js, "~/GitHub/covid_worksite_exposure/example_map/exposure_data.js")
 
 #may want to add code to delete already existing mapinput files if we are running this repeatedly
