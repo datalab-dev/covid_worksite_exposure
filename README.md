@@ -12,7 +12,9 @@ Dr. [Michele Tobias](https://github.com/MicheleTobias), DataLab Geospatial Data 
 # Project Description
 The goal of this project is to scrape and visualize the [the UC Davis Potential Worksite Exposure Reporting (AB 685)](https://campusready.ucdavis.edu/potential-exposure) data to help people understand and interpret the spatial and temporal data posted on the website.
 
-The data tables on the Potential Worksite Exposure Reporting site list the building with the exposure and a date range. From this presentation, it can be difficult to understand both the temporal and spatial patterns present in the data.  For example, if you were unfamiliar with Valley Hall and Vet Med 3A, you might not realize that these buildings are nextdoor to eachother on the southwest corner of campus or that the Center for Neuroscience is across I-80 from the main campus. Our curiosity about the spatial and temporal patterns in the data led the DataLab team to build this visualization and it provides a lovely example of many principles of data cleaning, analysis, visual representation, and interpretation that we regularly teach in our workshops.
+The data tables on the Potential Worksite Exposure Reporting site list the building with a potential exposure and a date range. From this presentation, it can be difficult to understand both the temporal and spatial patterns present in the data. Looking at a list of a dozen buildings with potential exposures might seem like a lot of buildings because the density and spatial relationships aren't readily apparent. For example, if you were unfamiliar with the southwest corner of campus, you might not realize that Valley Hall and Vet Med 3A are nextdoor to each other or that the Center for Neuroscience is across I-80, east of the main campus. 
+
+Our curiosity about the spatial and temporal patterns in the data led the DataLab team to build this visualization. It also provides a lovely example of many principles of data cleaning, analysis, visual representation, and interpretation that we regularly teach in our workshops.
 
 
 # Workflow
