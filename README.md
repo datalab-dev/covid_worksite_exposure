@@ -20,8 +20,10 @@ To visualize this dataset, we chose to use an interactive web map with a timelin
 
 
 # Workflow
+The workflow to assemble this web map required several steps.
 
 ## Scrape the data
+The [the UC Davis Potential Worksite Exposure Reporting (AB 685)](https://campusready.ucdavis.edu/potential-exposure) data is publically available on thieir website, presented as a table with ten rows per page for the last 14 days. Each day, data expires and is no longer available. To scrape this data, we needed to read the webpage to assess the number of pages on any given day, build the URL for each page of data, and then scrape the table from each URL.  The new data is then added to a .csv file that contains data we scraped on previous days. Having more than 14 days's worth of data allows us to better understand spatial patterns in the data.
 
 ## Spatial Data
 Join exposure data to the campus buildings spatial data
@@ -29,7 +31,7 @@ Join exposure data to the campus buildings spatial data
 ## Web Map
 Add the spatial exposures data to the webmap
 
-The workflow to assemble this web map required several steps.
+
 
 limitations of the covid workplace data viz:
 * matching multi-building complexes like "The Green", we had to pick one building footprint (maybe we can merge by name later)
