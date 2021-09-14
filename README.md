@@ -16,8 +16,20 @@ The data tables on the Potential Worksite Exposure Reporting site list the build
 
 Our curiosity about the spatial and temporal patterns in the data led the DataLab team to build this visualization. It also provides a lovely example of many principles of data cleaning, analysis, visual representation, and interpretation that we regularly teach in our workshops.
 
+To visualize this dataset, we chose to use an interactive web map with a timeline slider. The web map component allows users to customize the scale and exent (the view) of the data. The timeline allows users to see potential worksite exposures on a particular date, rather than looking at all of the data at once. 
+
 
 # Workflow
+
+## Scrape the data
+
+## Spatial Data
+Join exposure data to the campus buildings spatial data
+
+## Web Map
+Add the spatial exposures data to the webmap
+
+The workflow to assemble this web map required several steps.
 
 limitations of the covid workplace data viz:
 * matching multi-building complexes like "The Green", we had to pick one building footprint (maybe we can merge by name later)
