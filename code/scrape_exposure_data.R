@@ -256,6 +256,9 @@ combined <- merge.data.frame(all_exposures, geom, by.x = "campus_building", by.y
 matched <- combined[st_is_empty(combined$geometry) == FALSE, ]
 unmatched <- combined[st_is_empty(combined$geometry) == TRUE, ]
 
+#write the unmatched table to a .csv so we can fix them in the building dictionary
+write.csv(unmatched, "./data/unmatched_buildings.csv")
+
 
 #write to geojson to get formatting that leaflet can use
 st_write(matched, "./mapinput.geojson", delete_dsn = TRUE)
