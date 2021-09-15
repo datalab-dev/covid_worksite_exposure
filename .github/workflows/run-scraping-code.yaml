@@ -7,7 +7,7 @@ on:
     #           - cron:  '30 5,17 * * *'
     #           triggers the workflow every day at 5:30 and 17:30 UTC:
     # POSIX cron syntax: https://pubs.opengroup.org/onlinepubs/9699919799/utilities/crontab.html#tag_20_25_07
-    - cron:  '30 5,17 * * *'
+    - cron:  '07 13 * * *'
 
 jobs:
   build:
