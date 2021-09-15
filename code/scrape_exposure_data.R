@@ -21,7 +21,7 @@ library(stringr)
 library(sf)
 library(readtext)
 
-setwd("C:\\Users\\mmtobias\\Documents\\GitHub\\covid_worksite_exposure")
+#setwd("C:\\Users\\mmtobias\\Documents\\GitHub\\covid_worksite_exposure")
 
 # Fetching the website page 0----------------------------------------------------
 
