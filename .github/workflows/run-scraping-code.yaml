@@ -13,15 +13,15 @@ jobs:
   build:
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: r-lib/actions/setup-r@v1
-      - name: Install packages
+      - uses: actions/checkout@v2 #check out the repository
+      - uses: r-lib/actions/setup-r@v1 #set up the R environment
+      - name: Install packages #Job 1: install packages the next step will need
         run:
           Rscript -e "install.packages(c('httr', 'jsonlite', 'xml2', 'rvest','stringr','sf','readtext'))"
-      - name: Run Scraping Code File
+      - name: Run Scraping Code File #Job 2: run the code that scrapes the workplace exposure site
         run:
           Rscript -e "source('code/scrape_exposure_data.R')"
-      - name: Commit results
+      - name: Commit results #Job 3: committ the changes back to the repository
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
