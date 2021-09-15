@@ -263,6 +263,7 @@ write.csv(unmatched, "./data/unmatched_buildings.csv")
 #write to geojson to get formatting that leaflet can use
 st_write(matched, "./mapinput.geojson", delete_dsn = TRUE)
 
+
 #convert to txt file so we can edit the raw text
 file.rename("./mapinput.geojson", "./mapinput.txt")
 
@@ -276,3 +277,8 @@ js <- paste0("var exposures = ", txt$text)
 writeLines(js, "~/GitHub/covid_worksite_exposure/map/exposure_data.js")
 
 #may want to add code to delete already existing mapinput files if we are running this repeatedly
+
+paste0(
+  "Number Of Buildings Unmatched: ", 
+  dim(unmatched)[1]
+  )
