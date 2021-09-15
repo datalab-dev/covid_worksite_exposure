@@ -2,6 +2,9 @@
 Scraping and visualizing the UC Davis Potential Worksite Exposure Reporting (AB 685) data
 
 # Team
+
+**Coding:**
+
 Dr. [Michele Tobias](https://github.com/MicheleTobias), DataLab Geospatial Data Scientist
 
 [Elijah Stockwell](https://github.com/elistockwell), DataLab Student Employee
@@ -10,7 +13,8 @@ Dr. [Michele Tobias](https://github.com/MicheleTobias), DataLab Geospatial Data 
 
 [Jared Joseph](), DataLab Graduate Student Researcher
 
-Advising on Text Matching:
+
+**Advising on Text Matching:**
 
 Tyler Shoemaker
 
@@ -21,6 +25,8 @@ Carl Stahmer
 
 # Project Description
 The goal of this project is to scrape and visualize the [the UC Davis Potential Worksite Exposure Reporting (AB 685)](https://campusready.ucdavis.edu/potential-exposure) data to help people understand and interpret the spatial and temporal data posted on the website.
+
+[California Assebly Bill 685 (AB685)](https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=201920200AB685) requires employers to notify employees of potential worksite exposures to COVID-19 to the geographic scale of individual buildings.
 
 The data tables on the Potential Worksite Exposure Reporting site list the building with a potential exposure and a date range. From this presentation, it can be difficult to understand both the temporal and spatial patterns present in the data. Looking at a list of a dozen buildings with potential exposures might seem like a lot of buildings because the density and spatial relationships aren't readily apparent. For example, if you were unfamiliar with the southwest corner of campus, you might not realize that Valley Hall and Vet Med 3A are nextdoor to each other or that the Center for Neuroscience is across I-80, east of the main campus. 
 
