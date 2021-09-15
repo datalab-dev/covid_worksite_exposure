@@ -7,7 +7,7 @@ on:
     #           - cron:  '30 5,17 * * *'
     #           triggers the workflow every day at 5:30 and 17:30 UTC:
     # POSIX cron syntax: https://pubs.opengroup.org/onlinepubs/9699919799/utilities/crontab.html#tag_20_25_07
-    - cron:  '30 7,23 * * *' #run at 7:30am and 4:30pm pacific time
+    - cron:  '55 7,23 * * *' #run at 7:30am and 4:30pm pacific time
 
 jobs:
   build:
@@ -25,5 +25,5 @@ jobs:
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
-          git commit -m 'Updated scraped data' || echo "Updated scraped data"
+          git commit -a -m 'Updated scraped data' || echo "Updated scraped data"
           git push origin || echo "Pushed updated scraped data"
