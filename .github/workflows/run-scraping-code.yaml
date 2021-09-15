@@ -1,0 +1,30 @@
+name: Run Scraping Code
+
+on: 
+    schedule:
+    # * is a special character in YAML so you have to quote this string
+    # Example: 
+    #           - cron:  '30 5,17 * * *'
+    #           triggers the workflow every day at 5:30 and 17:30 UTC:
+    # POSIX cron syntax: https://pubs.opengroup.org/onlinepubs/9699919799/utilities/crontab.html#tag_20_25_07
+    - cron:  '30 5,17 * * *'
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: r-lib/actions/setup-r@v1
+      - name: Install packages
+        run:
+          Rscript -e "install.packages(c('httr', 'jsonlite', 'xml2', 'rvest','stringr','sf','readtext'))"
+      - name: Run Scraping Code File
+        run:
+          Rscript -e "source('code/scrape_exposure_data.R')"
+      - name: Commit results
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add extra/packages-used.png
+          git commit -m 'Re-build package plot' || echo "No changes to commit"
+          git push origin || echo "No changes to commit"
