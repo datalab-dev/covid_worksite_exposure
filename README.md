@@ -56,7 +56,6 @@ When we need to fix a building name by hand, we enter the variant and the offici
 **Possible later upgrade:** We would like to implement a fuzzy matching process on the building names to automatically match building names that are slightly different than the standard. This will reduce the amount of hands-on time updating the building dictionary to handle building names that don't match the campus database.
 
 
-
 ### Standardize Start & End Dates
 The dates of potential exposure take on two variations in the scraped dataset. The data is a string containing either a single date or two dates (a start and end) separated by an end of line character and a dash.  The tool that creates the timeline feature on our web map requires separate start and end columns, so we parsed the data to separate the two dates and format them into a standard date format that our javascript tool can read as a date.
 
@@ -65,19 +64,35 @@ The dates of potential exposure take on two variations in the scraped dataset. T
 **For your data:** Excel is a handy tool for data creation and viewing tablular data, but beware when opening a dataset in Excel that contains dates. Excel automatically formats dates and can alter your data.
 
 ## Spatial Data
-The spatial data in this dataset, the building names, is not immediately usable in a map. We, as humans, understand these names represent a location, but for a computer to place them on a map in relation to other locations, we need to represent these locations in a different way.
-Join exposure data to the campus buildings spatial data
+The spatial data in this dataset, the building names, is not immediately usable in a map. We, as humans, understand these names represent a location, but for a computer to place them on a map in relation to other locations, we need to represent these locations in a different way.  The tool we chose to use understands spatial data as a series of points, each of which has a latitude and logitude.  The campus buildings data already exists in this format, so we did a process called a table join to match the records in our exposures data to the campus buildings spatial data using the offical building name.  After the join, each of our exposure records has a building footprint associated with it.
+
+The web map requires the data to be in geojson format, but wrapped in a javascript variable declaration, so the javascript functions can read it. Our script outputs this very specific format for the webmap, but we also save a plain geojson file in case we need it for troubleshooting in a desktop GIS program.
 
 ## Web Map
-Add the spatial exposures data to the webmap
+We built the web map interface using a javascript tool called Leaflet. Leaflet provides an interactive map window that can display background data from a tile service (we used Stamen's Toner tiles) and overlay it with spatial vector data, like our building footprints that contains information about potential exposures.  
+
+We wanted to represent the temporal relationships in the data in addition to the spatial (map) relationships. To add the timeline feature, we used a plugin that extends Leaflet's functionality, called [Leaflet.Timeline](https://skeate.dev/Leaflet.timeline/).  Leaflet.Timeline reads the start and end columns from our dataset and displays each polygon when the timeline slider reaches the appropriate day. 
+
+**For your data:** When deciding how to visualize your own data, consider what aspects of or relationships in the data you want to communicate to your audience and think about how best to represent them. For example, in our webmap, we wanted to clearly draw attention to the buildings turning on and off. Making them red could be a good choice, but red might impart a negative connotation (and might be hard to see for people with certain variations in color perception) so we decided to use a gold color. 
+
+**Possible later upgrade:** Having annontations on the timeline for events like move-in or the start of classes could be helpful in understanding the patterns present in the data.
 
 
 
-limitations of the covid workplace data viz:
-* matching multi-building complexes like "The Green", we had to pick one building footprint (maybe we can merge by name later)
-* not all names in the workplace exposure data can be matched to a building - can't tell what they meant, or the building doesn't exist in the campus map yet (because it's still under construction, etc.) 
-* this is presence data (not presence-absence), meaning it only represents known cases and doesn't have information about where covid is NOT detected; just because a building isn't indicated, doesn't mean it doesn't have the virus present
 
-lessons: 
-* use a controlled vocabulary so you don't end up with lots of variations of the same words
-* don't use Excel, especially when dates are involved - autoformatting can make the dates unreadable or just not what you expect
+# Limitations & Cautions for Interpreting this Data
+DataLab has made every effort to represent this data with fidelity to the original source, however, we do not intend for this visualization to be a replacement for the official [the UC Davis Potential Worksite Exposure Reporting (AB 685)](https://campusready.ucdavis.edu/potential-exposure) website.
+
+This is presence data (not presence-absence data), meaning it only represents known cases and doesn't have information about where covid is NOT detected; just because a building isn't indicated, doesn't mean it doesn't have the virus present. 
+
+Because the original data does not use a controlled vocabulary restricted to the official campus builing names, the spatial representation of the data may occasionally be incorrect. We will correct these as we find them.
+
+# More Information & Bug Reporting
+If you'd like more information, please contact DataLab at data@ucdavis.edu or visit our [website](https://datalab.ucdavis.edu/).
+
+To report errors, either email us or [report an issue on our GitHub repository](https://github.com/datalab-dev/covid_worksite_exposure).
+
+
+
+
+
