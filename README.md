@@ -49,7 +49,7 @@ Once we've assembed the data, we need to clean and format the data. For our visu
 ### Standardize Building Names
 The building names in the current potential worksite exposures data are not always consistent with that campus' official building names.
 
-
+**For your data:** To ensure consistency in data collection and data development, implement a controlled vocabulary for columns with a restricted list of possible entries. For example, you might want to use a contolled vocabulary with categorical data such as type of candy: "M&Ms", "Good & Plenty"; not "M and Ms", "Good and Plenty". You wouldn't want to use a contolled vocabulary for data that can take on any value such as the weight of each type of candy (1.3 or 100.783 pounds) or interview responses.
 
 **Possible later upgrade:** We would like to implement a fuzzy matching process on the building names to automatically match building names that are slightly different than the standard. This will reduce the amount of hands-on time updating the building dictionary to handle building names that don't match the campus database.
 
