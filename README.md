@@ -23,20 +23,18 @@ Nick Ulle
 Carl Stahmer
 
 
-# Project Description
-The goal of this project is to scrape and visualize the [the UC Davis Potential Worksite Exposure Reporting (AB 685)](https://campusready.ucdavis.edu/potential-exposure) data to help people understand and interpret the spatial and temporal data posted on the website.
+# Background
+Data made available for the public, whether for policy reporting or other purposes, is often presented in periodically updated tables on a website. Here we demonstrate how a toolchain of webscraping, text processing, and interactive visualization can be applied to aid data interpretation and generate new insights.
 
-[California Assebly Bill 685 (AB685)](https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=201920200AB685) requires employers to notify employees of potential worksite exposures to COVID-19 to the geographic scale of individual buildings.
+For this case study, we are using the temporal and spatial data presented in the [the UC Davis Potential Worksite Exposure Reporting (AB 685)](https://campusready.ucdavis.edu/potential-exposure). [California Assebly Bill 685 (AB685)](https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=201920200AB685) requires employers to notify employees of potential worksite exposures to COVID-19 to the geographic scale of individual buildings. This dataset exploration allows us to demonstrate many principles of data cleaning, analysis, visual representation, and interpretation that we regularly teach in our workshops.
 
-The data tables on the Potential Worksite Exposure Reporting website list the name of the building with a potential exposure and the range of dates the building had the potential exposure. From this presentation, it can be difficult to understand both the temporal and spatial patterns present in the data. Looking at a list of a dozen buildings with potential exposures might seem like a lot of buildings because the density and spatial relationships aren't readily apparent. For example, if you were unfamiliar with the southwest corner of campus, you might not realize that Valley Hall and Vet Med 3A are nextdoor to each other or that the Center for Neuroscience is across I-80, east of the main campus, and not at all near Valley Hall or Vet Med 3A. 
+The data tables on the Potential Worksite Exposure Reporting website list the name of the building with a potential exposure and the range of dates the building had the potential exposure. However, this tabular presentation can be challenging for a potentially affected individual or administrator to understand both the immediate and wider temporal and spatial patterns present in the data. For example, the list of dozens of building names might give the impression that there is a larger affected area than actual because the density and spatial relationships aren't readily apparent in the current data presentation. If you were unfamiliar with the southwest corner of campus, you might not realize that Valley Hall and Vet Med 3A are next door to each other, or that the Center for Neuroscience is across I-80 (east of the main campus) and not at all near Valley Hall or Vet Med 3A.
 
-Our curiosity about the spatial and temporal patterns in the data led the DataLab team to build this visualization. It also provides a lovely example of many principles of data cleaning, analysis, visual representation, and interpretation that we regularly teach in our workshops.
-
-To visualize this dataset, we chose to use an interactive web map with a timeline slider. The web map component allows users to customize the scale and exent (the view) of the data. The timeline allows users to see potential worksite exposures on a particular date, rather than looking at all of the data at once. 
+To better demonstrate the spatial and temporal patterns in this dataset, we developed an interactive web map with a timeline slider. The web map component allows users to customize the scale and extent (the view) of the data. The timeline allows users to see potential worksite exposures on a particular date, rather than looking at all of the data at once. 
 
 
 # Workflow
-The workflow to assemble this web map required several steps.
+The workflow to assemble this web map required several steps: webscraping, cleaning, standardization, and mapping.
 
 ## Scrape the data
 The [the UC Davis Potential Worksite Exposure Reporting (AB 685)](https://campusready.ucdavis.edu/potential-exposure) data is publically available on thieir website, presented as a table with ten rows per page with data for the last 14 days. Each day, data older than 14 days expires and is no longer available. To scrape this data, we needed to read the webpage to assess the number of pages of data on any given day, build the URL for each page of data, and then scrape the table from each URL.  The data scraped from each page is then added to a .csv file that contains data we scraped on previous days. Having more than 14 days's worth of data allows us to better understand spatial and temporal patterns in the potential worksite exposures on campus.
