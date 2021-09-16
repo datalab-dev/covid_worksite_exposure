@@ -39,9 +39,21 @@ To visualize this dataset, we chose to use an interactive web map with a timelin
 The workflow to assemble this web map required several steps.
 
 ## Scrape the data
-The [the UC Davis Potential Worksite Exposure Reporting (AB 685)](https://campusready.ucdavis.edu/potential-exposure) data is publically available on thieir website, presented as a table with ten rows per page for the last 14 days. Each day, data expires and is no longer available. To scrape this data, we needed to read the webpage to assess the number of pages on any given day, build the URL for each page of data, and then scrape the table from each URL.  The new data is then added to a .csv file that contains data we scraped on previous days. Having more than 14 days's worth of data allows us to better understand spatial patterns in the data.
+The [the UC Davis Potential Worksite Exposure Reporting (AB 685)](https://campusready.ucdavis.edu/potential-exposure) data is publically available on thieir website, presented as a table with ten rows per page with data for the last 14 days. Each day, data expires and is no longer available. To scrape this data, we needed to read the webpage to assess the number of pages on any given day, build the URL for each page of data, and then scrape the table from each URL.  The data scraped from each page is then added to a .csv file that contains data we scraped on previous days. Having more than 14 days's worth of data allows us to better understand spatial patterns in the data.
+
+**Possible later upgrade:** We would like to scrape data from before our start date in mid August 2021 from the Internet Archive.
 
 ## Data Cleaning
+Once we've assembed the data, we need to clean and format the data. For our visualization, we need to be able to join the exposures data to the building footprint spatial data layer produced by Campus Planning. We also need standardized start and end dates for each potential exposure record.
+
+### Standardize Building Names
+The building names in the current potential worksite exposures data are not always consistent with that campus' official building names.
+
+
+
+**Possible later upgrade:** We would like to implement a fuzzy matching process on the building names to automatically match building names that are slightly different than the standard. This will reduce the amount of hands-on time updating the building dictionary to handle building names that don't match the campus database.
+
+### Standardize Start & End Dates
 
 ## Spatial Data
 The spatial data in this dataset, the building names, is not immediately usable in a map. We, as humans, understand these names represent a location, but for a computer to place them on a map in relation to other locations, we need to represent these locations in a different way.
