@@ -5,22 +5,27 @@ Scraping and visualizing the UC Davis Potential Worksite Exposure Reporting (AB 
 
 **Coding:**
 
-Dr. [Michele Tobias](https://github.com/MicheleTobias), DataLab Geospatial Data Scientist
+[Michele Tobias](https://github.com/MicheleTobias), DataLab Geospatial Data Scientist
 
 [Elijah Stockwell](https://github.com/elistockwell), DataLab Student Employee
 
 [Erika Lopez](https://github.com/erklopez), DataLab Student Employee
 
-[Jared Joseph](), DataLab Graduate Student Researcher
+[Jared Joseph](https://github.com/Epsian), DataLab Graduate Student Researcher
+
+
+**Documentation Editing:**
+
+[Pamela Reynolds](https://github.com/PLNReynolds), DataLab Associate Director
 
 
 **Advising on Text Matching:**
 
-Tyler Shoemaker
+Tyler Shoemaker, DataLab PostDoc
 
-Nick Ulle
+Nick Ulle, DataLab Data Scientist
 
-Carl Stahmer
+Carl Stahmer, DataLab Executive Director
 
 
 # Background
