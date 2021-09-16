@@ -150,7 +150,8 @@ campus_target_names<-building_footprints$arcgisDBObase_bldg_database_12_2017Buil
 campus_name_variants<-c(
   building_footprints$arcgisDBObase_bldg_database_12_2017Official_Long,
   building_footprints$arcgisDBObase_bldg_database_12_2017Abbrev_Short,
-  building_footprints$arcgisDBObase_bldg_database_12_2017FDX_Code
+  building_footprints$arcgisDBObase_bldg_database_12_2017FDX_Code,
+  building_footprints$arcgisDBObase_building_footprintsNAME_LC
   )
 
 #a dataframe with the name variations and what the targe (official) name should be
