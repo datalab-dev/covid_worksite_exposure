@@ -79,7 +79,12 @@
 
 	<script>
 		//add an empty map to the page
-		var map = L.map('map').setView([38.538592, -121.75], 15);
+		var map = L.map('map', {
+			center: [38.538592, -121.75], 
+			zoom: 15,
+			scrollWheelZoom: false
+			});
+			
 
 		//add the base map = Stamen Toner tile layer
 		var Stamen_Toner = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.{ext}', {
