@@ -44,6 +44,13 @@
         margin: 0;
         margin-bottom: 15px;
 		}
+		
+		.my-label {
+			position: absolute;
+			<!--width:20px;-->
+			font-size:10px;
+		}
+
     </style>
   
 	</head>
@@ -51,7 +58,9 @@
 	
 	<body>
 		
+		<!--
 		<div id="info">
+		-->
 		
 		<!--
 		<h1>Potential COVID-19 Worksite Exposure Reporting (AB 685) Map</h1>
@@ -68,7 +77,10 @@
 		<p>This is a spatial representation of the <a href="https://campusready.ucdavis.edu/potential-exposure">UC Davis Potential Worksite Exposure Reporting (AB 685)</a> data created by <a href="https://datalab.ucdavis.edu/">UC Davis DataLab</a>.</p> 
 		<p>Every effort has been made to represent the data as accurately as possible, but the official Potential Worksite Exposure Reporting site is the authoritative place to find data and more information.</p>
 		-->
+		
+		<!--
 		</div>
+		-->
 		
 	
 		<div id="map"></div>
@@ -84,6 +96,17 @@
 			zoom: 15,
 			scrollWheelZoom: false
 			});
+		
+		
+		//toggle scrollwheel zooming by clicking on the map
+		map.on('click', function() {
+			if (map.scrollWheelZoom.enabled()) {
+				map.scrollWheelZoom.disable();
+			}
+			else {
+				map.scrollWheelZoom.enable();
+			}
+  });
 			
 
 		//add the base map = Stamen Toner tile layer
@@ -96,6 +119,21 @@
 		});
 		map.addLayer(Stamen_Toner);
 		
+		//add custom campus labels
+		//Quad: 38.541162, -121.749371
+		var marker = new L.marker([38.541112, -121.749350], { 
+			opacity: 0.0   //opacity may be set to zero
+			}); 			
+			marker.bindTooltip("Quad", {
+				permanent: true, 
+				className: "my-label", 
+				offset: [46, 25] 
+				});
+			marker.addTo(map);
+			
+
+		
+		//make the timeline and load the data
 		var timeline;
 		var timelineControl;
 
@@ -133,8 +171,13 @@
 	//L.geoJSON(exposures).addTo(map);
   
   </script>
-  
 
-
+<!--  
+<div>
+<p>
+Click on the map to toggle zooming with a mouse scrollwheel.
+</p>
+</div>
+-->
 	
   </body>
