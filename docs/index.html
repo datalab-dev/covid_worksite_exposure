@@ -49,6 +49,9 @@
 			position: absolute;
 			<!--width:20px;-->
 			font-size:10px;
+			background-color: rgba(0, 0, 0, 0);
+			border: rgba(0, 0, 0, 0);
+			box-shadow: 0 1px 3px rgba(0,0,0,0);
 		}
 
     </style>
@@ -124,10 +127,10 @@
 		var marker = new L.marker([38.541112, -121.749350], { 
 			opacity: 0.0   //opacity may be set to zero
 			}); 			
-			marker.bindTooltip("Quad", {
+			marker.bindTooltip("<b>Quad<b>", {
 				permanent: true, 
 				className: "my-label", 
-				offset: [46, 25] 
+				offset: [46, 25]				
 				});
 			marker.addTo(map);
 			
