@@ -53,6 +53,16 @@
 			border: rgba(0, 0, 0, 0);
 			box-shadow: 0 1px 3px rgba(0,0,0,0);
 		}
+		
+		.info {
+			padding: 6px 8px;
+			font: 14px/16px Arial, Helvetica, sans-serif;
+			background: white;
+			background: rgba(255,255,255,1);
+			box-shadow: 0 0 15px rgba(0,0,0,0.2);
+			border-radius: 5px;
+			text-align: right;
+		}
 
     </style>
   
@@ -123,9 +133,9 @@
 		map.addLayer(Stamen_Toner);
 		
 		//add custom campus labels
-		//Quad: 38.541162, -121.749371
+			//Quad: 38.541162, -121.749371
 		var marker = new L.marker([38.541112, -121.749350], { 
-			opacity: 0.0   //opacity may be set to zero
+			opacity: 0.0   //teardrop marker opacity may be set to zero
 			}); 			
 			marker.bindTooltip("<b>Quad<b>", {
 				permanent: true, 
@@ -133,7 +143,22 @@
 				offset: [46, 25]				
 				});
 			marker.addTo(map);
-			
+
+		//add info box		
+		var info = L.control();
+
+		info.onAdd = function (map) {
+			this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
+			this.update();
+			return this._div;
+			};
+
+		// method that we will use to update the control based on feature properties passed
+		info.update = function (props) {
+			this._div.innerHTML = 'Code available on <a href="https://github.com/datalab-dev/covid_worksite_exposure">GitHub</a><br><b>Click map to toggle scroll wheel zooming.</b>';
+			};
+
+		info.addTo(map);
 
 		
 		//make the timeline and load the data
@@ -175,12 +200,6 @@
   
   </script>
 
-<!--  
-<div>
-<p>
-Click on the map to toggle zooming with a mouse scrollwheel.
-</p>
-</div>
--->
+
 	
   </body>
