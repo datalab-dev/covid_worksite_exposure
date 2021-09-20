@@ -1,4 +1,4 @@
-# covid_worksite_exposure
+# UC Davis Potential Worksite Exposure Interactive Web Map
 Scraping and visualizing the UC Davis Potential Worksite Exposure Reporting (AB 685) data
 
 [Interactive Web Map](https://datalab-dev.github.io/covid_worksite_exposure/)
