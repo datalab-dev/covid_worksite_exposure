@@ -95,6 +95,31 @@ Because the original data does not use a controlled vocabulary restricted to the
 
 # Citations
 
+[GitHub Actions for the R language](https://github.com/r-lib/actions#readme)
+
+[Leaflet Javascript Library](https://leafletjs.com/)
+
+[Leaflet.Timeline Javascript Plugin](https://skeate.dev/Leaflet.timeline/)
+
+[R Bloggers: Automatic Rendering of a Plot with GitHub Actions](https://www.r-bloggers.com/2021/01/automatic-rendering-of-a-plot-with-github-actions/)
+
+[R Project](https://cran.r-project.org/)
+
+R Packages: httr, jsonlite, xml2, rvest, stringr, sf, readtext
+
+[Stack Exchange: Leaflet mouse wheel zoom only after click on map](https://gis.stackexchange.com/questions/111887/leaflet-mouse-wheel-zoom-only-after-click-on-map)
+
+[Stack Overflow: Leaflet - styling a tooltip](https://stackoverflow.com/questions/59728027/leaflet-styling-a-tooltip)
+
+[Stack Overflow: Overlaying a text box on a leaflet.js map](https://stackoverflow.com/questions/33767463/overlaying-a-text-box-on-a-leaflet-js-map/33768597)
+
+UC Davis Campus Buildings (2018)
+
+[UC Davis Potential Worksite Exposure Reporting (AB 685)](https://campusready.ucdavis.edu/potential-exposure)
+
+[Understanding GitHub Actions](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions)
+
+[Workflow syntax for GitHub Actions](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions)
 
 # More Information & Bug Reporting
 If you'd like more information, please contact DataLab at datalab@ucdavis.edu or visit our [website](https://datalab.ucdavis.edu/).
