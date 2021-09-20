@@ -82,6 +82,9 @@ For this exercise we wanted to represent the temporal relationships in the data 
 
 **Possible later upgrade:** Having annotations on the timeline for events that could correlate with exposures, such as move-in or the start of classes, could be helpful in understanding the factors contributing to the patterns present in the data.
 
+## Automate Updates to Data
+Once the script was working, we wanted it to update the data regularly without a person needing to remember to run the script and update the repository. [GitHub Actions](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions) is ideal for this situation. We wrote a YAML (Yet Another Markdown Language) document using GitHub Actions' specific format to ask GitHub to run the scraping and data processing script twice a day and commit any changes back to the repository.
+
 
 # Limitations & Cautions for Interpreting these Data
 DataLab has made every effort to represent this data with fidelity to the original source, however, we do not intend for this visualization to be a replacement for the official [the UC Davis Potential Worksite Exposure Reporting (AB 685)](https://campusready.ucdavis.edu/potential-exposure) website. We do not have access to the source data informing the webportal and are limited to using the publicaly presented data on the portal.
@@ -89,6 +92,9 @@ DataLab has made every effort to represent this data with fidelity to the origin
 Furthermore, it is important to note that the interactive map contains presence data (not presence-absence data), meaning it only represents known cases and doesn't have information about where an exposure did NOT occur. Just because a building isn't indicated, doesn't mean it hasn't had a potential exposure. Additionally, this visualization does not tell us the degree of exposure risk for any given location, simply that there was an exposure.
 
 Because the original data does not use a controlled vocabulary restricted to the official campus building names, it is possible that there may be inaccuracies in the spatial representation. We will correct these as we become aware of them, and we encourage you to alert us if you notice any discrepancies.
+
+# Citations
+
 
 # More Information & Bug Reporting
 If you'd like more information, please contact DataLab at datalab@ucdavis.edu or visit our [website](https://datalab.ucdavis.edu/).
