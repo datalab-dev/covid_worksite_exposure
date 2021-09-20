@@ -93,6 +93,12 @@ Furthermore, it is important to note that the interactive map contains presence 
 
 Because the original data does not use a controlled vocabulary restricted to the official campus building names, it is possible that there may be inaccuracies in the spatial representation. We will correct these as we become aware of them, and we encourage you to alert us if you notice any discrepancies.
 
+# More Information & Bug Reporting
+If you'd like more information, please contact DataLab at datalab@ucdavis.edu or visit our [website](https://datalab.ucdavis.edu/).
+
+To report errors or suggest improvements, [report an issue on our GitHub repository](https://github.com/datalab-dev/covid_worksite_exposure) or email us.
+
+
 # Citations
 
 [GitHub Actions for the R language](https://github.com/r-lib/actions#readme)
@@ -121,7 +127,3 @@ UC Davis Campus Buildings (2018)
 
 [Workflow syntax for GitHub Actions](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions)
 
-# More Information & Bug Reporting
-If you'd like more information, please contact DataLab at datalab@ucdavis.edu or visit our [website](https://datalab.ucdavis.edu/).
-
-To report errors or suggest improvements, [report an issue on our GitHub repository](https://github.com/datalab-dev/covid_worksite_exposure) or email us.
