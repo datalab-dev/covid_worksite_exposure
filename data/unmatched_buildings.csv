@@ -1,3 +1,5 @@
 "","campus_building","worksite","report_date","location","potential_exposure_dates","start","end","geometry"
 "58","Orchard Park","Orchard Park","09-20","Davis campus","09-15
  - 09-17","2021-09-15","2021-09-17",list()
+"59","Primate Center","Primate Center","09-21","Davis campus","09-17
+ - 09-19","2021-09-17","2021-09-19",list()
