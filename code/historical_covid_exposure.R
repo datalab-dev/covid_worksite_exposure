@@ -70,3 +70,8 @@ setwd("C:/Program Files/phantomjs-2.1.1-windows/bin")
 # requires ^^ docker and i don't want to install it until I try the one avobe this
 
 # https://blog.brooke.science/posts/scraping-javascript-websites-in-r/#javascript-webscraping-in-r
+
+
+# https://sangaline.com/post/wayback-machine-scraper/ ---------------------
+
+# https://www.datacamp.com/community/tutorials/scraping-javascript-generated-data-with-r
