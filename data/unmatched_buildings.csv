@@ -1,9 +1,34 @@
 "","campus_building","worksite","report_date","location","potential_exposure_dates","start","end","geometry"
 "1","260 Cousteau","260 Cousteau","09-30","Davis campus","09-29","2021-09-29","2021-09-29",list()
-"25","CA Animal Health and Food Safety Lab, Turlock","CA Animal Health and Food Safety Lab, Turlock","09-22","Off campus","09-13
+"2","260 Cousteau","260 Cousteau","09-30","Davis campus","09-29","2021-09-29","2021-09-29",list()
+"3","260 Cousteau","260 Cousteau","09-30","Davis city","09/29/2021","2021-09/29","2021-1",list()
+"4","260 Cousteau","260 Cousteau","09-30","Davis city","09/29/2021","2021-09/29","2021-1",list()
+"56","CA Animal Health and Food Safety Lab, Turlock","CA Animal Health and Food Safety Lab, Turlock","09-22","Off campus","09-13
  - 09-15","2021-09-13","2021-09-15",list()
-"49","Geidt Hall","Geidt Hall","09-30","Davis campus","09-27","2021-09-27","2021-09-27",list()
-"247","Trecero Dining Commons","Trecero Dining Commons","09-30","Davis campus","09-24
+"116","Geidt Hall","Geidt Hall","09-30","Davis campus","09-27","2021-09-27","2021-09-27",list()
+"117","Geidt Hall","Geidt Hall","09-30","Davis campus","09-27","2021-09-27","2021-09-27",list()
+"118","Geidt Hall","Geidt Hall","09-30","Davis campus","09/27/2021","2021-09/27","2021-1",list()
+"119","Geidt Hall","Geidt Hall","09-30","Davis campus","09/27/2021","2021-09/27","2021-1",list()
+"561","Trecero Dining Commons","Trecero Dining Commons","09-30","Davis campus","09-24
  - 09-26","2021-09-24","2021-09-26",list()
-"261","Vet Med-Tulare","Vet Med-Tulare","09-29","Off campus","09-24
+"562","Trecero Dining Commons","Trecero Dining Commons","09-30","Davis campus","09/24/2021
+ - 09/26/2021","2021-09/24","2021-1
+ - ",list()
+"563","Trecero Dining Commons","Trecero Dining Commons","09-30","Davis campus","09/24/2021
+ - 09/26/2021","2021-09/24","2021-1
+ - ",list()
+"564","Trecero Dining Commons","Trecero Dining Commons","09-30","Davis campus","09-24
  - 09-26","2021-09-24","2021-09-26",list()
+"581","Vet Med-Tulare","Vet Med-Tulare","09-29","Off campus","09/24/2021
+ - 09/26/2021","2021-09/24","2021-1
+ - ",list()
+"582","Vet Med-Tulare","Vet Med-Tulare","09-29","Off campus","09/24/2021
+ - 09/26/2021","2021-09/24","2021-1
+ - ",list()
+"583","Vet Med-Tulare","Vet Med-Tulare","09-29","Off campus","09-24
+ - 09-26","2021-09-24","2021-09-26",list()
+"584","Vet Med-Tulare","Vet Med-Tulare","09-29","Off campus","09-24
+ - 09-26","2021-09-24","2021-09-26",list()
+"588","VMTH","VMTH","10-01","Davis campus","09/26/2021
+ - 09/28/2021","2021-09/26","2021-1
+ - ",list()
