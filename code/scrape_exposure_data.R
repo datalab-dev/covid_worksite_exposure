@@ -1,8 +1,8 @@
 #GOAL: 
 # 1. scrape the data from the UC Davis Potential Worksite Exposure Reporting (AB 685) report online
 # 2. clean the data 
-    # a. make the building names match the campus shapefile names
-    # b. make separate columns for start and end dates for potential exposure
+# a. make the building names match the campus shapefile names
+# b. make separate columns for start and end dates for potential exposure
 # 3. remove duplicates
 # 4. write a csv with the exposure data
 # 5. join the exposure data to the campus building data & export a geojson file
@@ -122,7 +122,7 @@ for (i in 0:number_pages){
   
   #add the data from this page to the existing dataframe
   covid_df<-rbind.data.frame(covid_df, covid_df_page)
-
+  
   #remove the duplicates
   all_exposures<-covid_df[!duplicated(covid_df), ]
   
@@ -152,13 +152,13 @@ campus_name_variants<-c(
   building_footprints$arcgisDBObase_bldg_database_12_2017Abbrev_Short,
   building_footprints$arcgisDBObase_bldg_database_12_2017FDX_Code,
   building_footprints$arcgisDBObase_building_footprintsNAME_LC
-  )
+)
 
 #a dataframe with the name variations and what the targe (official) name should be
 campus_names<-cbind.data.frame(
   campus_target_names, 
   campus_name_variants
-  )
+)
 
 #removing the lines with blanks - because if there's an NA in either column, we don't really want it
 campus_names<-na.omit(campus_names)
@@ -206,36 +206,88 @@ names(all_exposures)<-c("worksite", "report_date", "location", "potential_exposu
 #the colums MUST be called "start" and "end" and have the format 2021-09-13 (use dashes, not slashes)
 
 #subset first dates in table as start dates
-start <- substr(all_exposures$potential_exposure_dates, 1, 5)
 
-#add year
-for(i in 1:length(start)){
-  start[i] <- paste0("2021-", start[i])
+# this is a really rough fix for how to handle discrepancies between the data 
+# already collected and the newly formatted data as it's now coming in from the exposure site
+# first we have to remove the newlines in the datetime spans
+all_exposures$potential_exposure_dates <- gsub("\n", "", all_exposures$potential_exposure_dates)
+
+# create empty vectors and loop through all the exposure dates. if there's a datetime span,
+# split it. append the first entry to start and the second entry to end. if there isn't a 
+# datetime span, just append the date twice: once to start, once to end
+start <- c()
+end <- c()
+for (i in 1:length(all_exposures$potential_exposure_dates)) {
+  if (grepl(" - ", all_exposures$potential_exposure_dates[i])==TRUE) {
+    split_dates <- strsplit(all_exposures$potential_exposure_dates[i], " - ")
+    start <- append(start, split_dates[[1]][1])
+    end <- append(end, split_dates[[1]][2])
+  } else {
+    single_date <- all_exposures$potential_exposure_dates[i]
+    start <- append(start, single_date)
+    end <- append(end, single_date)
+  }
 }
 
-#add start column to df
+# looks like the formatting switched to /, which is annoying. we'll take care of those
+start <- gsub("\\/", "-", start)
+end <- gsub("\\/", "-", end)
+
+# loop through start and end and append the year if it's not there. ideally we wouldn't 
+# do an nchar check on these dates. we'd find another method
+for (i in 1:length(start)) {
+  if (nchar(start[i])==5) {
+    start[i] <- paste0(start[i], "-2021")
+  }
+}
+for (i in 1:length(end)) {
+  if (nchar(end[i])==5) {
+    end[i] <- paste0(end[i], "-2021")
+  }
+}
+
+# ...whoops, even i forgot the proper formatting! here's a messy fix 
+start <- gsub("-2021", "", start)
+start <- paste0("2021-", start)
+end <- gsub("-2021", "", end)
+end <- paste0("2021-", end)
+
+# okay, at least that works, so fine. put start and end into their respective
+# exposure data columns
 all_exposures$start <- start
-
-#create empty list for end dates
-end <- character()
-
-#check if there is only one date -> start and end day the same, otherwise subset second date
-for(i in 1:nrow(all_exposures)){
-  if(nchar(all_exposures$potential_exposure_dates[i]) == 5){
-    end[i] <- substr(all_exposures$potential_exposure_dates[i], 1, 5)
-  }
-  else{
-    end[i] <- substr(all_exposures$potential_exposure_dates[i], 10, nchar(all_exposures$potential_exposure_dates))
-  }
-}
-
-#add year
-for(i in 1:length(end)){
-  end[i] <- paste0("2021-", end[i])
-}
-
-#add end column to df
 all_exposures$end <- end
+
+#start <- substr(all_exposures$potential_exposure_dates, 1, 5)
+#
+##add year
+#for(i in 1:length(start)){
+#  start[i] <- paste0("2021-", start[i])
+#}
+#
+##add start column to df
+#all_exposures$start <- start
+#
+##create empty list for end dates
+#end <- character()
+#
+##check if there is only one date -> start and end day the same, otherwise subset second date
+#for(i in 1 :nrow(all_exposures)){
+#  if(nchar(all_exposures$potential_exposure_dates[i]) == 5){
+#    end[i] <- substr(all_exposures$potential_exposure_dates[i], 1, 5)
+#  }
+#  else{
+#    print(all_exposures$potential_exposure_dates[i])
+#    end[i] <- substr(all_exposures$potential_exposure_dates[i], 10, nchar(all_exposures$potential_exposure_dates))
+#  }
+#}
+#
+##add year
+#for(i in 1:length(end)){
+#  end[i] <- paste0("2021-", end[i])
+#}
+#
+##add end column to df
+#all_exposures$end <- end
 
 
 # Join with Campus Buildings GEOJSON --------------------------------------
@@ -283,4 +335,4 @@ writeLines(js, "./docs/exposure_data.js")
 paste0(
   "Number Of Buildings Unmatched: ", 
   dim(unmatched)[1]
-  )
+)
