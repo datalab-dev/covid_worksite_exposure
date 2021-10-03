@@ -20,8 +20,8 @@ library(rvest)
 library(stringr)
 library(sf)
 library(readtext)
+library(lubridate)
 
-#setwd("C:\\Users\\mmtobias\\Documents\\GitHub\\covid_worksite_exposure")
 
 # Fetching the website page 0----------------------------------------------------
 
@@ -105,7 +105,7 @@ last_page_href<-xml_find_all(exposure_html, "//li[contains(@class, 'pager__item 
 #parse the number of pages from the text; note that it's 0 indexed (numbering starts with 0)
 number_pages<-as.numeric(gsub("\"", "", substr(str_split(as.character(last_page_href), "page=")[[1]][2], 1, 2)))
 
-covid_df<-read.csv("./data/exposures.csv")
+covid_df<-read.csv("./data/exposures_thursday.csv")
 
 for (i in 0:number_pages){
   
@@ -123,8 +123,8 @@ for (i in 0:number_pages){
   #add the data from this page to the existing dataframe
   covid_df<-rbind.data.frame(covid_df, covid_df_page)
 
-  #remove the duplicates
-  all_exposures<-covid_df[!duplicated(covid_df), ]
+  #remove the duplicates - we'll need to do this AFTER we convert the dates to a standard format
+  #all_exposures<-covid_df[!duplicated(covid_df), ] 
   
 }
 
