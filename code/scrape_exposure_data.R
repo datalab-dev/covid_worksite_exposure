@@ -174,6 +174,10 @@ for (i in 1:length(parsed.end.date)){
   }
 }
 
+covid_df$standard.report.date<-parsed.report.date
+covid_df$start<-parsed.start.date
+covid_df$end<-parsed.end.date
+
 
 
 #code should output all_exposures variable with the data de-duplicated
