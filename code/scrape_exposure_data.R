@@ -105,7 +105,8 @@ last_page_href<-length(xml_find_all(exposure_html, "//li[contains(@class, 'pager
 
 number_pages<-last_page_href-1 #-1 because there are x pages + the next button
 
-covid_df<-read.csv("./data/exposures_thursday.csv")
+covid_df<-read.csv("./data/exposures.csv")
+#covid_df<-read.csv("./data/exposures_thursday.csv")
 
 for (i in 0:(number_pages-1)){ #pages on the site are 0 indexed
   
@@ -181,7 +182,7 @@ covid_df$end<-parsed.end.date
 
 
 #code should output all_exposures variable with the data de-duplicated
-all_exposures<-covid_df[!duplicated(covid_df), ]
+all_exposures<-covid_df[!duplicated(covid_df[,c(2, 5:7)]), ]
 
 
 
