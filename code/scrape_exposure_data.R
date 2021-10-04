@@ -100,14 +100,16 @@ exposure_html<- read_html(exposure_website)
 
 # How many pages of data are there?
 #extract the node with the last page number = the one that codes the "next" button
-last_page_href<-xml_find_all(exposure_html, "//li[contains(@class, 'pager__item pager__item--next')]")[[1]]
+#Old way: last_page_href<-xml_find_all(exposure_html, "//li[contains(@class, 'pager__item pager__item--next')]")[[1]]
+last_page_href<-length(xml_find_all(exposure_html, "//li[contains(@class, 'pager__item')]"))
 
 #parse the number of pages from the text; note that it's 0 indexed (numbering starts with 0)
-number_pages<-as.numeric(gsub("\"", "", substr(str_split(as.character(last_page_href), "page=")[[1]][2], 1, 2)))
+#Old way: number_pages<-as.numeric(gsub("\"", "", substr(str_split(as.character(last_page_href), "page=")[[1]][2], 1, 2)))
+number_pages<-last_page_href-1 #-1 because there are x pages + the next button
 
 covid_df<-read.csv("./data/exposures_thursday.csv")
 
-for (i in 0:number_pages){
+for (i in 0:(number_pages-1)){ #pages on the site are 0 indexed
   
   #make the URL
   url<-paste0("https://campusready.ucdavis.edu/potential-exposure?page=", i)
@@ -133,6 +135,10 @@ for (i in 0:number_pages){
 #parse_date_time(c('30-Sep', '09-24', '10/01/2021'), orders=c('%d-%b', '%m-%d', '%d/%m/%Y'))
 #EXAMPLE OF ADDING A YEAR TO A DATE WITH 0000 FOR THE YEAR:
 #my_date %m+% years(2021)
+
+possible.formats<-c('%d-%b', '%m-%d', '%d/%m/%Y', '%m-%d') #10-01
+
+parsed.report.date<-parse_date_time(covid_df$report.date, possible.formats)
 
 
 #code should output all_exposures variable with the data de-duplicated
