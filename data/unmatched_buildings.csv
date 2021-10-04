@@ -1,11 +1,5 @@
 "","campus_building","worksite","report_date","location","potential_exposure_dates","start","end","standardized_exposure_dates","geometry"
-"1","260 Cousteau","260 Cousteau","30-Sep","Davis campus","29-Sep",2021-09-29,2021-09-29,2021-09-30,list()
 "26","CA Animal Health and Food Safety Lab, Turlock","CA Animal Health and Food Safety Lab, Turlock","22-Sep","Off campus","09-13
  - 09-15",2021-09-13,2021-09-15,2021-09-22,list()
-"50","Geidt Hall","Geidt Hall","30-Sep","Davis campus","27-Sep",2021-09-27,2021-09-27,2021-09-30,list()
-"256","Trecero Dining Commons","Trecero Dining Commons","30-Sep","Davis campus","09-24
- - 09-26",2021-09-24,2021-09-26,2021-09-30,list()
-"270","Vet Med-Tulare","Vet Med-Tulare","29-Sep","Off campus","09-24
+"271","Vet Med-Tulare","Vet Med-Tulare","29-Sep","Off campus","09-24
  - 09-26",2021-09-24,2021-09-26,2021-09-29,list()
-"274","VMTH","VMTH","10-01","Davis campus","09/26/2021
- - 09/28/2021",2021-09-26,2021-09-28,2021-10-01,list()
