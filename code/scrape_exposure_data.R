@@ -134,9 +134,15 @@ for (i in 0:(number_pages-1)){ #pages on the site are 0 indexed
 #EXAMPLE OF ADDING A YEAR TO A DATE WITH 0000 FOR THE YEAR:
 #my_date %m+% years(2021)
 
-possible.formats<-c('%d-%b', '%m-%d', '%d/%m/%Y', '%m-%d') #10-01
+possible.formats<-c('%d-%b', '%m-%d', '%d/%m/%Y')
 
 parsed.report.date<-parse_date_time(covid_df$report.date, possible.formats)
+
+for (i in 1:length(parsed.report.date)){
+  if (format(parsed.report.date[i], '%Y') == '0000'){
+    parsed.report.date[i]<-parsed.report.date[i] %m+% years(2021)
+  }
+}
 
 
 #code should output all_exposures variable with the data de-duplicated
