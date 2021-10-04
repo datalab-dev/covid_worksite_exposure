@@ -20,77 +20,7 @@ library(rvest)
 library(stringr)
 library(sf)
 library(readtext)
-
-#setwd("C:\\Users\\mmtobias\\Documents\\GitHub\\covid_worksite_exposure")
-
-# Fetching the website page 0----------------------------------------------------
-
-# i_exposure_website0 <- GET("https://campusready.ucdavis.edu/potential-exposure?page=0&order=field_report_date&sort=desc") ## Fetch the website page 0
-
-# i_data0<- read_html(i_exposure_website0)  ##Read the html of the website, from rvest
-
-# i_tables0<- xml_find_all(i_data0, "//table") ## searches for tables on the website 
-
-# i_cov0<- html_table(i_tables0, fill = TRUE) ## recreates a table from the website
-
-# i_covid_df0<- i_cov0[[1]] ## takes the first page of the table
-
-##This section is only used to create initial csv
-
-# Fetching website page 1 -------------------------------------------------
-
-# i_exposure_website1<- GET("https://campusready.ucdavis.edu/potential-exposure?page=1&order=field_report_date&sort=desc")
-## Fetch the website page 1
-
-# i_data1<- read_html(i_exposure_website1)  ##Read the html of the website
-
-# i_tables1<- xml_find_all(i_data1, "//table") ## searches for tables on the website
-
-# i_cov1<- html_table(i_tables1, fill = TRUE) ## recreates a table from the website
-
-# i_covid_df1<- i_cov1[[1]] ## takes the first page of the table
-
-
-# covid_worksite_ex<- rbind(i_covid_df0, i_covid_df1) ##Binding the two pages of content
-
-# covid_worksite_ex<- covid_worksite_ex[!duplicated(covid_worksite_ex), ] ## Getting rid of duplicates
-
-# colnames(covid_worksite_ex)<-c("report.date", "worksite", "location", "potential.exposure.dates") ##renaming columns
-
-
-# write.csv(covid_worksite_ex, "~//data_lab//covid_worksite_exposure//covid_worksite_ex.csv", row.names = FALSE)
-
-##This section is only used to create initial csv
-
-
-# Scrapping Function ----------------------------------------------------------
-
-# covid_worksite_ex<-read.csv("C://Users//ERIKA//data_lab_//covid_worksite_exposure//data//exposures.csv") ##Importing CSV file with the previous scrapping
-
-# 
-# scrape_exposure<- function(page0, page1, file_destination){
-#   exposure_website0 <- GET(page0) 
-#   data0<- read_html(exposure_website0)  
-#   tables0<- xml_find_all(data0, "//table") 
-#   cov0<- html_table(tables0, fill = TRUE)
-#   covid_df0<- cov0[[1]]
-#   colnames(covid_df0)<-c("report.date", "worksite", "location", "potential.exposure.dates")
-#   exposure_website1 <- GET(page1) 
-#   data1<- read_html(exposure_website1)  
-#   tables1<- xml_find_all(data1, "//table") 
-#   cov1<- html_table(tables1, fill = TRUE)
-#   covid_df1<- cov1[[1]]
-#   colnames(covid_df1)<-c("report.date", "worksite", "location", "potential.exposure.dates")
-#   covid_worksite_ex<- rbind(covid_df0, covid_df1, covid_worksite_ex)
-#   covid_worksite_ex<- covid_worksite_ex[!duplicated(covid_worksite_ex), ]
-#   write.csv(covid_worksite_ex, file_destination, row.names = FALSE) 
-#   return(covid_worksite_ex)
-# }
-# 
-#  
-# scrape_exposure("https://campusready.ucdavis.edu/potential-exposure?page=0&order=field_report_date&sort=desc"
-#  , "https://campusready.ucdavis.edu/potential-exposure?page=1&order=field_report_date&sort=desc", 
-#  "C://Users//ERIKA//data_lab_//covid_worksite_exposure//data//exposures.csv")
+library(lubridate)
 
 
 base_url<-"https://campusready.ucdavis.edu/potential-exposure"
@@ -99,15 +29,18 @@ exposure_website <- GET(base_url)
 exposure_html<- read_html(exposure_website)  
 
 # How many pages of data are there?
-#extract the node with the last page number = the one that codes the "next" button
-last_page_href<-xml_find_all(exposure_html, "//li[contains(@class, 'pager__item pager__item--next')]")[[1]]
+#extract the nodes called "pager_item" - there is one more of these than the number of pages (because the next button is one too)
 
-#parse the number of pages from the text; note that it's 0 indexed (numbering starts with 0)
-number_pages<-as.numeric(gsub("\"", "", substr(str_split(as.character(last_page_href), "page=")[[1]][2], 1, 2)))
+last_page_href<-length(xml_find_all(exposure_html, "//li[contains(@class, 'pager__item')]"))
+
+number_pages<-last_page_href-1 #-1 because there are x pages + the next button
 
 covid_df<-read.csv("./data/exposures.csv")
+#covid_df<-read.csv("./data/exposures_thursday.csv")
 
-for (i in 0:number_pages){
+covid_df<-covid_df[,1:4]
+
+for (i in 0:(number_pages-1)){ #pages on the site are 0 indexed
   
   #make the URL
   url<-paste0("https://campusready.ucdavis.edu/potential-exposure?page=", i)
@@ -123,10 +56,69 @@ for (i in 0:number_pages){
   #add the data from this page to the existing dataframe
   covid_df<-rbind.data.frame(covid_df, covid_df_page)
 
-  #remove the duplicates
-  all_exposures<-covid_df[!duplicated(covid_df), ]
+  #remove the duplicates - we'll need to do this AFTER we convert the dates to a standard format
+  #all_exposures<-covid_df[!duplicated(covid_df), ] 
   
 }
+
+#Standardize the dates in the report.date and potential.exposure.dates columns
+  #EXAMPLE OF DATE PARSING:
+    #parse_date_time(c('30-Sep', '09-24', '10/01/2021'), orders=c('%d-%b', '%m-%d', '%d/%m/%Y'))
+  #EXAMPLE OF ADDING A YEAR TO A DATE WITH 0000 FOR THE YEAR:
+    #my_date %m+% years(2021)
+
+possible.formats<-c('%d-%b', '%m-%d', '%m/%d/%Y')
+
+parsed.report.date<-parse_date_time(covid_df$report.date, possible.formats)
+
+for (i in 1:length(parsed.report.date)){
+  if (format(parsed.report.date[i], '%Y') == '0000'){
+    parsed.report.date[i]<-parsed.report.date[i] %m+% years(2021)
+  }
+}
+
+
+#Exposure Date Parsing
+
+for (i in 1:length(covid_df$potential.exposure.dates)){
+  split.dates<-unlist(strsplit(covid_df$potential.exposure.dates[i], ' - '))
+  if (length(split.dates)==2){
+    covid_df$start[i]<-split.dates[1]
+    covid_df$end[i]<-split.dates[2]
+  }else{
+    covid_df$start[i]<-split.dates[1]
+    covid_df$end[i]<-split.dates[1]
+  }
+}
+
+parsed.start.date<-parse_date_time(covid_df$start, possible.formats)
+
+for (i in 1:length(parsed.start.date)){
+  if (format(parsed.start.date[i], '%Y') == '0000'){
+    parsed.start.date[i]<-parsed.start.date[i] %m+% years(2021)
+  }
+}
+
+parsed.end.date<-parse_date_time(covid_df$end, possible.formats)
+
+for (i in 1:length(parsed.end.date)){
+  if (format(parsed.end.date[i], '%Y') == '0000'){
+    parsed.end.date[i]<-parsed.end.date[i] %m+% years(2021)
+  }
+}
+
+covid_df$standard.report.date<-parsed.report.date
+covid_df$start<-parsed.start.date
+covid_df$end<-parsed.end.date
+
+
+
+#code should output all_exposures variable with the data de-duplicated
+all_exposures<-covid_df[!duplicated(covid_df[,c(2, 5:7)]), ]
+
+
+
+
 
 #write the scraped exposure data to a csv without the row numbers
 write.csv(x=all_exposures, file="./data/exposures.csv", row.names = FALSE)
@@ -194,48 +186,48 @@ all_exposures<-merge(
   by="worksite")
 
 #remove the repeated columns
-all_exposures<-all_exposures[,c(1:4, 9)]
-names(all_exposures)<-c("worksite", "report_date", "location", "potential_exposure_dates", "campus_building")
+all_exposures<-all_exposures[,c(1:7, 15)]
+names(all_exposures)<-c("worksite", "report_date", "location", "potential_exposure_dates", "start", "end", "standardized_exposure_dates", "campus_building")
 
 
 
-# Date Parsing ------------------------------------------------------------
-
-#use the potential_exposure_dates column to create a start and end column. If there is just one date (it's not a range of dates), the start and end should match. 
-
-#the colums MUST be called "start" and "end" and have the format 2021-09-13 (use dashes, not slashes)
-
-#subset first dates in table as start dates
-start <- substr(all_exposures$potential_exposure_dates, 1, 5)
-
-#add year
-for(i in 1:length(start)){
-  start[i] <- paste0("2021-", start[i])
-}
-
-#add start column to df
-all_exposures$start <- start
-
-#create empty list for end dates
-end <- character()
-
-#check if there is only one date -> start and end day the same, otherwise subset second date
-for(i in 1:nrow(all_exposures)){
-  if(nchar(all_exposures$potential_exposure_dates[i]) == 5){
-    end[i] <- substr(all_exposures$potential_exposure_dates[i], 1, 5)
-  }
-  else{
-    end[i] <- substr(all_exposures$potential_exposure_dates[i], 10, nchar(all_exposures$potential_exposure_dates))
-  }
-}
-
-#add year
-for(i in 1:length(end)){
-  end[i] <- paste0("2021-", end[i])
-}
-
-#add end column to df
-all_exposures$end <- end
+# # Date Parsing ------------------------------------------------------------
+# 
+# #use the potential_exposure_dates column to create a start and end column. If there is just one date (it's not a range of dates), the start and end should match. 
+# 
+# #the colums MUST be called "start" and "end" and have the format 2021-09-13 (use dashes, not slashes)
+# 
+# #subset first dates in table as start dates
+# start <- substr(all_exposures$potential_exposure_dates, 1, 5)
+# 
+# #add year
+# for(i in 1:length(start)){
+#   start[i] <- paste0("2021-", start[i])
+# }
+# 
+# #add start column to df
+# all_exposures$start <- start
+# 
+# #create empty list for end dates
+# end <- character()
+# 
+# #check if there is only one date -> start and end day the same, otherwise subset second date
+# for(i in 1:nrow(all_exposures)){
+#   if(nchar(all_exposures$potential_exposure_dates[i]) == 5){
+#     end[i] <- substr(all_exposures$potential_exposure_dates[i], 1, 5)
+#   }
+#   else{
+#     end[i] <- substr(all_exposures$potential_exposure_dates[i], 10, nchar(all_exposures$potential_exposure_dates))
+#   }
+# }
+# 
+# #add year
+# for(i in 1:length(end)){
+#   end[i] <- paste0("2021-", end[i])
+# }
+# 
+# #add end column to df
+# all_exposures$end <- end
 
 
 # Join with Campus Buildings GEOJSON --------------------------------------
@@ -284,3 +276,4 @@ paste0(
   "Number Of Buildings Unmatched: ", 
   dim(unmatched)[1]
   )
+unmatched[, c(2,4)]
