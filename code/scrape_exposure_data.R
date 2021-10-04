@@ -166,6 +166,14 @@ for (i in 1:length(parsed.start.date)){
   }
 }
 
+parsed.end.date<-parse_date_time(covid_df$end, possible.formats)
+
+for (i in 1:length(parsed.end.date)){
+  if (format(parsed.end.date[i], '%Y') == '0000'){
+    parsed.end.date[i]<-parsed.end.date[i] %m+% years(2021)
+  }
+}
+
 
 
 #code should output all_exposures variable with the data de-duplicated
