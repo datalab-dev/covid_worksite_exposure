@@ -99,12 +99,10 @@ exposure_website <- GET(base_url)
 exposure_html<- read_html(exposure_website)  
 
 # How many pages of data are there?
-#extract the node with the last page number = the one that codes the "next" button
-#Old way: last_page_href<-xml_find_all(exposure_html, "//li[contains(@class, 'pager__item pager__item--next')]")[[1]]
+#extract the nodes called "pager_item" - there is one more of these than the number of pages (because the next button is one too)
+
 last_page_href<-length(xml_find_all(exposure_html, "//li[contains(@class, 'pager__item')]"))
 
-#parse the number of pages from the text; note that it's 0 indexed (numbering starts with 0)
-#Old way: number_pages<-as.numeric(gsub("\"", "", substr(str_split(as.character(last_page_href), "page=")[[1]][2], 1, 2)))
 number_pages<-last_page_href-1 #-1 because there are x pages + the next button
 
 covid_df<-read.csv("./data/exposures_thursday.csv")
