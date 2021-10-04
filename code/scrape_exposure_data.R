@@ -145,6 +145,25 @@ for (i in 1:length(parsed.report.date)){
 }
 
 
+#Exposure Date Parsing
+
+start.date<-c()
+end.date<-c()
+
+#covid_df$start<-unlist(strsplit(covid_df$potential.exposure.dates, ' - '))
+
+for (i in 1:length(covid_df$potential.exposure.dates)){
+  split.dates<-unlist(strsplit(covid_df$potential.exposure.dates[i], ' - '))
+  if (length(split.dates)==2){
+    covid_df$start[i]<-split.dates[1]
+    covid_df$end[i]<-split.dates[2]
+  }else{
+    covid_df$start[i]<-split.dates[1]
+    covid_df$end[i]<-split.dates[1]
+  }
+}
+
+
 #code should output all_exposures variable with the data de-duplicated
 all_exposures<-covid_df[!duplicated(covid_df), ]
 
