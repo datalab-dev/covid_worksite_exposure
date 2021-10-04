@@ -62,10 +62,10 @@ for (i in 0:(number_pages-1)){ #pages on the site are 0 indexed
 }
 
 #Standardize the dates in the report.date and potential.exposure.dates columns
-#EXAMPLE OF DATE PARSING:
-#parse_date_time(c('30-Sep', '09-24', '10/01/2021'), orders=c('%d-%b', '%m-%d', '%d/%m/%Y'))
-#EXAMPLE OF ADDING A YEAR TO A DATE WITH 0000 FOR THE YEAR:
-#my_date %m+% years(2021)
+  #EXAMPLE OF DATE PARSING:
+    #parse_date_time(c('30-Sep', '09-24', '10/01/2021'), orders=c('%d-%b', '%m-%d', '%d/%m/%Y'))
+  #EXAMPLE OF ADDING A YEAR TO A DATE WITH 0000 FOR THE YEAR:
+    #my_date %m+% years(2021)
 
 possible.formats<-c('%d-%b', '%m-%d', '%m/%d/%Y')
 
@@ -186,48 +186,48 @@ all_exposures<-merge(
   by="worksite")
 
 #remove the repeated columns
-all_exposures<-all_exposures[,c(1:4, 9)]
-names(all_exposures)<-c("worksite", "report_date", "location", "potential_exposure_dates", "campus_building")
+all_exposures<-all_exposures[,c(1:7, 15)]
+names(all_exposures)<-c("worksite", "report_date", "location", "potential_exposure_dates", "start", "end", "standardized_exposure_dates", "campus_building")
 
 
 
-# Date Parsing ------------------------------------------------------------
-
-#use the potential_exposure_dates column to create a start and end column. If there is just one date (it's not a range of dates), the start and end should match. 
-
-#the colums MUST be called "start" and "end" and have the format 2021-09-13 (use dashes, not slashes)
-
-#subset first dates in table as start dates
-start <- substr(all_exposures$potential_exposure_dates, 1, 5)
-
-#add year
-for(i in 1:length(start)){
-  start[i] <- paste0("2021-", start[i])
-}
-
-#add start column to df
-all_exposures$start <- start
-
-#create empty list for end dates
-end <- character()
-
-#check if there is only one date -> start and end day the same, otherwise subset second date
-for(i in 1:nrow(all_exposures)){
-  if(nchar(all_exposures$potential_exposure_dates[i]) == 5){
-    end[i] <- substr(all_exposures$potential_exposure_dates[i], 1, 5)
-  }
-  else{
-    end[i] <- substr(all_exposures$potential_exposure_dates[i], 10, nchar(all_exposures$potential_exposure_dates))
-  }
-}
-
-#add year
-for(i in 1:length(end)){
-  end[i] <- paste0("2021-", end[i])
-}
-
-#add end column to df
-all_exposures$end <- end
+# # Date Parsing ------------------------------------------------------------
+# 
+# #use the potential_exposure_dates column to create a start and end column. If there is just one date (it's not a range of dates), the start and end should match. 
+# 
+# #the colums MUST be called "start" and "end" and have the format 2021-09-13 (use dashes, not slashes)
+# 
+# #subset first dates in table as start dates
+# start <- substr(all_exposures$potential_exposure_dates, 1, 5)
+# 
+# #add year
+# for(i in 1:length(start)){
+#   start[i] <- paste0("2021-", start[i])
+# }
+# 
+# #add start column to df
+# all_exposures$start <- start
+# 
+# #create empty list for end dates
+# end <- character()
+# 
+# #check if there is only one date -> start and end day the same, otherwise subset second date
+# for(i in 1:nrow(all_exposures)){
+#   if(nchar(all_exposures$potential_exposure_dates[i]) == 5){
+#     end[i] <- substr(all_exposures$potential_exposure_dates[i], 1, 5)
+#   }
+#   else{
+#     end[i] <- substr(all_exposures$potential_exposure_dates[i], 10, nchar(all_exposures$potential_exposure_dates))
+#   }
+# }
+# 
+# #add year
+# for(i in 1:length(end)){
+#   end[i] <- paste0("2021-", end[i])
+# }
+# 
+# #add end column to df
+# all_exposures$end <- end
 
 
 # Join with Campus Buildings GEOJSON --------------------------------------
@@ -276,3 +276,4 @@ paste0(
   "Number Of Buildings Unmatched: ", 
   dim(unmatched)[1]
   )
+unmatched[, c(2,4)]
