@@ -128,6 +128,20 @@ for (i in 0:number_pages){
   
 }
 
+#Standardize the dates in the report.date and potential.exposure.dates columns
+#EXAMPLE OF DATE PARSING:
+#parse_date_time(c('30-Sep', '09-24', '10/01/2021'), orders=c('%d-%b', '%m-%d', '%d/%m/%Y'))
+#EXAMPLE OF ADDING A YEAR TO A DATE WITH 0000 FOR THE YEAR:
+#my_date %m+% years(2021)
+
+
+#code should output all_exposures variable with the data de-duplicated
+all_exposures<-covid_df[!duplicated(covid_df), ]
+
+
+
+
+
 #write the scraped exposure data to a csv without the row numbers
 write.csv(x=all_exposures, file="./data/exposures.csv", row.names = FALSE)
 
