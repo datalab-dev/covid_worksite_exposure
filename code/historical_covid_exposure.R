@@ -16,62 +16,47 @@ library(plyr)
 library(dplyr)
 library(ggvis)
 library(knitr)
+library(rjson)
 
 
 
-# Initial fetch (website per day). ----------------------------------------
+# Initial fetch (URLs). ----------------------------------------
 
 ##I'll have it do a scrapping of each link of the calendar that initially shows up for the internet archive website and 
-##then I'll modify the function that Michele used for the scrapping of scrape_exposure_data.R
-link<- "https://web.archive.org/web/*/https://campusready.ucdavis.edu/potential-exposure"
-ucdavis_archive<- GET("https://web.archive.org/web/*/https://campusready.ucdavis.edu/potential-exposure")##Fetch the website
+##then I'll modify the function used for the scrapping of scrape_exposure_data.R
 
-archive_html<- read_xml(ucdavis_archive) ##Reads the html content of the website
+link<- "https://web.archive.org/web/*/https://campusready.ucdavis.edu/potential-exposure" #Initial link with the calendar and the 
+# urls to the actual "screenshots" of the website
 
-
-# https://stackoverflow.com/questions/26631511/scraping-javascript --------
-
-setwd("C:/Program Files/phantomjs-2.1.1-windows/bin")
-
-# render HTML from the site with phantomjs
-# 
-# writeLines(sprintf("var page = require('webpage').create();
-# page.open('%s', function () {
-#     console.log(page.content); //page source
-#     phantom.exit();
-# });", link))
-#  # ,con="scrape.js"
-# system("phantomjs scrape.js > scrape.html", intern = TRUE)
-# # extract the content you need
-# pg <- read_xml("scrape.html")
-# pg %>% html_nodes("#utime") %>% html_text()
+ucdavis_archive<- GET(link)##Fetch the website
 
 
-# library(RSelenium)
-# 
-# url
-# 
-# system('docker run -d -p 4445:4444 selenium/standalone-chrome') 
-# remDr <- remoteDriver(remoteServerAddr = "localhost", port = 4445L, browserName = "chrome")
-# remDr$open()
-# remDr$navigate(link)
-# 
-# writeLines(sprintf("var page = require('webpage').create();
-# page.open('%s', function () {
-#     console.log(page.content); //page source
-#     phantom.exit();
-# });", link), con="scrape.js")
-# 
-# system("phantomjs scrape.js > scrape.html", intern = T)
-# 
-# # extract the content you need
-# pg <- read_html("scrape.html")
-# pg %>% html_nodes("#utime") %>% html_text() 
-# requires ^^ docker and i don't want to install it until I try the one avobe this
+# URL data frame building and cleaning ------------------------------------
 
-# https://blog.brooke.science/posts/scraping-javascript-websites-in-r/#javascript-webscraping-in-r
+# Used the wayback-scraper tool that utilizes the command line to access and scrpe the links of the
+# calendar page that includes the URLs to the 'sreenshots'
+# more info here: https://pypi.org/project/wayback-scraper/
+# wayback-scraper -u http://campusready.ucdavis.edu/potential-exposure -o json (command line)
+
+historical_links_json<- fromJSON(file = "~//data_lab//covid_worksite_exposure//wayback_scraper.json") 
+# reads json that contains the links
+
+historical_links<- lapply(historical_links_json, function(play)
+  {
+  data.frame(matrix(unlist(play), ncol=3, byrow = T))
+})
+# creates the data frame with 3 columns corresponding to each variable from the json and 36 rows corresponding
+# to the URLs
 
 
-# https://sangaline.com/post/wayback-machine-scraper/ ---------------------
+historical_links<- do.call(rbind, historical_links) #binds the data frames built with the previous line of code
 
-# https://www.datacamp.com/community/tutorials/scraping-javascript-generated-data-with-r
+colnames(historical_links)<-names(historical_links_json[[1]][[1]]) #renames the columns to correct name from firs json object names
+rownames(historical_links)<- NULL # gets rid of unnecessary row names
+
+
+# Modifying and running code from scrape_exposure_data.R ------------------
+
+
+
+
