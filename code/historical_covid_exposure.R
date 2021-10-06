@@ -11,13 +11,8 @@ library(rvest)
 library(stringr)
 library(sf)
 library(readtext)
-library(V8)
-library(plyr)
-library(dplyr)
-library(ggvis)
-library(knitr)
+library(lubridate)
 library(rjson)
-
 
 
 # Initial fetch (URLs). ----------------------------------------
@@ -57,6 +52,44 @@ rownames(historical_links)<- NULL # gets rid of unnecessary row names
 
 # Modifying and running code from scrape_exposure_data.R ------------------
 
+# Start with trial scrape of January 8 scrape, page 0 to create the corresponding data frame
+# t_get<-GET(historical_links$url[1])
+# t_html<-read_html(t_get)
+# t_tables<-xml_find_all(t_html, "//table")
+# t_list<-html_table(t_tables, fill = TRUE)
+# t_tab<- t_list[[1]]
+# colnames(t_tab)<-c("report.date", "worksite", "location", "potential.exposure.dates")
+# write.csv(t_tab, "~//data_lab//covid_worksite_exposure//historical_notcleaned.csv", row.names = FALSE)
+
+historical_notcleaned<-read.csv("~//data_lab//covid_worksite_exposure//historical_notcleaned.csv")
+
+
+for (i in historical_links$url){
+  get_i<-GET(i)
+  html_i<-read_html(get_i)
+  last_page_href<-length(xml_find_all(html_i, "//li[contains(@class, 'pager__item')]"))
+  number_pages<-last_page_href-2 
+  for(j in 0:(number_pages)){ 
+    url<-paste0(i, "?page=", j)
+    print(url)
+    a <-GET(url)
+    b<-read_html(a)
+    tables<- xml_find_all(b, "//table") 
+    exp_list<- html_table(tables, fill = TRUE)
+    covid_df_page<- exp_list[[1]]
+    colnames(covid_df_page)<-c("report.date", "worksite", "location", "potential.exposure.dates")
+    }
+  #add the data from this page to the existing dataframe
+  historical_notcleaned<-rbind.data.frame(historical_notcleaned, covid_df_page)
+  
+}
+
+
+# Cleaning duplicates and formatting --------------------------------------
+
+
+historical_cleaning<- historical_notcleaned[!duplicated(historical_notcleaned), ]
 
 
 
+current_ex<- read.csv("~//data_lab//covid_worksite_exposure//exposures_2021-10-02.csv")# Not necessary at the moment
