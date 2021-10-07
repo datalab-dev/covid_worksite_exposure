@@ -62,28 +62,39 @@ rownames(historical_links)<- NULL # gets rid of unnecessary row names
 # write.csv(t_tab, "~//data_lab//covid_worksite_exposure//historical_notcleaned.csv", row.names = FALSE)
 
 historical_notcleaned<-read.csv("~//data_lab//covid_worksite_exposure//historical_notcleaned.csv")
+#base data frame with data from page one Jan 8
 
+historical_links$stamps<- strtrim(historical_links$timestamp, 8)
+#get rid of the indicators within the time stamp, this will facilitate finding the correct urls for the different pages
 
-for (i in historical_links$url){
-  get_i<-GET(i)
-  html_i<-read_html(get_i)
-  last_page_href<-length(xml_find_all(html_i, "//li[contains(@class, 'pager__item')]"))
-  number_pages<-last_page_href-2 
-  for(j in 0:(number_pages)){ 
-    url<-paste0(i, "?page=", j)
+url_wayback<- "https://web.archive.org/web/" 
+#part one of the link for the wayback machine
+url_davis<- "/https://campusready.ucdavis.edu/potential-exposure"
+#original url of the website
+
+for (i in historical_links$stamps){
+  d<- paste0(url_wayback, i, url_davis)
+  for(j in 0:12){ 
+    url<-paste0(d, "?page=", j)
     print(url)
     a <-GET(url)
     b<-read_html(a)
-    tables<- xml_find_all(b, "//table") 
-    exp_list<- html_table(tables, fill = TRUE)
-    covid_df_page<- exp_list[[1]]
-    colnames(covid_df_page)<-c("report.date", "worksite", "location", "potential.exposure.dates")
+    x_tables<- xml_find_all(b, "//table")
+    exp_list<- html_table(x_tables, fill = TRUE) 
+    if (length(exp_list)>=1){
+      covid_df_page<- exp_list[[1]]
+      colnames(covid_df_page)<-c("report.date", "worksite", "location", "potential.exposure.dates")
+      #add the data from this page to the existing dataframe
+      historical_notcleaned<-rbind.data.frame(historical_notcleaned, covid_df_page)
+      }
     }
-  #add the data from this page to the existing dataframe
-  historical_notcleaned<-rbind.data.frame(historical_notcleaned, covid_df_page)
-  
 }
 
+exposure_website <- GET(url) 
+data<- read_html(exposure_website)  
+tables<- xml_find_all(data, "//table") 
+cov<- html_table(tables, fill = TRUE)
+covid_df_page<- cov[[1]]
 
 # Cleaning duplicates and formatting --------------------------------------
 
