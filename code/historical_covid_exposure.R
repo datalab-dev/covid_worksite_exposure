@@ -90,17 +90,11 @@ for (i in historical_links$stamps){
     }
 }
 
-exposure_website <- GET(url) 
-data<- read_html(exposure_website)  
-tables<- xml_find_all(data, "//table") 
-cov<- html_table(tables, fill = TRUE)
-covid_df_page<- cov[[1]]
-
 # Cleaning duplicates and formatting --------------------------------------
 
 
 historical_cleaning<- historical_notcleaned[!duplicated(historical_notcleaned), ]
 
-
+write.csv(historical_cleaning,"~//data_lab//covid_worksite_exposure//historical_data.csv", row.names = FALSE)
 
 current_ex<- read.csv("~//data_lab//covid_worksite_exposure//exposures_2021-10-02.csv")# Not necessary at the moment
