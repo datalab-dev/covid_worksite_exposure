@@ -90,11 +90,43 @@ for (i in historical_links$stamps){
     }
 }
 
-# Cleaning duplicates and formatting --------------------------------------
 
 
-historical_cleaning<- historical_notcleaned[!duplicated(historical_notcleaned), ]
+# Inspecting outcasts -----------------------------------------------------
 
-write.csv(historical_cleaning,"~//data_lab//covid_worksite_exposure//historical_data.csv", row.names = FALSE)
+outcasts<- historical_links[27:33,] #Links that did not give back any data.
+#Notes: this links have only one page, therefore calling ?page=0 actually takes you to a different date
+#so to work with this I wrote a loop for these dates only, but it could definitely be incorporated easily 
+#into the original loop
+historical_outcasts<- read.csv("~//data_lab//covid_worksite_exposure//historical_notcleaned.csv")
+# usind this trial data again (above it was historical_notcleaned) to get a base with correct names for binding 
+# next loop data frames
 
-current_ex<- read.csv("~//data_lab//covid_worksite_exposure//exposures_2021-10-02.csv")# Not necessary at the moment
+for (v in outcasts$stamps){
+  d<- paste0(url_wayback, v, url_davis)
+  print(d)
+  a <-GET(d)
+  b<-read_html(a)
+  x_tables_o<- xml_find_all(b, "//table")
+  exp_list_o<- html_table(x_tables_o, fill = TRUE) 
+  covid_df_page<- exp_list_o[[1]]
+  colnames(covid_df_page)<-c("report.date", "worksite", "location", "potential.exposure.dates")
+  historical_outcasts<-rbind.data.frame(historical_outcasts, covid_df_page)
+}
+
+historical_cleaning<- read.csv("~//data_lab//covid_worksite_exposure//historical_data.csv")#read csv of the historical data
+
+
+historical_cleaning<- rbind.data.frame(historical_cleaning, historical_outcasts) #binding outcast data to data
+# collected from previous loop
+
+# Cleaning duplicates --------------------------------------
+
+row.names(historical_cleaning)<-seq(length=nrow(historical_cleaning))# numbers rows correctly
+
+historical_cleaning<- historical_cleaning[!duplicated(historical_cleaning), ]#gets rid of duplicated rows
+
+# write.csv(historical_cleaning,"~//data_lab//covid_worksite_exposure//historical_data.csv", row.names = FALSE) #Writes csv
+
+
+# Re-formatting dates -----------------------------------------------------
