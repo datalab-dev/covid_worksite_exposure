@@ -246,7 +246,7 @@ all_exposures<-merge(
 all_exposures<-all_exposures[,c(1:7, 15)]
 names(all_exposures)<-c("worksite", "report_date", "location", "potential_exposure_dates", "start", "end", "standardized_exposure_dates", "campus_building")
 
-
+all_exposures<-all_exposures[!duplicated(all_exposures), ]
 # Join with Campus Buildings GEOJSON --------------------------------------
 
 #join the campus exposures data to the campus buildings layer. 
@@ -262,6 +262,10 @@ geom <- footprints[,c("arcgisDBObase_bldg_database_12_2017Building_Name", "geome
 #merge geometries onto all_exposures, all.x=TRUE so we keep all the exposures but unmatched building names have empty geometry 
 combined <- merge.data.frame(all_exposures, geom, by.x = "campus_building", by.y = "arcgisDBObase_bldg_database_12_2017Building_Name", all.x = TRUE)
 
+combined<- combined[!duplicated(combined),]
+
+combined<-combined[(order(as.Date(combined$standardized_exposure_dates, format="%m/%d/%Y"))),]
+
 #separate into matched and unmatched building names
 matched <- combined[st_is_empty(combined$geometry) == FALSE, ]
 unmatched <- combined[st_is_empty(combined$geometry) == TRUE, ]
@@ -273,7 +277,7 @@ unmatched<- unmatched[!duplicated(unmatched),]
 
 
 #write the unmatched table to a .csv so we can fix them in the building dictionary
-write.csv(unmatched, "./data/hist_unmatched_buildings.csv")
+write.csv(unmatched, "./data/hist_unmatched_buildings.csv", row.names = FALSE)
 
 
 #write to geojson to get formatting that leaflet can use
@@ -301,4 +305,5 @@ paste0(
 unmatched[, c(2,4)]
 
 
+write.csv(matched, './data/historical_exposures.csv', row.names= FALSE)
 
