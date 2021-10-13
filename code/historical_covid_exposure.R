@@ -217,8 +217,135 @@ names(campus_names)<-names(building_dictionary)
 building_dictionary<-rbind(building_dictionary, campus_names)
 
 #join the exposure data and the building dictionary 
-dictionary_join<-merge(
+hist_dictionary_join<-merge(
   x=all_hist_exposures,
+  y=building_dictionary,
+  by.x="worksite",
+  by.y="variation",
+  all.x = TRUE
+)
+
+#update the NAs to match the worksite name
+hist_campus_building<-hist_dictionary_join$target
+
+for (i in 1:length(hist_campus_building)){
+  if (is.na(hist_campus_building[i])){
+    hist_campus_building[i]<-hist_dictionary_join$worksite[i]
+  }
+}
+
+hist_dictionary_join$hist_campus_building<-hist_campus_building
+
+#add the campus_building column to the all_hist_exposures data set
+all_hist_exposures<-merge(
+  x=all_hist_exposures, 
+  y=hist_dictionary_join,
+  by="worksite")
+
+#remove the repeated columns
+all_hist_exposures<-all_hist_exposures[,c(1:7, 15)]
+names(all_hist_exposures)<-c("worksite", "report_date", "location", "potential_exposure_dates", "start", "end", "standardized_exposure_dates", "campus_building")
+
+all_hist_exposures<-all_hist_exposures[!duplicated(all_hist_exposures), ]
+
+# Join with Campus Buildings GEOJSON --------------------------------------
+
+#join the campus exposures data to the campus buildings layer. 
+
+#The "campus_building" column in the exposure dataframe should match the "arcgisDBObase_bldg_database_12_2017Building_Name" column in the campus building dataset. There are many building name variations in the campus layer, so make sure you match on the correct one.
+
+#read geojson
+footprints <- st_read("./data/UC_Davis_Building_Footprints_2021-08-18.geojson")
+
+#isolate building names and geometries
+geom <- footprints[,c("arcgisDBObase_bldg_database_12_2017Building_Name", "geometry")]
+
+#merge geometries onto all_hist_exposures, all.x=TRUE so we keep all the exposures but unmatched building names have empty geometry 
+hist_combined <- merge.data.frame(all_hist_exposures, geom, by.x = "campus_building", by.y = "arcgisDBObase_bldg_database_12_2017Building_Name", all.x = TRUE)
+
+hist_combined<- hist_combined[!duplicated(hist_combined),]
+
+hist_combined<-hist_combined[(order(as.Date(hist_combined$standardized_exposure_dates, format="%m/%d/%Y"))),]
+
+#separate into matched and unmatched building names
+hist_matched <- hist_combined[st_is_empty(hist_combined$geometry) == FALSE, ]
+hist_unmatched <- hist_combined[st_is_empty(hist_combined$geometry) == TRUE, ]
+
+hist_matched<-hist_matched[!duplicated(hist_matched),]
+hist_unmatched<- hist_unmatched[!duplicated(hist_unmatched),] 
+# Original code ran a bunch of duplicates for some reason, but after getting rid of them
+# the sum of matched and unmatched adds up correctly to initial 365
+
+
+#write the unmatched table to a .csv so we can fix them in the building dictionary
+write.csv(hist_unmatched, "./data/hist_unmatched_buildings.csv", row.names = FALSE)
+
+
+#write to geojson to get formatting that leaflet can use
+st_write(hist_matched, "./hist_mapinput.geojson", delete_dsn = TRUE)
+
+
+#convert to txt file so we can edit the raw text
+file.rename("./hist_mapinput.geojson", "./hist_mapinput.txt")
+
+#read new text file into R
+hist_txt <- readtext("./hist_mapinput.txt")
+
+#adds javascript formatting
+hist_js <- paste0("var exposures = ", hist_txt$text)
+
+#write to js file
+#writeLines(js, "~/GitHub/covid_worksite_exposure/docs/exposure_data.js")
+writeLines(hist_js, "./docs/historical_exposure_data.js")
+
+
+paste0(
+  "Number Of Buildings Unmatched: ", 
+  dim(hist_unmatched)[1]
+)
+hist_unmatched[, c(2,4)]
+
+
+# Amending Historical and Current Data ------------------------------------
+
+# Grab code from scrape_exposure_data.R and to gram matched and merge it with historical data
+
+all_exposures<-read.csv('./data/exposures.csv')
+
+
+# # Name matching section ---------------------------------------------------
+
+# load the building dictionary file (it's tab separated, not sure why/how, but we'll roll with it... thanks excel?)
+building_dictionary<-read.csv("./data/building_dictionary.csv", sep=",")
+
+# make a table of campus name variants
+building_footprints <- st_read("./data/UC_Davis_Building_Footprints_2021-08-18.geojson")
+
+campus_target_names<-building_footprints$arcgisDBObase_bldg_database_12_2017Building_Name
+
+campus_name_variants<-c(
+  building_footprints$arcgisDBObase_bldg_database_12_2017Official_Long,
+  building_footprints$arcgisDBObase_bldg_database_12_2017Abbrev_Short,
+  building_footprints$arcgisDBObase_bldg_database_12_2017FDX_Code,
+  building_footprints$arcgisDBObase_building_footprintsNAME_LC
+)
+
+#a dataframe with the name variations and what the targe (official) name should be
+campus_names<-cbind.data.frame(
+  campus_target_names, 
+  campus_name_variants
+)
+
+#removing the lines with blanks - because if there's an NA in either column, we don't really want it
+campus_names<-na.omit(campus_names)
+names(campus_names)<-names(building_dictionary)
+
+#add the campus names to the dictionary names
+building_dictionary<-rbind(building_dictionary, campus_names)
+
+#join the exposure data and the building dictionary 
+dictionary_join<-merge(
+  x=all_exposures,
   y=building_dictionary,
   by.x="worksite",
   by.y="variation",
@@ -236,9 +363,9 @@ for (i in 1:length(campus_building)){
 
 dictionary_join$campus_building<-campus_building
 
-#add the campus_building column to the all_hist_exposures data set
+#add the campus_building column to the all_exposures dataset
 all_exposures<-merge(
-  x=all_hist_exposures, 
+  x=all_exposures, 
   y=dictionary_join,
   by="worksite")
 
@@ -246,8 +373,8 @@ all_exposures<-merge(
 all_exposures<-all_exposures[,c(1:7, 15)]
 names(all_exposures)<-c("worksite", "report_date", "location", "potential_exposure_dates", "start", "end", "standardized_exposure_dates", "campus_building")
 
-all_exposures<-all_exposures[!duplicated(all_exposures), ]
-# Join with Campus Buildings GEOJSON --------------------------------------
+
+# # Join with Campus Buildings GEOJSON --------------------------------------
 
 #join the campus exposures data to the campus buildings layer. 
 
@@ -262,48 +389,41 @@ geom <- footprints[,c("arcgisDBObase_bldg_database_12_2017Building_Name", "geome
 #merge geometries onto all_exposures, all.x=TRUE so we keep all the exposures but unmatched building names have empty geometry 
 combined <- merge.data.frame(all_exposures, geom, by.x = "campus_building", by.y = "arcgisDBObase_bldg_database_12_2017Building_Name", all.x = TRUE)
 
-combined<- combined[!duplicated(combined),]
-
-combined<-combined[(order(as.Date(combined$standardized_exposure_dates, format="%m/%d/%Y"))),]
-
 #separate into matched and unmatched building names
 matched <- combined[st_is_empty(combined$geometry) == FALSE, ]
 unmatched <- combined[st_is_empty(combined$geometry) == TRUE, ]
 
-matched<-matched[!duplicated(matched),]
-unmatched<- unmatched[!duplicated(unmatched),] 
-# Original code ran a bunch of duplicates for some reason, but after getting rid of them
-# the sum of matched and unmatched adds up correctly to initial 365
 
 
+
+#################################################################################
+matched<-rbind(matched, hist_matched)
+
+unmatched<-rbind(unmatched, hist_unmatched)
 #write the unmatched table to a .csv so we can fix them in the building dictionary
 write.csv(unmatched, "./data/hist_unmatched_buildings.csv", row.names = FALSE)
 
 
 #write to geojson to get formatting that leaflet can use
-st_write(matched, "./hist_mapinput.geojson", delete_dsn = TRUE)
+st_write(hist_matched, "./hist_mapinput.geojson", delete_dsn = TRUE)
 
 
 #convert to txt file so we can edit the raw text
 file.rename("./hist_mapinput.geojson", "./hist_mapinput.txt")
 
 #read new text file into R
-txt <- readtext("./hist_mapinput.txt")
+hist_txt <- readtext("./hist_mapinput.txt")
 
 #adds javascript formatting
-js <- paste0("var exposures = ", txt$text)
+hist_js <- paste0("var exposures = ", hist_txt$text)
 
 #write to js file
 #writeLines(js, "~/GitHub/covid_worksite_exposure/docs/exposure_data.js")
-writeLines(js, "./docs/historical_exposure_data.js")
+writeLines(hist_js, "./docs/historical_exposure_data.js")
 
 
 paste0(
   "Number Of Buildings Unmatched: ", 
-  dim(unmatched)[1]
+  dim(hist_unmatched)[1]
 )
-unmatched[, c(2,4)]
-
-
-write.csv(matched, './data/historical_exposures.csv', row.names= FALSE)
-
+hist_unmatched[, c(2,4)]
