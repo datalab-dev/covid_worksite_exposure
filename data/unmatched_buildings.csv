@@ -1,5 +1,12 @@
 "","campus_building","worksite","report_date","location","potential_exposure_dates","start","end","standardized_exposure_dates","geometry"
-"37","CA Animal Health and Food Safety Lab, Turlock","CA Animal Health and Food Safety Lab, Turlock","22-Sep","Off campus","09-13
+"3","AB540 and Undocumented Student Center","AB540 and Undocumented Student Center","10-13","Davis campus","10/12/2021",2021-10-12,2021-10-12,2021-10-13,list()
+"45","CA Animal Health and Food Safety Lab, Turlock","CA Animal Health and Food Safety Lab, Turlock","22-Sep","Off campus","09-13
  - 09-15",2021-09-13,2021-09-15,2021-09-22,list()
-"601","Vet Med-Tulare","Vet Med-Tulare","29-Sep","Off campus","09-24
+"108","Coffee House","Coffee House","10-13","Davis campus","10/12/2021",2021-10-12,2021-10-12,2021-10-13,list()
+"109","Cruess hall","Cruess hall","10-14","Davis campus","10/11/2021
+ - 10/12/2021",2021-10-11,2021-10-12,2021-10-14,list()
+"111","Ctr for Chicanx & Latinx Academic Student Success","Ctr for Chicanx & Latinx Academic Student Success","10-13","Davis campus","10/11/2021",2021-10-11,2021-10-11,2021-10-13,list()
+"456","Memorial Union Moss Room","Memorial Union Moss Room","10-11","Davis campus","10/11/2021",2021-10-11,2021-10-11,2021-10-11,list()
+"598","Segundo Hall","Segundo Hall","10-14","Davis campus","10/11/2021",2021-10-11,2021-10-11,2021-10-14,list()
+"722","Vet Med-Tulare","Vet Med-Tulare","29-Sep","Off campus","09-24
  - 09-26",2021-09-24,2021-09-26,2021-09-29,list()
