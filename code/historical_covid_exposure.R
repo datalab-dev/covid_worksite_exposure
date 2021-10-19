@@ -283,7 +283,7 @@ combined <- merge.data.frame(all_exposures_3, geom, by.x = "campus_building", by
 #separate into matched and unmatched building names
 matched <- combined[st_is_empty(combined$geometry) == FALSE, ]
 unmatched <- combined[st_is_empty(combined$geometry) == TRUE, ]
-#  unmatched<-distinct(unmatched, campus_building, worksite, report_date, location, potential_exposure_dates, .keep_all= TRUE)
+# unmatched<-distinct(unmatched, campus_building, worksite, report_date, location, potential_exposure_dates, .keep_all= TRUE)
 #write the unmatched table to a .csv so we can fix them in the building dictionary
 write.csv(unmatched, "./data/unmatched_buildings.csv", row.names = FALSE)
 
