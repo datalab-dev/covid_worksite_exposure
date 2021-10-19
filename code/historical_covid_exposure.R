@@ -3,7 +3,7 @@
 #Internet Archive website: https://web.archive.org/web/*/https://campusready.ucdavis.edu/potential-exposure
 
 # Set-up ------------------------------------------------------------------
-
+library(dplyr)
 library(httr)
 library(jsonlite)
 library(xml2)
@@ -61,15 +61,15 @@ historical_links_json<- fromJSON(file = "~//data_lab//covid_worksite_exposure//w
 # colnames(t_tab)<-c("report.date", "worksite", "location", "potential.exposure.dates")
 # write.csv(t_tab, "~//data_lab//covid_worksite_exposure//historical_notcleaned.csv", row.names = FALSE)
 
-historical_notcleaned<-read.csv("~//data_lab//covid_worksite_exposure//historical_notcleaned.csv")
+# historical_notcleaned<-read.csv("~//data_lab//covid_worksite_exposure//historical_notcleaned.csv")
 #base data frame with data from page one Jan 8
 
-historical_links$stamps<- strtrim(historical_links$timestamp, 8)
+# historical_links$stamps<- strtrim(historical_links$timestamp, 8)
 #get rid of the indicators within the time stamp, this will facilitate finding the correct urls for the different pages
 
-url_wayback<- "https://web.archive.org/web/" 
+# url_wayback<- "https://web.archive.org/web/" 
 #part one of the link for the wayback machine
-url_davis<- "/https://campusready.ucdavis.edu/potential-exposure"
+# url_davis<- "/https://campusready.ucdavis.edu/potential-exposure"
 #original url of the website
 
 # for (i in historical_links$stamps){
@@ -99,7 +99,7 @@ url_davis<- "/https://campusready.ucdavis.edu/potential-exposure"
 #Notes: this links have only one page, therefore calling ?page=0 actually takes you to a different date
 #so to work with this I wrote a loop for these dates only, but it could definitely be incorporated easily 
 #into the original loop
-historical_outcasts<- read.csv("~//data_lab//covid_worksite_exposure//historical_notcleaned.csv")
+# historical_outcasts<- read.csv("~//data_lab//covid_worksite_exposure//historical_notcleaned.csv")
 # usind this trial data again (above it was historical_notcleaned) to get a base with correct names for binding 
 # next loop data frames
 
@@ -165,6 +165,9 @@ for (i in 1:length(historical_cleaning$potential.exposure.dates)){
 parsed.start.date<-parse_date_time(historical_cleaning$start, possible.formats)
 
 for (i in 1:length(parsed.start.date)){
+  if (format(parsed.start.date[i], '%m') == '12'){
+    parsed.start.date[i]<-parsed.start.date[i] %m+% years(2020)
+  }
   if (format(parsed.start.date[i], '%Y') == '0000'){
     parsed.start.date[i]<-parsed.start.date[i] %m+% years(2021)
   }
@@ -173,6 +176,9 @@ for (i in 1:length(parsed.start.date)){
 parsed.end.date<-parse_date_time(historical_cleaning$end, possible.formats)
 
 for (i in 1:length(parsed.end.date)){
+  if (format(parsed.end.date[i], '%m') == '12'){
+    parsed.end.date[i]<-parsed.end.date[i] %m+% years(2020)
+  }
   if (format(parsed.end.date[i], '%Y') == '0000'){
     parsed.end.date[i]<-parsed.end.date[i] %m+% years(2021)
   }
@@ -277,9 +283,9 @@ combined <- merge.data.frame(all_exposures_3, geom, by.x = "campus_building", by
 #separate into matched and unmatched building names
 matched <- combined[st_is_empty(combined$geometry) == FALSE, ]
 unmatched <- combined[st_is_empty(combined$geometry) == TRUE, ]
-
+#  unmatched<-distinct(unmatched, campus_building, worksite, report_date, location, potential_exposure_dates, .keep_all= TRUE)
 #write the unmatched table to a .csv so we can fix them in the building dictionary
-write.csv(unmatched, "./data/unmatched_buildings.csv")
+write.csv(unmatched, "./data/unmatched_buildings.csv", row.names = FALSE)
 
 
 #write to geojson to get formatting that leaflet can use
