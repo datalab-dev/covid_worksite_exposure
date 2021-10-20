@@ -1,0 +1,271 @@
+"campus_building","worksite","report_date","location","potential_exposure_dates","start","end","standardized_exposure_dates","geometry"
+"1850 Research Park Dr","1850 Research Park Dr","02-09","Davis city","02-06
+ - 02-08","2021-02-06 00:00:00","2021-02-08 00:00:00","2021-02-09 00:00:00",list()
+"187 Mint, The Green","187 Mint, The Green","02-01","Davis campus","01-26
+ - 01-27","2021-01-26 00:00:00","2021-01-27 00:00:00","2021-02-01 00:00:00",list()
+"260 Cousteau Place","260 Cousteau Place","03-02","Davis city","02-19","2021-02-19 00:00:00","2021-02-19 00:00:00","2021-03-02 00:00:00",list()
+"298 Horizon St., The Green","298 Horizon St., The Green","02-01","Davis campus","01-26
+ - 01-27","2021-01-26 00:00:00","2021-01-27 00:00:00","2021-02-01 00:00:00",list()
+"3213 Apiary drive","3213 Apiary drive","03-05","Davis campus","02-25
+ - 02-26","2021-02-25 00:00:00","2021-02-26 00:00:00","2021-03-05 00:00:00",list()
+"359 North Sage St.,The Green","359 North Sage St.,The Green","02-08","Davis campus","02-02
+ - 02-04","2021-02-02 00:00:00","2021-02-04 00:00:00","2021-02-08 00:00:00",list()
+"623 Putah Creek Lodge Drive","623 Putah Creek Lodge Drive","02-03","Davis campus","02-01
+ - 02-02","2021-02-01 00:00:00","2021-02-02 00:00:00","2021-02-03 00:00:00",list()
+"623 Putah Creek Lodge Drive","623 Putah Creek Lodge Drive","01-26","Davis campus","01-23
+ - 01-25","2021-01-23 00:00:00","2021-01-25 00:00:00","2021-01-26 00:00:00",list()
+"8-4","8-4","08-04","Davis campus","07-28","2021-07-28 00:00:00","2021-07-28 00:00:00","2021-08-04 00:00:00",list()
+"Activities & Recreation Center","Activities & Recreation Center","02-04","Davis campus","01-27
+ - 02-02","2021-01-27 00:00:00","2021-02-02 00:00:00","2021-02-04 00:00:00",list()
+"Activities & Recreation Center","Activities & Recreation Center","01-11","Davis campus","01-04
+ - 01-06","2021-01-04 00:00:00","2021-01-06 00:00:00","2021-01-11 00:00:00",list()
+"Activities & Recreation Center","Activities & Recreation Center","02-09","Davis campus","02-06
+ - 02-08","2021-02-06 00:00:00","2021-02-08 00:00:00","2021-02-09 00:00:00",list()
+"Activities & Recreation Center","Activities & Recreation Center","01-08","Davis campus","01-04
+ - 01-06","2021-01-04 00:00:00","2021-01-06 00:00:00","2021-01-08 00:00:00",list()
+"Activities & Recreation Center","Activities & Recreation Center","01-22","Davis campus","01-14
+ - 01-15","2021-01-14 00:00:00","2021-01-15 00:00:00","2021-01-22 00:00:00",list()
+"Activities & Recreation Center","Activities & Recreation Center","07-06","Davis campus","06-30
+ - 07-01","2021-06-30 00:00:00","2021-07-01 00:00:00","2021-07-06 00:00:00",list()
+"Activities & Recreation Center","Activities & Recreation Center","01-20","Davis campus","01-14
+ - 01-18","2021-01-14 00:00:00","2021-01-18 00:00:00","2021-01-20 00:00:00",list()
+"Activities & Recreation Center","Activities & Recreation Center","01-25","Davis campus","01-19
+ - 01-21","2021-01-19 00:00:00","2021-01-21 00:00:00","2021-01-25 00:00:00",list()
+"Advanced Transportation Infrastructure Research Ce","Advanced Transportation Infrastructure Research Ce","02-22","Davis campus","02-15
+ - 02-18","2021-02-15 00:00:00","2021-02-18 00:00:00","2021-02-22 00:00:00",list()
+"Advanced Transportation Infrastructure Rsch Ctr","Advanced Transportation Infrastructure Rsch Ctr","07-23","Davis campus","07-19
+ - 07-22","2021-07-19 00:00:00","2021-07-22 00:00:00","2021-07-23 00:00:00",list()
+"Aggie Soccer Field","Aggie Soccer Field","02-09","Davis campus","02-06
+ - 02-08","2021-02-06 00:00:00","2021-02-08 00:00:00","2021-02-09 00:00:00",list()
+"Aggie Surplus & Custodial Building","Aggie Surplus & Custodial Building","04-19","Davis campus","04-14
+ - 04-19","2021-04-14 00:00:00","2021-04-19 00:00:00","2021-04-19 00:00:00",list()
+"Aggie Surplus & Custodial Storage Facility","Aggie Surplus & Custodial Storage Facility","01-29","Davis campus","01-25
+ - 01-28","2021-01-25 00:00:00","2021-01-28 00:00:00","2021-01-29 00:00:00",list()
+"Aggie Surplus and Custodial","Aggie Surplus and Custodial","07-23","Davis campus","07-19
+ - 07-23","2021-07-19 00:00:00","2021-07-23 00:00:00","2021-07-23 00:00:00",list()
+"Alder Hall","Alder Hall","01-05","Davis Campus","01-01
+ - 01-04","2021-01-01 00:00:00","2021-01-04 00:00:00","2021-01-05 00:00:00",list()
+"Alder Hall","Alder Hall","01-05","Davis campus","01-01
+ - 01-04","2021-01-01 00:00:00","2021-01-04 00:00:00","2021-01-05 00:00:00",list()
+"Animal Resource Service V","Animal Resource Service V","01-11","Davis campus","01-04
+ - 01-08","2021-01-04 00:00:00","2021-01-08 00:00:00","2021-01-11 00:00:00",list()
+"Aquatic Biology & Environmental Science building","Aquatic Biology & Environmental Science building","04-05","Davis campus","03-31
+ - 04-02","2021-03-31 00:00:00","2021-04-02 00:00:00","2021-04-05 00:00:00",list()
+"Atriums at La Rue Park","Atriums at La Rue Park","03-29","Davis campus","03-19","2021-03-19 00:00:00","2021-03-19 00:00:00","2021-03-29 00:00:00",list()
+"Building Maintenance Services","Building Maintenance Services","01-06","Davis Campus","12-29
+ - 12-31","2020-12-29 00:00:00","2020-12-31 00:00:00","2021-01-06 00:00:00",list()
+"Building Maintenance Services","Building Maintenance Services","01-06","Davis campus","12-29
+ - 12-31","2020-12-29 00:00:00","2020-12-31 00:00:00","2021-01-06 00:00:00",list()
+"Building Maintenance Services","Building Maintenance Services","01-15","Davis campus","01-11
+ - 01-14","2021-01-11 00:00:00","2021-01-14 00:00:00","2021-01-15 00:00:00",list()
+"CA Animal Health and Food Safety Lab, Turlock","CA Animal Health and Food Safety Lab, Turlock","22-Sep","Off campus","09-13
+ - 09-15","2021-09-13 07:00:00","2021-09-15 07:00:00","2021-09-22 07:00:00",list()
+"CAHFS San Bernardino Lab","CAHFS San Bernardino Lab","08-04","Off campus","07-27
+ - 07-29","2021-07-27 00:00:00","2021-07-29 00:00:00","2021-08-04 00:00:00",list()
+"California National Primate Research Center","California National Primate Research Center","04-16","Davis campus","04-10","2021-04-10 00:00:00","2021-04-10 00:00:00","2021-04-16 00:00:00",list()
+"Cole Facility","Cole Facility","01-11","Davis campus","01-05
+ - 01-07","2021-01-05 00:00:00","2021-01-07 00:00:00","2021-01-11 00:00:00",list()
+"Comparative Pathology Lab","Comparative Pathology Lab","01-05","Davis Campus","12-25
+ - 12-29","2020-12-25 00:00:00","2020-12-29 00:00:00","2021-01-05 00:00:00",list()
+"Comparative Pathology Lab","Comparative Pathology Lab","01-05","Davis campus","12-25
+ - 12-29","2020-12-25 00:00:00","2020-12-29 00:00:00","2021-01-05 00:00:00",list()
+"Comparative Pathology Lab","Comparative Pathology Lab","01-05","Davis Campus","12-29
+ - 01-02","2020-12-29 00:00:00","2021-01-02 00:00:00","2021-01-05 00:00:00",list()
+"D Barn / Facilities Shop","D Barn / Facilities Shop","08-11","Davis campus","08-07
+ - 08-09","2021-08-07 00:00:00","2021-08-09 00:00:00","2021-08-11 00:00:00",list()
+"Dairy Barn","Dairy Barn","02-10","Davis campus","02-04
+ - 02-06","2021-02-04 00:00:00","2021-02-06 00:00:00","2021-02-10 00:00:00",list()
+"Dobbins Baseball Complex","Dobbins Baseball Complex","01-14","Davis campus","01-09
+ - 01-11","2021-01-09 00:00:00","2021-01-11 00:00:00","2021-01-14 00:00:00",list()
+"Downtown Store","Downtown Store","01-29","Davis city","01-21
+ - 01-25","2021-01-21 00:00:00","2021-01-25 00:00:00","2021-01-29 00:00:00",list()
+"Emerson Hall","Emerson Hall","08-03","Davis campus","07-29","2021-07-29 00:00:00","2021-07-29 00:00:00","2021-08-03 00:00:00",list()
+"Emerson Hall","Emerson Hall","02-02","Davis campus","01-23
+ - 01-25","2021-01-23 00:00:00","2021-01-25 00:00:00","2021-02-02 00:00:00",list()
+"Emerson Hall","Emerson Hall","08-11","Davis campus","08-04","2021-08-04 00:00:00","2021-08-04 00:00:00","2021-08-11 00:00:00",list()
+"Equestrian Center","Equestrian Center","01-13","Davis campus","01-09
+ - 01-12","2021-01-09 00:00:00","2021-01-12 00:00:00","2021-01-13 00:00:00",list()
+"Fleet Services Central Garage","Fleet Services Central Garage","07-28","Davis campus","07-23
+ - 07-26","2021-07-23 00:00:00","2021-07-26 00:00:00","2021-07-28 00:00:00",list()
+"Gilmore Hall","Gilmore Hall","01-20","Davis campus","01-14
+ - 01-19","2021-01-14 00:00:00","2021-01-19 00:00:00","2021-01-20 00:00:00",list()
+"Gilmore Hall","Gilmore Hall","01-13","Davis campus","01-09
+ - 01-13","2021-01-09 00:00:00","2021-01-13 00:00:00","2021-01-13 00:00:00",list()
+"Gilmore Hall","Gilmore Hall","01-22","Davis campus","01-17
+ - 01-21","2021-01-17 00:00:00","2021-01-21 00:00:00","2021-01-22 00:00:00",list()
+"Gilmore Hall","Gilmore Hall","01-21","Davis campus","01-16
+ - 01-19","2021-01-16 00:00:00","2021-01-19 00:00:00","2021-01-21 00:00:00",list()
+"Gilmore Hall","Gilmore Hall","01-13","Davis campus","01-09
+ - 01-12","2021-01-09 00:00:00","2021-01-12 00:00:00","2021-01-13 00:00:00",list()
+"Gilmore Hall","Gilmore Hall","01-14","Davis campus","01-07
+ - 01-12","2021-01-07 00:00:00","2021-01-12 00:00:00","2021-01-14 00:00:00",list()
+"Gilmore Hall","Gilmore Hall","01-20","Davis campus","01-17
+ - 01-19","2021-01-17 00:00:00","2021-01-19 00:00:00","2021-01-20 00:00:00",list()
+"Gilmore Hall","Gilmore Hall","01-14","Davis campus","01-09
+ - 01-13","2021-01-09 00:00:00","2021-01-13 00:00:00","2021-01-14 00:00:00",list()
+"Gilmore Hall","Gilmore Hall","01-11","Davis campus","01-07
+ - 01-09","2021-01-07 00:00:00","2021-01-09 00:00:00","2021-01-11 00:00:00",list()
+"Gilmore Hall","Gilmore Hall","01-19","Davis campus","01-15
+ - 01-18","2021-01-15 00:00:00","2021-01-18 00:00:00","2021-01-19 00:00:00",list()
+"Gilmore Hall","Gilmore Hall","01-12","Davis campus","01-07
+ - 01-11","2021-01-07 00:00:00","2021-01-11 00:00:00","2021-01-12 00:00:00",list()
+"Granite Canyon Laboratory, Monterey, CA","Granite Canyon Laboratory, Monterey, CA","08-05","Off campus","07-25
+ - 08-04","2021-07-25 00:00:00","2021-08-04 00:00:00","2021-08-05 00:00:00",list()
+"Howard Field","Howard Field","01-13","Davis campus","01-09
+ - 01-10","2021-01-09 00:00:00","2021-01-10 00:00:00","2021-01-13 00:00:00",list()
+"Hutchinson Child Development Center","Hutchinson Child Development Center","04-14","Davis campus","04-07
+ - 04-14","2021-04-07 00:00:00","2021-04-14 00:00:00","2021-04-14 00:00:00",list()
+"Hyatt Place","Hyatt Place","03-23","Davis campus","03-15","2021-03-15 00:00:00","2021-03-15 00:00:00","2021-03-23 00:00:00",list()
+"Hyatt Place","Hyatt Place","07-19","Davis campus","07-14
+ - 07-16","2021-07-14 00:00:00","2021-07-16 00:00:00","2021-07-19 00:00:00",list()
+"Life Sciences/Green Hall","Life Sciences/Green Hall","02-12","Davis campus","02-08
+ - 02-10","2021-02-08 00:00:00","2021-02-10 00:00:00","2021-02-12 00:00:00",list()
+"Life Sciences/Green Hall","Life Sciences/Green Hall","02-22","Davis campus","02-16
+ - 02-19","2021-02-16 00:00:00","2021-02-19 00:00:00","2021-02-22 00:00:00",list()
+"Mahagony Hall","Mahagony Hall","01-20","Davis campus","01-16
+ - 01-19","2021-01-16 00:00:00","2021-01-19 00:00:00","2021-01-20 00:00:00",list()
+"Malcolm Hall","Malcolm Hall","01-11","Davis campus","01-05
+ - 01-07","2021-01-05 00:00:00","2021-01-07 00:00:00","2021-01-11 00:00:00",list()
+"Malcolm Hall","Malcolm Hall","01-12","Davis campus","01-07
+ - 01-10","2021-01-07 00:00:00","2021-01-10 00:00:00","2021-01-12 00:00:00",list()
+"Marya Welch Tennis Center","Marya Welch Tennis Center","01-14","Davis campus","01-10
+ - 01-12","2021-01-10 00:00:00","2021-01-12 00:00:00","2021-01-14 00:00:00",list()
+"Mayra Welch Tennis Center","Mayra Welch Tennis Center","01-15","Davis campus","01-10
+ - 01-14","2021-01-10 00:00:00","2021-01-14 00:00:00","2021-01-15 00:00:00",list()
+"Memorial Union Bookstore","Memorial Union Bookstore","03-12","Davis campus","03-09
+ - 03-12","2021-03-09 00:00:00","2021-03-12 00:00:00","2021-03-12 00:00:00",list()
+"Memorial Union Unitrans Terminal","Memorial Union Unitrans Terminal","01-29","Davis campus","01-21
+ - 01-25","2021-01-21 00:00:00","2021-01-25 00:00:00","2021-01-29 00:00:00",list()
+"Miller Hall","Miller Hall","01-05","Davis Campus","01-01
+ - 01-04","2021-01-01 00:00:00","2021-01-04 00:00:00","2021-01-05 00:00:00",list()
+"Miller Hall","Miller Hall","01-14","Davis campus","01-09
+ - 01-13","2021-01-09 00:00:00","2021-01-13 00:00:00","2021-01-14 00:00:00",list()
+"Miller Hall","Miller Hall","01-05","Davis campus","01-01
+ - 01-04","2021-01-01 00:00:00","2021-01-04 00:00:00","2021-01-05 00:00:00",list()
+"Mondavi","Mondavi","01-13","Davis campus","01-07
+ - 01-09","2021-01-07 00:00:00","2021-01-09 00:00:00","2021-01-13 00:00:00",list()
+"Mondavi","Mondavi","01-11","Davis campus","01-06
+ - 01-08","2021-01-06 00:00:00","2021-01-08 00:00:00","2021-01-11 00:00:00",list()
+"Mondavi Center for the Performing Arts","Mondavi Center for the Performing Arts","03-31","Davis campus","03-27
+ - 03-28","2021-03-27 00:00:00","2021-03-28 00:00:00","2021-03-31 00:00:00",list()
+"Orchard Park Greenhouse Complex","Orchard Park Greenhouse Complex","08-03","Davis campus","07-25
+ - 07-30","2021-07-25 00:00:00","2021-07-30 00:00:00","2021-08-03 00:00:00",list()
+"Outdoor Adventures","Outdoor Adventures","01-26","Davis campus","01-22
+ - 01-25","2021-01-22 00:00:00","2021-01-25 00:00:00","2021-01-26 00:00:00",list()
+"Peter J.Shields Library","Peter J.Shields Library","03-19","Davis campus","03-10
+ - 03-16","2021-03-10 00:00:00","2021-03-16 00:00:00","2021-03-19 00:00:00",list()
+"Plant and Enviro Sciences","Plant and Enviro Sciences","08-11","Davis campus","08-06
+ - 08-08","2021-08-06 00:00:00","2021-08-08 00:00:00","2021-08-11 00:00:00",list()
+"Police","Police","01-19","Davis campus","01-12
+ - 01-14","2021-01-12 00:00:00","2021-01-14 00:00:00","2021-01-19 00:00:00",list()
+"Police Building","Police Building","04-12","Davis campus","04-07
+ - 04-08","2021-04-07 00:00:00","2021-04-08 00:00:00","2021-04-12 00:00:00",list()
+"Police Building","Police Building","01-07","Davis Campus","01-03
+ - 01-05","2021-01-03 00:00:00","2021-01-05 00:00:00","2021-01-07 00:00:00",list()
+"Police Building","Police Building","01-07","Davis campus","01-03
+ - 01-05","2021-01-03 00:00:00","2021-01-05 00:00:00","2021-01-07 00:00:00",list()
+"Primate Colony","Primate Colony","02-01","Davis campus","01-26
+ - 01-29","2021-01-26 00:00:00","2021-01-29 00:00:00","2021-02-01 00:00:00",list()
+"Rec Pool","Rec Pool","01-19","Davis campus","01-10
+ - 01-14","2021-01-10 00:00:00","2021-01-14 00:00:00","2021-01-19 00:00:00",list()
+"Rec Pool","Rec Pool","01-20","Davis campus","01-16
+ - 01-19","2021-01-16 00:00:00","2021-01-19 00:00:00","2021-01-20 00:00:00",list()
+"Russell Ranch","Russell Ranch","01-14","Davis campus","01-09
+ - 01-12","2021-01-09 00:00:00","2021-01-12 00:00:00","2021-01-14 00:00:00",list()
+"Ryerson Hall","Ryerson Hall","01-12","Davis campus","01-07
+ - 01-10","2021-01-07 00:00:00","2021-01-10 00:00:00","2021-01-12 00:00:00",list()
+"San Bernardino Lab","San Bernardino Lab","01-25","Off campus","01-20
+ - 01-21","2021-01-20 00:00:00","2021-01-21 00:00:00","2021-01-25 00:00:00",list()
+"San Bernardino Lab","San Bernardino Lab","01-12","Off campus","01-05
+ - 01-07","2021-01-05 00:00:00","2021-01-07 00:00:00","2021-01-12 00:00:00",list()
+"Segundo Dining commons","Segundo Dining commons","03-22","Davis campus","03-16
+ - 03-18","2021-03-16 00:00:00","2021-03-18 00:00:00","2021-03-22 00:00:00",list()
+"Segundo Student Services","Segundo Student Services","01-20","Davis campus","01-14
+ - 01-19","2021-01-14 00:00:00","2021-01-19 00:00:00","2021-01-20 00:00:00",list()
+"Social Sciences and Humanities","Social Sciences and Humanities","04-19","Davis campus","04-14
+ - 04-16","2021-04-14 00:00:00","2021-04-16 00:00:00","2021-04-19 00:00:00",list()
+"Social Sciences and Humanities","Social Sciences and Humanities","03-29","Davis campus","03-25
+ - 03-27","2021-03-25 00:00:00","2021-03-27 00:00:00","2021-03-29 00:00:00",list()
+"Solano Park","Solano Park","03-29","Davis campus","03-19","2021-03-19 00:00:00","2021-03-19 00:00:00","2021-03-29 00:00:00",list()
+"Surge II","Surge II","03-05","Davis campus","02-25
+ - 02-26","2021-02-25 00:00:00","2021-02-26 00:00:00","2021-03-05 00:00:00",list()
+"TANA arts facility, 1224 Lemen Av, Woodland","TANA arts facility, 1224 Lemen Av, Woodland","07-14","Off campus","07-11
+ - 07-12","2021-07-11 00:00:00","2021-07-12 00:00:00","2021-07-14 00:00:00",list()
+"Tercero Dining","Tercero Dining","01-19","Davis campus","01-11
+ - 01-13","2021-01-11 00:00:00","2021-01-13 00:00:00","2021-01-19 00:00:00",list()
+"Tercero Madrone","Tercero Madrone","02-25","Davis campus","02-21
+ - 02-23","2021-02-21 00:00:00","2021-02-23 00:00:00","2021-02-25 00:00:00",list()
+"Tercero Redwood","Tercero Redwood","01-08","Davis campus","01-03
+ - 01-05","2021-01-03 00:00:00","2021-01-05 00:00:00","2021-01-08 00:00:00",list()
+"Tercero Services Center","Tercero Services Center","03-15","Davis campus","03-11
+ - 03-15","2021-03-11 00:00:00","2021-03-15 00:00:00","2021-03-15 00:00:00",list()
+"Tercero Services Center","Tercero Services Center","03-16","Davis campus","03-13
+ - 03-16","2021-03-13 00:00:00","2021-03-16 00:00:00","2021-03-16 00:00:00",list()
+"Tercero Services Center","Tercero Services Center","03-30","Davis campus","03-27
+ - 03-30","2021-03-27 00:00:00","2021-03-30 00:00:00","2021-03-30 00:00:00",list()
+"The Green - 187 Mint St","The Green - 187 Mint St","01-19","Davis campus","01-18
+ - 01-19","2021-01-18 00:00:00","2021-01-19 00:00:00","2021-01-19 00:00:00",list()
+"The Green - 2231 Jade St","The Green - 2231 Jade St","01-19","Davis campus","01-18
+ - 01-19","2021-01-18 00:00:00","2021-01-19 00:00:00","2021-01-19 00:00:00",list()
+"The Green (West Village)","The Green (West Village)","01-15","Davis campus","01-07
+ - 01-14","2021-01-07 00:00:00","2021-01-14 00:00:00","2021-01-15 00:00:00",list()
+"The Green (West Village)","The Green (West Village)","01-15","Davis campus","01-11
+ - 01-14","2021-01-11 00:00:00","2021-01-14 00:00:00","2021-01-15 00:00:00",list()
+"The Green; 2231 Jade St.","The Green; 2231 Jade St.","01-04","Davis campus","12-29
+ - 12-31","2020-12-29 00:00:00","2020-12-31 00:00:00","2021-01-04 00:00:00",list()
+"The Green; 2231 Jade St.","The Green; 2231 Jade St.","01-04","Davis Campus","12-29
+ - 12-31","2020-12-29 00:00:00","2020-12-31 00:00:00","2021-01-04 00:00:00",list()
+"Thurman Lab","Thurman Lab","01-13","Davis campus","01-08
+ - 01-12","2021-01-08 00:00:00","2021-01-12 00:00:00","2021-01-13 00:00:00",list()
+"Thurman Lab","Thurman Lab","01-20","Davis campus","01-12
+ - 01-15","2021-01-12 00:00:00","2021-01-15 00:00:00","2021-01-20 00:00:00",list()
+"Thurman Lab","Thurman Lab","01-05","Davis Campus","12-26
+ - 12-30","2020-12-26 00:00:00","2020-12-30 00:00:00","2021-01-05 00:00:00",list()
+"Toomey Field","Toomey Field","01-13","Davis campus","01-09
+ - 01-12","2021-01-09 00:00:00","2021-01-12 00:00:00","2021-01-13 00:00:00",list()
+"Toomey Field","Toomey Field","01-13","Davis campus","01-10
+ - 01-12","2021-01-10 00:00:00","2021-01-12 00:00:00","2021-01-13 00:00:00",list()
+"Toomey Field","Toomey Field","02-03","Davis campus","01-28
+ - 01-29","2021-01-28 00:00:00","2021-01-29 00:00:00","2021-02-03 00:00:00",list()
+"Toomey Weight Room Field","Toomey Weight Room Field","02-09","Davis campus","02-06
+ - 02-08","2021-02-06 00:00:00","2021-02-08 00:00:00","2021-02-09 00:00:00",list()
+"Transportation and Parking Services","Transportation and Parking Services","02-17","Davis campus","02-11
+ - 02-12","2021-02-11 00:00:00","2021-02-12 00:00:00","2021-02-17 00:00:00",list()
+"Tulare Lab","Tulare Lab","01-12","Off campus","01-03
+ - 01-05","2021-01-03 00:00:00","2021-01-05 00:00:00","2021-01-12 00:00:00",list()
+"UC Davis California National Primate Research","UC Davis California National Primate Research","04-01","Davis campus","03-29
+ - 03-31","2021-03-29 00:00:00","2021-03-31 00:00:00","2021-04-01 00:00:00",list()
+"UC Davis California National Primate Research Cen","UC Davis California National Primate Research Cen","02-25","Davis campus","02-20
+ - 02-24","2021-02-20 00:00:00","2021-02-24 00:00:00","2021-02-25 00:00:00",list()
+"Vegetable Crops Headquarters","Vegetable Crops Headquarters","01-19","Davis campus","01-12
+ - 01-14","2021-01-12 00:00:00","2021-01-14 00:00:00","2021-01-19 00:00:00",list()
+"Vet Med-Tulare","Vet Med-Tulare","29-Sep","Off campus","09-24
+ - 09-26","2021-09-24 07:00:00","2021-09-26 07:00:00","2021-09-29 07:00:00",list()
+"Vet Med 2","Vet Med 2","07-13","Davis campus","07-05
+ - 07-06","2021-07-05 00:00:00","2021-07-06 00:00:00","2021-07-13 00:00:00",list()
+"Vet Med 2","Vet Med 2","02-19","Davis campus","02-15
+ - 02-18","2021-02-15 00:00:00","2021-02-18 00:00:00","2021-02-19 00:00:00",list()
+"Vet Med Admin Center","Vet Med Admin Center","01-25","Davis campus","01-18
+ - 01-20","2021-01-18 00:00:00","2021-01-20 00:00:00","2021-01-25 00:00:00",list()
+"Vet Med Admin Center","Vet Med Admin Center","01-06","Davis campus","01-01
+ - 01-05","2021-01-01 00:00:00","2021-01-05 00:00:00","2021-01-06 00:00:00",list()
+"Vet Med Admin Center","Vet Med Admin Center","01-06","Davis Campus","01-01
+ - 01-05","2021-01-01 00:00:00","2021-01-05 00:00:00","2021-01-06 00:00:00",list()
+"Vet Med Teaching Hospital Small Animal Clinic","Vet Med Teaching Hospital Small Animal Clinic","02-01","Davis campus","01-25
+ - 01-29","2021-01-25 00:00:00","2021-01-29 00:00:00","2021-02-01 00:00:00",list()
+"VMTH B Barn","VMTH B Barn","07-13","Davis campus","07-05
+ - 07-06","2021-07-05 00:00:00","2021-07-06 00:00:00","2021-07-13 00:00:00",list()
+"Voorhies Hal","Voorhies Hal","04-01","Davis campus","03-29
+ - 03-31","2021-03-29 00:00:00","2021-03-31 00:00:00","2021-04-01 00:00:00",list()
+"Waste Water Treatment Plant","Waste Water Treatment Plant","08-11","Davis campus","08-08
+ - 08-10","2021-08-08 00:00:00","2021-08-10 00:00:00","2021-08-11 00:00:00",list()
+"Wastewater Treatment Plant","Wastewater Treatment Plant","01-14","Davis campus","01-09
+ - 01-12","2021-01-09 00:00:00","2021-01-12 00:00:00","2021-01-14 00:00:00",list()
+"Wastewater Treatment Plant","Wastewater Treatment Plant","03-10","Davis campus","03-04
+ - 03-05","2021-03-04 00:00:00","2021-03-05 00:00:00","2021-03-10 00:00:00",list()
+"Wastewater Treatment Plant Admin Bldg 2","Wastewater Treatment Plant Admin Bldg 2","07-30","Davis campus","07-27
+ - 07-30","2021-07-27 00:00:00","2021-07-30 00:00:00","2021-07-30 00:00:00",list()
+"Wastewater Treatment Plant Administration Building","Wastewater Treatment Plant Administration Building","02-10","Davis campus","02-06
+ - 02-08","2021-02-06 00:00:00","2021-02-08 00:00:00","2021-02-10 00:00:00",list()
+"Watershed Sciences Building","Watershed Sciences Building","08-11","Davis campus","08-08
+ - 08-10","2021-08-08 00:00:00","2021-08-10 00:00:00","2021-08-11 00:00:00",list()
