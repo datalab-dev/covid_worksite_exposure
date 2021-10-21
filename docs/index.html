@@ -144,7 +144,7 @@
 				});
 			marker.addTo(map);
 
-	
+		//add box with links to github and instructions for turning on scrollwheel zooming
 		L.Control.textbox = L.Control.extend({
 		onAdd: function(map) {
 			
@@ -187,6 +187,7 @@
 				return new Date(date).toLocaleDateString('en-US', { timeZone: 'UTC' });
 			},
 				enableKeyboardControls: true,
+				duration: 35000, //default is 10000; units are ms
 			});
         
 			timeline.addTo(map);
