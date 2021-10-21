@@ -72,6 +72,9 @@ possible.formats<-c('%d-%b', '%m-%d', '%m/%d/%Y')
 parsed.report.date<-parse_date_time(covid_df$report.date, possible.formats)
 
 for (i in 1:length(parsed.report.date)){
+  if (format(parsed.report.date[i], '%m') == '12'){
+    parsed.report.date[i]<-parsed.report.date[i] %m+% years(2020)
+    }
   if (format(parsed.report.date[i], '%Y') == '0000'){
     parsed.report.date[i]<-parsed.report.date[i] %m+% years(2021)
   }
@@ -94,6 +97,9 @@ for (i in 1:length(covid_df$potential.exposure.dates)){
 parsed.start.date<-parse_date_time(covid_df$start, possible.formats)
 
 for (i in 1:length(parsed.start.date)){
+  if (format(parsed.start.date[i], '%m') == '12'){
+    parsed.start.date[i]<-parsed.start.date[i] %m+% years(2020)
+    }
   if (format(parsed.start.date[i], '%Y') == '0000'){
     parsed.start.date[i]<-parsed.start.date[i] %m+% years(2021)
   }
@@ -102,6 +108,9 @@ for (i in 1:length(parsed.start.date)){
 parsed.end.date<-parse_date_time(covid_df$end, possible.formats)
 
 for (i in 1:length(parsed.end.date)){
+  if (format(parsed.end.date[i], '%m') == '12'){
+    parsed.end.date[i]<-parsed.end.date[i] %m+% years(2020)
+    }
   if (format(parsed.end.date[i], '%Y') == '0000'){
     parsed.end.date[i]<-parsed.end.date[i] %m+% years(2021)
   }
@@ -117,7 +126,8 @@ covid_df$end<-parsed.end.date
 all_exposures<-covid_df[!duplicated(covid_df[,c(2, 5:7)]), ]
 
 
-
+#organizes exposures by date reported
+all_exposures<-all_exposures[(order(as.Date(all_exposures$standard.report.date, format="%m/%d/%Y"))),]
 
 
 #write the scraped exposure data to a csv without the row numbers
