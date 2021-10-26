@@ -71,7 +71,7 @@ possible.formats<-c( '%d-%b','%m-%d', '%m/%d/%Y')
 
 parsed.report.date<-parse_date_time(covid_df$report.date, possible.formats)
 
-parsed_fail<- setNames(data.frame(matrix(ncol = 7, nrow = 0)), c("report.date", "worksite","location",
+unmatched_dates<- setNames(data.frame(matrix(ncol = 7, nrow = 0)), c("report.date", "worksite","location",
                                                    "potential.exposure.dates","start","end",
                                                    "standard.report.date"))
 # MAKES data frame with no rows but corresponding columns to the covid_df, used to create parsed_fail
@@ -80,11 +80,11 @@ fail_parsed_rows<-which(is.na(parsed.report.date)) ##creates list of the rows th
 
 for (i in fail_parsed_rows){
   f<-as.data.frame(covid_df[i,])
-  parsed_fail<- rbind.data.frame(f, parsed_fail)
+  unmatched_dates<- rbind.data.frame(f, unmatched_dates)
   covid_df<- covid_df[-i,]
 }
 
-write.csv(parsed_fail,'./data/parsed_fail.csv', row.names = FALSE) # writes csv with the rows that failed to parse
+write.csv(unmatched_dates,'./data/unmatched_dates.csv', row.names = FALSE) # writes csv with the rows that failed to parse
 
 # subsets dates that do not fit the possible formats
 
