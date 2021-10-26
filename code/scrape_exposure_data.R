@@ -67,9 +67,27 @@ for (i in 0:(number_pages-1)){ #pages on the site are 0 indexed
   #EXAMPLE OF ADDING A YEAR TO A DATE WITH 0000 FOR THE YEAR:
     #my_date %m+% years(2021)
 
-possible.formats<-c('%d-%b', '%m-%d', '%m/%d/%Y')
+possible.formats<-c( '%d-%b','%m-%d', '%m/%d/%Y')
 
 parsed.report.date<-parse_date_time(covid_df$report.date, possible.formats)
+
+parsed_fail<- setNames(data.frame(matrix(ncol = 7, nrow = 0)), c("report.date", "worksite","location",
+                                                   "potential.exposure.dates","start","end",
+                                                   "standard.report.date"))
+# MAKES data frame with no rows but corresponding columns to the covid_df, used to create parsed_fail
+
+fail_parsed_rows<-which(is.na(parsed.report.date)) ##creates list of the rows that do not parse
+
+for (i in fail_parsed_rows){
+  f<-as.data.frame(covid_df[i,])
+  parsed_fail<- rbind.data.frame(f, parsed_fail)
+  covid_df<- covid_df[-i,]
+}
+
+write.csv(parsed_fail,'./data/parsed_fail.csv', row.names = FALSE) # writes csv with the rows that failed to parse
+
+# subsets dates that do not fit the possible formats
+
 
 for (i in 1:length(parsed.report.date)){
   if (format(parsed.report.date[i], '%Y') == '0000'){
