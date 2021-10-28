@@ -87,6 +87,9 @@ for (i in fail_parsed_rows){
 parsed.report.date<-na.omit(parsed.report.date)
 # removes na's from parsed.report.date
 for (i in 1:length(parsed.report.date)){
+  if (format(parsed.report.date[i], '%m') == '12'){
+    parsed.report.date[i]<-parsed.report.date[i] %m+% years(2020)
+    }
   if (format(parsed.report.date[i], '%Y') == '0000'){
     parsed.report.date[i]<-parsed.report.date[i] %m+% years(2021)
   }
@@ -123,6 +126,9 @@ for (i in fail_parsed_start){
 parsed.start.date<-na.omit(parsed.start.date)
 # removes na's from parsed.start.date
 for (i in 1:length(parsed.start.date)){
+  if (format(parsed.start.date[i], '%m') == '12'){
+    parsed.start.date[i]<-parsed.start.date[i] %m+% years(2020)
+    }
   if (format(parsed.start.date[i], '%Y') == '0000'){
     parsed.start.date[i]<-parsed.start.date[i] %m+% years(2021)
   }
@@ -144,6 +150,9 @@ for (i in fail_parse_end){
 parsed.end.date<-na.omit(parsed.end.date)
 # removes na's from parsed.end.date
 for (i in 1:length(parsed.end.date)){
+  if (format(parsed.end.date[i], '%m') == '12'){
+    parsed.end.date[i]<-parsed.end.date[i] %m+% years(2020)
+    }
   if (format(parsed.end.date[i], '%Y') == '0000'){
     parsed.end.date[i]<-parsed.end.date[i] %m+% years(2021)
   }
@@ -174,11 +183,13 @@ write.csv(unmatched_dates,'./data/unmatched_dates.csv', row.names = FALSE) # wri
 all_exposures<-all_exposures[(order(as.Date(all_exposures$standard.report.date, format="%m/%d/%Y"))),]
 
 
-# All exposures -----------------------------------------------------------
 
+# All exposures -----------------------------------------------------------
  
 #code should output all_exposures variable with the data de-duplicated
 all_exposures<-covid_df[!duplicated(covid_df[,c(2, 5:7)]), ]
+#organizes exposures by date reported
+all_exposures<-all_exposures[(order(as.Date(all_exposures$standard.report.date, format="%m/%d/%Y"))),]
 
 #organizes exposures by date reported
 all_exposures<-all_exposures[(order(as.Date(all_exposures$standard.report.date, format="%m/%d/%Y"))),]
