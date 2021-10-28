@@ -180,6 +180,8 @@ all_exposures<-all_exposures[(order(as.Date(all_exposures$standard.report.date, 
 #code should output all_exposures variable with the data de-duplicated
 all_exposures<-covid_df[!duplicated(covid_df[,c(2, 5:7)]), ]
 
+#organizes exposures by date reported
+all_exposures<-all_exposures[(order(as.Date(all_exposures$standard.report.date, format="%m/%d/%Y"))),]
 
 #write the scraped exposure data to a csv without the row numbers
 write.csv(x=all_exposures, file="./data/exposures.csv", row.names = FALSE)
