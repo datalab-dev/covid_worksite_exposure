@@ -167,6 +167,9 @@ unmatched_dates<-na.omit(unmatched_dates) #remove NA's at unmatched_dates that a
 
 write.csv(unmatched_dates,'./data/unmatched_dates.csv', row.names = FALSE) # writes csv with the rows that failed to parse
 
+#code should output all_exposures variable with the data de-duplicated
+all_exposures<-covid_df[!duplicated(covid_df[,c(2, 5:7)]), ]
+
 # Testing date mismatch  --------------------------------------------------
 # 
 # covid_df<-covid_df[390:414,] # Subsets covid_df to work with smaller section
