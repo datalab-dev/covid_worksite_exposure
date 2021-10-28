@@ -144,22 +144,7 @@
 				});
 			marker.addTo(map);
 
-		//add info box		
-		//var info = L.control();
-
-		//info.onAdd = function (map) {
-			//this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
-			//this.update();
-			//return this._div;
-			//};
-
-		// method that we will use to update the control based on feature properties passed
-		//info.update = function (props) {
-			//this._div.innerHTML = 'Code available on <a href="https://github.com/datalab-dev/covid_worksite_exposure" target="_blank" >GitHub</a><br><b>Click map to toggle scroll wheel zooming.</b>';
-			//};
-
-		//info.addTo(map);
-		
+		//add box with links to github and instructions for turning on scrollwheel zooming
 		L.Control.textbox = L.Control.extend({
 		onAdd: function(map) {
 			
@@ -202,6 +187,7 @@
 				return new Date(date).toLocaleDateString('en-US', { timeZone: 'UTC' });
 			},
 				enableKeyboardControls: true,
+				duration: 35000, //default is 10000; units are ms
 			});
         
 			timeline.addTo(map);
