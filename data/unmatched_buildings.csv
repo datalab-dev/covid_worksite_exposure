@@ -1,24 +1,24 @@
 "","campus_building","worksite","report_date","location","potential_exposure_dates","start","end","standardized_exposure_dates","geometry"
-"4","359 North Sage St.,The Green","359 North Sage St.,The Green","02-08","Davis campus","02-02
+"5","359 North Sage St.,The Green","359 North Sage St.,The Green","02-08","Davis campus","02-02
  - 02-04",2021-02-02,2021-02-04,2021-02-08,list()
-"5","8-4","8-4","08-04","Davis campus","07-28",2021-07-28,2021-07-28,2021-08-04,list()
-"225","CA Animal Health and Food Safety Lab, Turlock","CA Animal Health and Food Safety Lab, Turlock","22-Sep","Off campus","09-13
+"6","8-4","8-4","08-04","Davis campus","07-28",2021-07-28,2021-07-28,2021-08-04,list()
+"228","CA Animal Health and Food Safety Lab, Turlock","CA Animal Health and Food Safety Lab, Turlock","22-Sep","Off campus","09-13
  - 09-15",2021-09-13,2021-09-15,2021-09-22,list()
-"226","CAHFS San Bernardino Lab","CAHFS San Bernardino Lab","08-04","Off campus","07-27
+"229","CAHFS San Bernardino Lab","CAHFS San Bernardino Lab","08-04","Off campus","07-27
  - 07-29",2021-07-27,2021-07-29,2021-08-04,list()
-"547","Granite Canyon Laboratory, Monterey, CA","Granite Canyon Laboratory, Monterey, CA","08-05","Off campus","07-25
+"574","Granite Canyon Laboratory, Monterey, CA","Granite Canyon Laboratory, Monterey, CA","08-05","Off campus","07-25
  - 08-04",2021-07-25,2021-08-04,2021-08-05,list()
-"2200","San Bernardino Lab","San Bernardino Lab","01-25","Off campus","01-20
- - 01-21",2021-01-20,2021-01-21,2021-01-25,list()
-"2201","San Bernardino Lab","San Bernardino Lab","01-25","Off campus","01-20
- - 01-21",2021-01-20,2021-01-21,2021-01-25,list()
-"2202","San Bernardino Lab","San Bernardino Lab","01-12","Off campus","01-05
+"2270","San Bernardino Lab","San Bernardino Lab","01-12","Off campus","01-05
  - 01-07",2021-01-05,2021-01-07,2021-01-12,list()
-"2203","San Bernardino Lab","San Bernardino Lab","01-12","Off campus","01-05
+"2271","San Bernardino Lab","San Bernardino Lab","01-25","Off campus","01-20
+ - 01-21",2021-01-20,2021-01-21,2021-01-25,list()
+"2272","San Bernardino Lab","San Bernardino Lab","01-25","Off campus","01-20
+ - 01-21",2021-01-20,2021-01-21,2021-01-25,list()
+"2273","San Bernardino Lab","San Bernardino Lab","01-12","Off campus","01-05
  - 01-07",2021-01-05,2021-01-07,2021-01-12,list()
-"3639","TANA arts facility, 1224 Lemen Av, Woodland","TANA arts facility, 1224 Lemen Av, Woodland","07-14","Off campus","07-11
+"3748","TANA arts facility, 1224 Lemen Av, Woodland","TANA arts facility, 1224 Lemen Av, Woodland","07-14","Off campus","07-11
  - 07-12",2021-07-11,2021-07-12,2021-07-14,list()
-"4372","Tulare Lab","Tulare Lab","01-12","Off campus","01-03
+"4490","Tulare Lab","Tulare Lab","01-12","Off campus","01-03
  - 01-05",2021-01-03,2021-01-05,2021-01-12,list()
-"4487","Vet Med-Tulare","Vet Med-Tulare","29-Sep","Off campus","09-24
+"4605","Vet Med-Tulare","Vet Med-Tulare","29-Sep","Off campus","09-24
  - 09-26",2021-09-24,2021-09-26,2021-09-29,list()
