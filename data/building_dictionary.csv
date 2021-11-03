@@ -51,10 +51,10 @@ Mayra Welch Tennis Center,Mary Welch Tennis Center
 Mayra Welch Tennis Center,Marya Welch Tennis Center
 Mechanical 2,Physical Plant
 Mechanical Sewer,623 Putah Creek Lodge Drive
-Mechanical Sewer,Waste Water Treatment Plant
-Mechanical Sewer,Wastewater Treatment Plant
-Mechanical Sewer,Wastewater Treatment Plant Admin Bldg 2
-Mechanical Sewer,Wastewater Treatment Plant Administration Building
+Wastewater Treatment Plant Administration Building 2,Waste Water Treatment Plant
+Wastewater Treatment Plant Administration Building 2,Wastewater Treatment Plant
+Wastewater Treatment Plant Administration Building 2,Wastewater Treatment Plant Admin Bldg 2
+Wastewater Treatment Plant Administration Building 2,Wastewater Treatment Plant Administration Building
 Medical Sciences I C,Medical Sciences
 Memorial Union,Coffee House
 Memorial Union,Ctr for Chicanx & Latinx Academic Student Success
@@ -140,3 +140,5 @@ CFA Mondavi,Mondavi Center - Jackson Hall
 Dutton Hall,Academic Assistance and Tutoring Center
 Student Farm Greenhouse,Student Farm - Greenhouse
 Memorial Union,Memorial Union Games Area
+Center for Health & Environment Office & Laboratory,Center for Health & Environment
+Medical Sciences I C,Medical Sciences 1C
