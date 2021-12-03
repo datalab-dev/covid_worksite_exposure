@@ -3,36 +3,37 @@
 "6","359 North Sage St.,The Green","359 North Sage St.,The Green","02-08","Davis campus","02-02
  - 02-04",2021-02-02,2021-02-04,2021-02-08,list()
 "7","8-4","8-4","08-04","Davis campus","07-28",2021-07-28,2021-07-28,2021-08-04,list()
-"150","Antenna Farm","Antenna Farm","11-10","Davis campus","11/08/2021
+"153","Antenna Farm","Antenna Farm","11-10","Davis campus","11/08/2021
  - 11/10/2021",2021-11-08,2021-11-10,2021-11-10,list()
-"550","CA Animal Health and Food Safety Lab, Turlock","CA Animal Health and Food Safety Lab, Turlock","22-Sep","Off campus","09-13
+"584","CA Animal Health and Food Safety Lab, Turlock","CA Animal Health and Food Safety Lab, Turlock","22-Sep","Off campus","09-13
  - 09-15",2021-09-13,2021-09-15,2021-09-22,list()
-"551","CAHFS San Bernardino Lab","CAHFS San Bernardino Lab","08-04","Off campus","07-27
+"585","CAHFS San Bernardino Lab","CAHFS San Bernardino Lab","08-04","Off campus","07-27
  - 07-29",2021-07-27,2021-07-29,2021-08-04,list()
-"816","Center for Immunology & Infectious Diseases (CIID)","Center for Immunology & Infectious Diseases (CIID)","11-30","Davis campus","11/29/2021",2021-11-29,2021-11-29,2021-11-30,list()
-"1051","Coffee Center","Coffee Center","11-16","Davis campus","11/15/2021",2021-11-15,2021-11-15,2021-11-16,list()
-"1353","Granite Canyon Laboratory, Monterey, CA","Granite Canyon Laboratory, Monterey, CA","08-05","Off campus","07-25
+"850","Center for Immunology & Infectious Diseases (CIID)","Center for Immunology & Infectious Diseases (CIID)","11-30","Davis campus","11/29/2021",2021-11-29,2021-11-29,2021-11-30,list()
+"1148","Coffee Center","Coffee Center","11-16","Davis campus","11/15/2021",2021-11-15,2021-11-15,2021-11-16,list()
+"1450","Granite Canyon Laboratory, Monterey, CA","Granite Canyon Laboratory, Monterey, CA","08-05","Off campus","07-25
  - 08-04",2021-07-25,2021-08-04,2021-08-05,list()
-"1360","Green Hall (Life Sciences)","Green Hall (Life Sciences)","11-29","Davis campus","11/24/2021",2021-11-24,2021-11-24,2021-11-29,list()
-"3241","Manetti Shrem Museum","Manetti Shrem Museum","11-15","Davis campus","11/13/2021",2021-11-13,2021-11-13,2021-11-15,list()
-"4724","San Bernardino Lab","San Bernardino Lab","01-12","Off campus","01-05
- - 01-07",2021-01-05,2021-01-07,2021-01-12,list()
-"4725","San Bernardino Lab","San Bernardino Lab","01-12","Off campus","01-05
- - 01-07",2021-01-05,2021-01-07,2021-01-12,list()
-"4726","San Bernardino Lab","San Bernardino Lab","01-25","Off campus","01-20
+"1457","Green Hall (Life Sciences)","Green Hall (Life Sciences)","11-29","Davis campus","11/24/2021",2021-11-24,2021-11-24,2021-11-29,list()
+"3398","Malcom Hall","Malcom Hall","12-03","Davis campus","11/30/2021",2021-11-30,2021-11-30,2020-12-03,list()
+"3399","Manetti Shrem Museum","Manetti Shrem Museum","11-15","Davis campus","11/13/2021",2021-11-13,2021-11-13,2021-11-15,list()
+"4882","San Bernardino Lab","San Bernardino Lab","01-25","Off campus","01-20
  - 01-21",2021-01-20,2021-01-21,2021-01-25,list()
-"4727","San Bernardino Lab","San Bernardino Lab","01-25","Off campus","01-20
+"4883","San Bernardino Lab","San Bernardino Lab","01-12","Off campus","01-05
+ - 01-07",2021-01-05,2021-01-07,2021-01-12,list()
+"4884","San Bernardino Lab","San Bernardino Lab","01-25","Off campus","01-20
  - 01-21",2021-01-20,2021-01-21,2021-01-25,list()
-"7809","Storer Hall Research Lab","Storer Hall Research Lab","11-30","Davis campus","11/23/2021",2021-11-23,2021-11-23,2021-11-30,list()
-"7817","Student Heath & Counseling Services","Student Heath & Counseling Services","11-18","Davis campus","11/17/2021",2021-11-17,2021-11-17,2021-11-18,list()
-"7821","TANA arts facility, 1224 Lemen Av, Woodland","TANA arts facility, 1224 Lemen Av, Woodland","07-14","Off campus","07-11
+"4885","San Bernardino Lab","San Bernardino Lab","01-12","Off campus","01-05
+ - 01-07",2021-01-05,2021-01-07,2021-01-12,list()
+"8107","Storer Hall Research Lab","Storer Hall Research Lab","11-30","Davis campus","11/23/2021",2021-11-23,2021-11-23,2021-11-30,list()
+"8115","Student Heath & Counseling Services","Student Heath & Counseling Services","11-18","Davis campus","11/17/2021",2021-11-17,2021-11-17,2021-11-18,list()
+"8119","TANA arts facility, 1224 Lemen Av, Woodland","TANA arts facility, 1224 Lemen Av, Woodland","07-14","Off campus","07-11
  - 07-12",2021-07-11,2021-07-12,2021-07-14,list()
-"7848","Telecom Building","Telecom Building","11-12","Davis campus","11/08/2021
+"8146","Telecom Building","Telecom Building","11-12","Davis campus","11/08/2021
  - 11/10/2021",2021-11-08,2021-11-10,2021-11-12,list()
-"7849","Temporary Building 9","Temporary Building 9","11-23","Davis campus","11/22/2021",2021-11-22,2021-11-22,2021-11-23,list()
-"8470","Tercero Dining Hall","Tercero Dining Hall","11-15","Davis campus","11/08/2021
+"8147","Temporary Building 9","Temporary Building 9","11-23","Davis campus","11/22/2021",2021-11-22,2021-11-22,2021-11-23,list()
+"8768","Tercero Dining Hall","Tercero Dining Hall","11-15","Davis campus","11/08/2021
  - 11/13/2021",2021-11-08,2021-11-13,2021-11-15,list()
-"8665","Tulare Lab","Tulare Lab","01-12","Off campus","01-03
+"8963","Tulare Lab","Tulare Lab","01-12","Off campus","01-03
  - 01-05",2021-01-03,2021-01-05,2021-01-12,list()
-"8801","Vet Med-Tulare","Vet Med-Tulare","29-Sep","Off campus","09-24
+"9099","Vet Med-Tulare","Vet Med-Tulare","29-Sep","Off campus","09-24
  - 09-26",2021-09-24,2021-09-26,2021-09-29,list()
