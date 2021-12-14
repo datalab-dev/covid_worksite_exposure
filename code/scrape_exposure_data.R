@@ -95,7 +95,7 @@ for (j in 1:dim(covid_df)[1]){ #for each row in the covid_df dataframe
 unmatched_dates<- setNames(data.frame(matrix(ncol = 4, nrow = 0)), c("report.date", "worksite","location", "potential.exposure.dates"))
 # MAKES data frame with no rows but corresponding columns to the covid_df, used to create parsed_fail
 
-fail_parsed_rows<-which(is.na(parsed.report.date)) ##creates list of the rows that do not parse
+fail_parsed_rows<-which(is.na(covid_df$standard.report.date)) ##creates list of the rows that do not parse
 for (i in fail_parsed_rows){
   f<-as.data.frame(covid_df[i,])
   unmatched_dates<- rbind.data.frame(f, unmatched_dates)
@@ -103,21 +103,22 @@ for (i in fail_parsed_rows){
 } # extracts the dates that failed to parse report date 
 parsed.report.date<-na.omit(parsed.report.date)
 # removes na's from parsed.report.date
-for (i in 1:length(parsed.report.date)){
-  # if (format(parsed.report.date[i], '%m') == '12'){
-  #   parsed.report.date[i]<-parsed.report.date[i] %m+% years(2020)
-  #   }
-  if (format(
-    parsed.report.date[i], '%Y') == '0000' || 
-    format(parsed.report.date[i], '%m') == '1'){
-    parsed.report.date[i]<-parsed.report.date[i] %m+% years(2022)
-  }
-  if (format(
-    parsed.report.date[i], '%Y') == '0000' || 
-    format(parsed.report.date[i], '%m') == '1'){
-    parsed.report.date[i]<-parsed.report.date[i] %m+% years(2022)
-  }
-} # Adds year to parsed report date
+
+# for (i in 1:length(parsed.report.date)){
+#   # if (format(parsed.report.date[i], '%m') == '12'){
+#   #   parsed.report.date[i]<-parsed.report.date[i] %m+% years(2020)
+#   #   }
+#   if (format(
+#     parsed.report.date[i], '%Y') == '0000' || 
+#     format(parsed.report.date[i], '%m') == '1'){
+#     parsed.report.date[i]<-parsed.report.date[i] %m+% years(2022)
+#   }
+#   if (format(
+#     parsed.report.date[i], '%Y') == '0000' || 
+#     format(parsed.report.date[i], '%m') == '1'){
+#     parsed.report.date[i]<-parsed.report.date[i] %m+% years(2022)
+#   }
+# } # Adds year to parsed report date
 
 
 
@@ -125,14 +126,17 @@ for (i in 1:length(parsed.report.date)){
 #Exposure Date Parsing
 
 for (i in 1:length(covid_df$potential.exposure.dates)){
-  split.dates<-unlist(strsplit(covid_df$potential.exposure.dates[i], ' - '))
-  if (length(split.dates)==2){
-    covid_df$start[i]<-split.dates[1]
-    covid_df$end[i]<-split.dates[2]
-  }else{
-    covid_df$start[i]<-split.dates[1]
-    covid_df$end[i]<-split.dates[1]
+  if (is.na(covid_df$start[i])){
+    split.dates<-unlist(strsplit(covid_df$potential.exposure.dates[i], ' - '))
+    if (length(split.dates)==2){
+      covid_df$start[i]<-gsub("/", "-", split.dates[1])
+      covid_df$end[i]<-gsub("/", "-", split.dates[2])
+    }else{
+      covid_df$start[i]<-gsub("/", "-", split.dates[1])
+      covid_df$end[i]<-gsub("/", "-", split.dates[1])
+    }
   }
+  
 } # Splits dates
 
 
