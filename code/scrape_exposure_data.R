@@ -129,11 +129,11 @@ for (i in 1:length(covid_df$potential.exposure.dates)){
   if (is.na(covid_df$start[i])){
     split.dates<-unlist(strsplit(covid_df$potential.exposure.dates[i], ' - '))
     if (length(split.dates)==2){
-      covid_df$start[i]<-gsub("/", "-", split.dates[1])
-      covid_df$end[i]<-gsub("/", "-", split.dates[2])
+      covid_df$start[i]<-format.Date(parse_date_time(split.dates[1], possible.formats), "%Y-%m-%d")
+      covid_df$end[i]<-format.Date(parse_date_time(split.dates[2], possible.formats), "%Y-%m-%d")
     }else{
-      covid_df$start[i]<-gsub("/", "-", split.dates[1])
-      covid_df$end[i]<-gsub("/", "-", split.dates[1])
+      covid_df$start[i]<-format.Date(parse_date_time(split.dates[1], possible.formats), "%Y-%m-%d")
+      covid_df$end[i]<-format.Date(parse_date_time(split.dates[1], possible.formats), "%Y-%m-%d")
     }
   }
   
@@ -153,14 +153,15 @@ for (i in fail_parsed_start){
 } # extracts the dates that failed to parse start date
 parsed.start.date<-na.omit(parsed.start.date)
 # removes na's from parsed.start.date
-for (i in 1:length(parsed.start.date)){
-  if (format(parsed.start.date[i], '%m') == '12'){
-    parsed.start.date[i]<-parsed.start.date[i] %m+% years(2020)
-    }
-  if (format(parsed.start.date[i], '%Y') == '0000'){
-    parsed.start.date[i]<-parsed.start.date[i] %m+% years(2021)
-  }
-} # Adds year to parsed start date
+
+# for (i in 1:length(parsed.start.date)){
+#   if (format(parsed.start.date[i], '%m') == '12'){
+#     parsed.start.date[i]<-parsed.start.date[i] %m+% years(2020)
+#     }
+#   if (format(parsed.start.date[i], '%Y') == '0000'){
+#     parsed.start.date[i]<-parsed.start.date[i] %m+% years(2021)
+#   }
+# } # Adds year to parsed start date
 
 
 
@@ -177,19 +178,20 @@ for (i in fail_parse_end){
 } # extracts the dates that failed to parse end date
 parsed.end.date<-na.omit(parsed.end.date)
 # removes na's from parsed.end.date
-for (i in 1:length(parsed.end.date)){
-  if (format(parsed.end.date[i], '%m') == '12'){
-    parsed.end.date[i]<-parsed.end.date[i] %m+% years(2020)
-    }
-  if (format(parsed.end.date[i], '%Y') == '0000'){
-    parsed.end.date[i]<-parsed.end.date[i] %m+% years(2021)
-  }
-} # Adds year to parsed end dates
+
+# for (i in 1:length(parsed.end.date)){
+#   if (format(parsed.end.date[i], '%m') == '12'){
+#     parsed.end.date[i]<-parsed.end.date[i] %m+% years(2020)
+#     }
+#   if (format(parsed.end.date[i], '%Y') == '0000'){
+#     parsed.end.date[i]<-parsed.end.date[i] %m+% years(2021)
+#   }
+# } # Adds year to parsed end dates
 
 
-covid_df$standard.report.date<-parsed.report.date
-covid_df$start<-parsed.start.date
-covid_df$end<-parsed.end.date
+# covid_df$standard.report.date<-parsed.report.date
+# covid_df$start<-parsed.start.date
+# covid_df$end<-parsed.end.date
 
 unmatched_dates<-na.omit(unmatched_dates) #remove NA's at unmatched_dates that are created
 
