@@ -76,12 +76,12 @@ possible.formats<-c( '%d-%b','%m-%d', '%m/%d/%Y')
 #Report Date
 #parsed.report.date<-parse_date_time(covid_df$report.date, possible.formats)
 
-for (j in dim(covid_df)[1]){ #for each row in the covid_df dataframe
+for (j in 1:dim(covid_df)[1]){ #for each row in the covid_df dataframe
   if (is.na(covid_df[j, 7])) { #if the value in column 7 is NA
     parsed.date<-parse_date_time(covid_df$report.date[j], possible.formats) #parse the reported date
     if (
-      format(parsed.date, '%Y') == '0000' || #the year is 0000
-      format(Sys.Date(), '%m') == "01" ||    #today's month is January
+      format(parsed.date, '%Y') == '0000' && #the year is 0000
+      format(Sys.Date(), '%m') == "01" &&    #today's month is January
       format(parsed.date, '%m') == "12"      #the parsed month is December
       ){
       covid_df[j,7]<-as.character(parsed.date %m+% (years(as.numeric(format(Sys.Date(), '%Y')))-years(1))) #the year for the report date is today's year minus 1
