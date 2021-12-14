@@ -38,7 +38,7 @@ number_pages<-last_page_href-1 #-1 because there are x pages + the next button
 covid_df<-read.csv("./data/exposures.csv")
 #covid_df<-read.csv("./data/exposures_thursday.csv")
 
-covid_df<-covid_df[,1:4]
+#covid_df<-covid_df[,1:4]
 
 for (i in 0:(number_pages-1)){ #pages on the site are 0 indexed
   
@@ -50,8 +50,9 @@ for (i in 0:(number_pages-1)){ #pages on the site are 0 indexed
   data<- read_html(exposure_website)  
   tables<- xml_find_all(data, "//table") 
   cov<- html_table(tables, fill = TRUE)
-  covid_df_page<- cov[[1]]
-  colnames(covid_df_page)<-c("report.date", "worksite", "location", "potential.exposure.dates")
+  covid_df_page<- cbind.data.frame(cov[[1]], NA, NA, NA)
+  #colnames(covid_df_page)<-c("report.date", "worksite", "location", "potential.exposure.dates")
+  colnames(covid_df_page)<-names(covid_df)
   
   #add the data from this page to the existing dataframe
   covid_df<-rbind.data.frame(covid_df, covid_df_page)
@@ -72,10 +73,22 @@ for (i in 0:(number_pages-1)){ #pages on the site are 0 indexed
 
 possible.formats<-c( '%d-%b','%m-%d', '%m/%d/%Y')
 
-parsed.report.date<-parse_date_time(covid_df$report.date, possible.formats)
+#Report Date
+#parsed.report.date<-parse_date_time(covid_df$report.date, possible.formats)
 
-unmatched_dates<- setNames(data.frame(matrix(ncol = 4, nrow = 0)), c("report.date", "worksite","location",
-                                                   "potential.exposure.dates"))
+for (j in dim(covid_df)[1]){
+  if (is.na(covid_df[j, 7])) {
+    first.date<-parse_date_time(covid_df$report.date[j], possible.formats)
+    if (format(Sys.Date(), '%m') == format(first.date, '%m')){
+      covid_df[j,7]<-as.character(first.date %m+% years(format(Sys.Date(), '%Y')))
+    }
+    else{
+      covid_df[j,7]<-as.character(first.date %m+% years(format(Sys.Date(), '%Y')-1))
+    }
+  }
+}
+
+unmatched_dates<- setNames(data.frame(matrix(ncol = 4, nrow = 0)), c("report.date", "worksite","location", "potential.exposure.dates"))
 # MAKES data frame with no rows but corresponding columns to the covid_df, used to create parsed_fail
 
 fail_parsed_rows<-which(is.na(parsed.report.date)) ##creates list of the rows that do not parse
@@ -87,11 +100,18 @@ for (i in fail_parsed_rows){
 parsed.report.date<-na.omit(parsed.report.date)
 # removes na's from parsed.report.date
 for (i in 1:length(parsed.report.date)){
-  if (format(parsed.report.date[i], '%m') == '12'){
-    parsed.report.date[i]<-parsed.report.date[i] %m+% years(2020)
-    }
-  if (format(parsed.report.date[i], '%Y') == '0000'){
-    parsed.report.date[i]<-parsed.report.date[i] %m+% years(2021)
+  # if (format(parsed.report.date[i], '%m') == '12'){
+  #   parsed.report.date[i]<-parsed.report.date[i] %m+% years(2020)
+  #   }
+  if (format(
+    parsed.report.date[i], '%Y') == '0000' || 
+    format(parsed.report.date[i], '%m') == '1'){
+    parsed.report.date[i]<-parsed.report.date[i] %m+% years(2022)
+  }
+  if (format(
+    parsed.report.date[i], '%Y') == '0000' || 
+    format(parsed.report.date[i], '%m') == '1'){
+    parsed.report.date[i]<-parsed.report.date[i] %m+% years(2022)
   }
 } # Adds year to parsed report date
 
