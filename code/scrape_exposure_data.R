@@ -71,7 +71,7 @@ for (i in 0:(number_pages-1)){ #pages on the site are 0 indexed
   #EXAMPLE OF ADDING A YEAR TO A DATE WITH 0000 FOR THE YEAR:
     #my_date %m+% years(2021)
 
-possible.formats<-c( '%d-%b','%m-%d', '%m/%d/%Y')
+possible.formats<-c( '%d-%b','%m-%d', '%m/%d/%Y', '%m-%d-%Y', '%Y/%m/%d', '%Y-%m-%d')
 
 #Report Date
 #parsed.report.date<-parse_date_time(covid_df$report.date, possible.formats)
