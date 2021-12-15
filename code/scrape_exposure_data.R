@@ -74,7 +74,7 @@ for (i in 0:(number_pages-1)){ #pages on the site are 0 indexed
 possible.formats<-c( '%d-%b','%m-%d', '%m/%d/%Y', '%m-%d-%Y', '%Y/%m/%d', '%Y-%m-%d')
 
 #Report Date
-#parsed.report.date<-parse_date_time(covid_df$report.date, possible.formats)
+parsed.report.date<-parse_date_time(covid_df$report.date, possible.formats)
 
 for (j in 1:dim(covid_df)[1]){ #for each row in the covid_df dataframe
   if (is.na(covid_df[j, 7])) { #if the value in column 7 is NA
