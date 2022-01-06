@@ -4,64 +4,66 @@
  - 02-04","2021-02-02","2021-02-04","2021-02-08",list()
 "7","8-4","8-4","08-04","Davis campus","07-28","2021-07-28","2021-07-28","2021-08-04",list()
 "35","Academic Surge HRVIP Lab","Academic Surge HRVIP Lab","12-21","Davis campus","12/17/2021","2021-12-17","2021-12-17","2021-12-21",list()
-"207","Antenna Farm","Antenna Farm","11-10","Davis campus","11/08/2021
+"229","Antenna Farm","Antenna Farm","11-10","Davis campus","11/08/2021
  - 11/10/2021","2021-11-08","2021-11-10","2021-11-10",list()
-"706","CA Animal Health and Food Safety Lab, Turlock","CA Animal Health and Food Safety Lab, Turlock","22-Sep","Off campus","09-13
+"728","CA Animal Health and Food Safety Lab, Turlock","CA Animal Health and Food Safety Lab, Turlock","22-Sep","Off campus","09-13
  - 09-15","2021-09-13","2021-09-15","2021-09-22",list()
-"707","CAHFS San Bernardino Lab","CAHFS San Bernardino Lab","08-04","Off campus","07-27
+"729","CAHFS San Bernardino Lab","CAHFS San Bernardino Lab","08-04","Off campus","07-27
  - 07-29","2021-07-27","2021-07-29","2021-08-04",list()
-"1020","Center for Immunology & Infectious Diseases (CIID)","Center for Immunology & Infectious Diseases (CIID)","11-30","Davis campus","11/29/2021","2021-11-29","2021-11-29","2021-11-30",list()
-"1432","Chemistry Building","Chemistry Building","12-27","Davis campus","12/20/2021","2021-12-20","2021-12-20","2021-12-27",list()
-"1604","Coffee Center","Coffee Center","11-16","Davis campus","11/15/2021","2021-11-15","2021-11-15","2021-11-16",list()
-"1928","Granite Canyon Laboratory, Monterey, CA","Granite Canyon Laboratory, Monterey, CA","08-05","Off campus","07-25
+"1042","Center for Immunology & Infectious Diseases (CIID)","Center for Immunology & Infectious Diseases (CIID)","11-30","Davis campus","11/29/2021","2021-11-29","2021-11-29","2021-11-30",list()
+"1454","Chemistry Building","Chemistry Building","12-27","Davis campus","12/20/2021","2021-12-20","2021-12-20","2021-12-27",list()
+"1626","Coffee Center","Coffee Center","11-16","Davis campus","11/15/2021","2021-11-15","2021-11-15","2021-11-16",list()
+"1950","Granite Canyon Laboratory, Monterey, CA","Granite Canyon Laboratory, Monterey, CA","08-05","Off campus","07-25
  - 08-04","2021-07-25","2021-08-04","2021-08-05",list()
-"1943","Green Hall (Life Sciences)","Green Hall (Life Sciences)","11-29","Davis campus","11/24/2021","2021-11-24","2021-11-24","2021-11-29",list()
-"4329","Malcom Hall","Malcom Hall","12-03","Davis campus","11/30/2021","2021-11-30","2021-11-30","2021-12-03",list()
-"4330","Malcom Hall","Malcom Hall","12-03","Davis campus","11/30/2021","2021-11-30","2021-11-30","2021-12-03",list()
-"4331","Malcom Hall","Malcom Hall","12-03","Davis campus","11/30/2021","2021-11-30","2021-11-30","2020-12-03",list()
-"4332","Malcom Hall","Malcom Hall","12-03","Davis campus","11/30/2021","2021-11-30","2021-11-30","2020-12-03",list()
-"4333","Manetti Shrem Museum","Manetti Shrem Museum","12-17","Davis campus","12/17/2021","2021-12-17","2021-12-17","2021-12-17",list()
-"4334","Manetti Shrem Museum","Manetti Shrem Museum","12-17","Davis campus","12/17/2021","2021-12-17","2021-12-17","2021-12-17",list()
-"4335","Manetti Shrem Museum","Manetti Shrem Museum","11-15","Davis campus","11/13/2021","2021-11-13","2021-11-13","2021-11-15",list()
-"4336","Manetti Shrem Museum","Manetti Shrem Museum","11-15","Davis campus","11/13/2021","2021-11-13","2021-11-13","2021-11-15",list()
-"4362","Medical Sciences 1B","Medical Sciences 1B","12-15","Davis campus","12/14/2021","2021-12-14","2021-12-14","2021-12-15",list()
-"6336","San Bernardino Lab","San Bernardino Lab","01-12","Off campus","01-05
- - 01-07","2021-01-05","2021-01-07","2021-01-12",list()
-"6337","San Bernardino Lab","San Bernardino Lab","01-25","Off campus","01-20
+"1965","Green Hall (Life Sciences)","Green Hall (Life Sciences)","11-29","Davis campus","11/24/2021","2021-11-24","2021-11-24","2021-11-29",list()
+"4354","Malcom Hall","Malcom Hall","12-03","Davis campus","11/30/2021","2021-11-30","2021-11-30","2020-12-03",list()
+"4355","Malcom Hall","Malcom Hall","12-03","Davis campus","11/30/2021","2021-11-30","2021-11-30","2021-12-03",list()
+"4356","Malcom Hall","Malcom Hall","12-03","Davis campus","11/30/2021","2021-11-30","2021-11-30","2021-12-03",list()
+"4357","Malcom Hall","Malcom Hall","12-03","Davis campus","11/30/2021","2021-11-30","2021-11-30","2020-12-03",list()
+"4358","Manetti Shrem Museum","Manetti Shrem Museum","11-15","Davis campus","11/13/2021","2021-11-13","2021-11-13","2021-11-15",list()
+"4359","Manetti Shrem Museum","Manetti Shrem Museum","11-15","Davis campus","11/13/2021","2021-11-13","2021-11-13","2021-11-15",list()
+"4360","Manetti Shrem Museum","Manetti Shrem Museum","12-17","Davis campus","12/17/2021","2021-12-17","2021-12-17","2021-12-17",list()
+"4361","Manetti Shrem Museum","Manetti Shrem Museum","12-17","Davis campus","12/17/2021","2021-12-17","2021-12-17","2021-12-17",list()
+"4387","Medical Sciences 1B","Medical Sciences 1B","12-15","Davis campus","12/14/2021","2021-12-14","2021-12-14","2021-12-15",list()
+"6361","San Bernardino Lab","San Bernardino Lab","01-25","Off campus","01-20
  - 01-21","2021-01-20","2021-01-21","2021-01-25",list()
-"6338","San Bernardino Lab","San Bernardino Lab","01-25","Off campus","01-20
- - 01-21","2021-01-20","2021-01-21","2021-01-25",list()
-"6339","San Bernardino Lab","San Bernardino Lab","01-12","Off campus","01-05
+"6362","San Bernardino Lab","San Bernardino Lab","01-12","Off campus","01-05
  - 01-07","2021-01-05","2021-01-07","2021-01-12",list()
-"10247","Storer Hall Research Lab","Storer Hall Research Lab","11-30","Davis campus","11/23/2021","2021-11-23","2021-11-23","2021-11-30",list()
-"10271","Student Heath & Counseling Services","Student Heath & Counseling Services","11-18","Davis campus","11/17/2021","2021-11-17","2021-11-17","2021-11-18",list()
-"10275","TANA arts facility, 1224 Lemen Av, Woodland","TANA arts facility, 1224 Lemen Av, Woodland","07-14","Off campus","07-11
+"6363","San Bernardino Lab","San Bernardino Lab","01-12","Off campus","01-05
+ - 01-07","2021-01-05","2021-01-07","2021-01-12",list()
+"6364","San Bernardino Lab","San Bernardino Lab","01-25","Off campus","01-20
+ - 01-21","2021-01-20","2021-01-21","2021-01-25",list()
+"10272","Storer Hall Research Lab","Storer Hall Research Lab","11-30","Davis campus","11/23/2021","2021-11-23","2021-11-23","2021-11-30",list()
+"10296","Student Heath & Counseling Services","Student Heath & Counseling Services","11-18","Davis campus","11/17/2021","2021-11-17","2021-11-17","2021-11-18",list()
+"10300","TANA arts facility, 1224 Lemen Av, Woodland","TANA arts facility, 1224 Lemen Av, Woodland","07-14","Off campus","07-11
  - 07-12","2021-07-11","2021-07-12","2021-07-14",list()
-"10302","Telecom Building","Telecom Building","11-12","Davis campus","11/08/2021
+"10327","Telecom Building","Telecom Building","11-12","Davis campus","11/08/2021
  - 11/10/2021","2021-11-08","2021-11-10","2021-11-12",list()
-"10303","Temporary Building 9","Temporary Building 9","11-23","Davis campus","11/22/2021","2021-11-22","2021-11-22","2021-11-23",list()
-"10359","Tercero Admin Building","Tercero Admin Building","12-28","Davis campus","12/27/2021","2021-12-27","2021-12-27","2021-12-28",list()
-"10925","Tercero Dining Hall","Tercero Dining Hall","11-15","Davis campus","11/08/2021
+"10328","Temporary Building 9","Temporary Building 9","11-23","Davis campus","11/22/2021","2021-11-22","2021-11-22","2021-11-23",list()
+"10385","Tercero Admin Building","Tercero Admin Building","12-28","Davis campus","12/27/2021","2021-12-27","2021-12-27","2021-12-28",list()
+"10951","Tercero Dining Hall","Tercero Dining Hall","11-15","Davis campus","11/08/2021
  - 11/13/2021","2021-11-08","2021-11-13","2021-11-15",list()
-"11082","The Grove - Academic Surge 3","The Grove - Academic Surge 3","12-06","Davis campus","11/30/2021","2021-11-30","2021-11-30","2020-12-06",list()
-"11083","The Grove - Academic Surge 3","The Grove - Academic Surge 3","12-02","Davis campus","12/02/2021","2021-12-02","2021-12-02","2021-12-02",list()
-"11084","The Grove - Academic Surge 3","The Grove - Academic Surge 3","12-06","Davis campus","11/30/2021","2021-11-30","2021-11-30","2020-12-06",list()
-"11085","The Grove - Academic Surge 3","The Grove - Academic Surge 3","12-06","Davis campus","11/30/2021","2021-11-30","2021-11-30","2020-12-06",list()
-"11086","The Grove - Academic Surge 3","The Grove - Academic Surge 3","12-06","Davis campus","11/30/2021","2021-11-30","2021-11-30","2021-12-06",list()
-"11087","The Grove - Academic Surge 3","The Grove - Academic Surge 3","12-06","Davis campus","11/30/2021","2021-11-30","2021-11-30","2021-12-06",list()
-"11088","The Grove - Academic Surge 3","The Grove - Academic Surge 3","12-06","Davis campus","11/30/2021","2021-11-30","2021-11-30","2021-12-06",list()
-"11089","The Grove - Academic Surge 3","The Grove - Academic Surge 3","12-06","Davis campus","11/30/2021","2021-11-30","2021-11-30","2021-12-06",list()
-"11090","The Grove - Academic Surge 3","The Grove - Academic Surge 3","12-02","Davis campus","12/02/2021","2021-12-02","2021-12-02","2021-12-02",list()
-"11091","The Grove - Academic Surge 3","The Grove - Academic Surge 3","12-02","Davis campus","12/02/2021","2021-12-02","2021-12-02","2021-12-02",list()
-"11092","The Grove - Academic Surge 3","The Grove - Academic Surge 3","12-02","Davis campus","12/02/2021","2021-12-02","2021-12-02","2020-12-02",list()
-"11093","The Grove - Academic Surge 3","The Grove - Academic Surge 3","12-02","Davis campus","12/02/2021","2021-12-02","2021-12-02","2021-12-02",list()
-"11094","The Grove - Academic Surge 3","The Grove - Academic Surge 3","12-02","Davis campus","12/02/2021","2021-12-02","2021-12-02","2020-12-02",list()
-"11095","The Grove - Academic Surge 3","The Grove - Academic Surge 3","12-02","Davis campus","12/02/2021","2021-12-02","2021-12-02","2020-12-02",list()
-"11096","The Grove - Academic Surge 3","The Grove - Academic Surge 3","12-02","Davis campus","12/02/2021","2021-12-02","2021-12-02","2020-12-02",list()
-"11097","The Grove - Academic Surge 3","The Grove - Academic Surge 3","12-06","Davis campus","11/30/2021","2021-11-30","2021-11-30","2020-12-06",list()
-"11136","Tulare Lab","Tulare Lab","01-12","Off campus","01-03
+"11108","The Grove - Academic Surge 3","The Grove - Academic Surge 3","12-06","Davis campus","11/30/2021","2021-11-30","2021-11-30","2020-12-06",list()
+"11109","The Grove - Academic Surge 3","The Grove - Academic Surge 3","12-06","Davis campus","11/30/2021","2021-11-30","2021-11-30","2020-12-06",list()
+"11110","The Grove - Academic Surge 3","The Grove - Academic Surge 3","12-06","Davis campus","11/30/2021","2021-11-30","2021-11-30","2021-12-06",list()
+"11111","The Grove - Academic Surge 3","The Grove - Academic Surge 3","12-06","Davis campus","11/30/2021","2021-11-30","2021-11-30","2021-12-06",list()
+"11112","The Grove - Academic Surge 3","The Grove - Academic Surge 3","12-06","Davis campus","11/30/2021","2021-11-30","2021-11-30","2021-12-06",list()
+"11113","The Grove - Academic Surge 3","The Grove - Academic Surge 3","12-02","Davis campus","12/02/2021","2021-12-02","2021-12-02","2021-12-02",list()
+"11114","The Grove - Academic Surge 3","The Grove - Academic Surge 3","12-02","Davis campus","12/02/2021","2021-12-02","2021-12-02","2021-12-02",list()
+"11115","The Grove - Academic Surge 3","The Grove - Academic Surge 3","12-02","Davis campus","12/02/2021","2021-12-02","2021-12-02","2021-12-02",list()
+"11116","The Grove - Academic Surge 3","The Grove - Academic Surge 3","12-02","Davis campus","12/02/2021","2021-12-02","2021-12-02","2020-12-02",list()
+"11117","The Grove - Academic Surge 3","The Grove - Academic Surge 3","12-02","Davis campus","12/02/2021","2021-12-02","2021-12-02","2021-12-02",list()
+"11118","The Grove - Academic Surge 3","The Grove - Academic Surge 3","12-06","Davis campus","11/30/2021","2021-11-30","2021-11-30","2020-12-06",list()
+"11119","The Grove - Academic Surge 3","The Grove - Academic Surge 3","12-02","Davis campus","12/02/2021","2021-12-02","2021-12-02","2020-12-02",list()
+"11120","The Grove - Academic Surge 3","The Grove - Academic Surge 3","12-06","Davis campus","11/30/2021","2021-11-30","2021-11-30","2021-12-06",list()
+"11121","The Grove - Academic Surge 3","The Grove - Academic Surge 3","12-06","Davis campus","11/30/2021","2021-11-30","2021-11-30","2020-12-06",list()
+"11122","The Grove - Academic Surge 3","The Grove - Academic Surge 3","12-02","Davis campus","12/02/2021","2021-12-02","2021-12-02","2020-12-02",list()
+"11123","The Grove - Academic Surge 3","The Grove - Academic Surge 3","12-02","Davis campus","12/02/2021","2021-12-02","2021-12-02","2020-12-02",list()
+"11162","Tulare Lab","Tulare Lab","01-12","Off campus","01-03
  - 01-05","2021-01-03","2021-01-05","2021-01-12",list()
-"11250","UC Pavement Research Center","UC Pavement Research Center","12-21","Davis campus","12/16/2021
+"11276","UC Pavement Research Center","UC Pavement Research Center","12-21","Davis campus","12/16/2021
  - 12/17/2021","2021-12-16","2021-12-17","2021-12-21",list()
-"11349","Vet Med-Tulare","Vet Med-Tulare","29-Sep","Off campus","09-24
+"11378","Vet Med-Tulare","Vet Med-Tulare","29-Sep","Off campus","09-24
  - 09-26","2021-09-24","2021-09-26","2021-09-29",list()
+"11498","Veterinary Medical Teaching Hospital","Veterinary Medical Teaching Hospital","01-03","Davis campus","12/30/2021","2021-12-30","2021-12-30","2022-01-03",list()
+"11507","VMTH Clinical Labs","VMTH Clinical Labs","01-04","Davis campus","12/29/2021","2021-12-29","2021-12-29","2022-01-04",list()
