@@ -1,6 +1,7 @@
 target,variation
 260 Cousteau,260 Cousteau Place
 Academic Surge Building,Academic Surge
+Academic Surge Building,Academic Surge HRVIP Lab
 Activities and Recreation Center,Activities & Recreation Center
 Activities and Recreation Center,Activities & Recreation Center (ARC)
 Activities and Recreation Center,Activities & Recreational Center
@@ -19,11 +20,15 @@ Aquatic Biology & Environmental Science Bldg,Aquatic Biology & Environmental Sci
 Atriums at La Rue 100,Atriums at La Rue Park
 Baseball Storage,Dobbins Baseball Complex
 Buehler Alumni Center,Walter A Beuhler Alumni Center
+Center for Comparative Medicine,Center for Immunology & Infectious Diseases (CIID)
+Center for Health & Environment Office & Laboratory,Center for Health & Environment
 Center for Neuroscience,Center for Neuroscience - CNS
 CFA Mondavi,Modavi Center
 CFA Mondavi,Mondavi
 CFA Mondavi,Mondavi Center
 CFA Mondavi,Mondavi Center for the Performing Arts
+CFA Mondavi,Mondavi Center - Jackson Hall
+Chemistry,Chemistry Building
 Chemistry Rock Hall,Rock Hall
 Cole A,Cole Facility
 Cruess Hall,Cruess hall
@@ -31,6 +36,7 @@ Dairy Barn 2,D Barn / Facilities Shop
 Dairy Barn 2,Dairy Barn
 Davis 1850 Research Park Drive,1850 Research Park Dr
 Davis 624 & 630 Second Street (Bookstore),Downtown Store
+Dutton Hall,Academic Assistance and Tutoring Center
 Earth and Physical Sciences Building,Earth and Physical Sciences
 Equestrian Center Covered Arena,Equestrian Center
 Fire & Police Building,Fire & Police
@@ -38,9 +44,12 @@ Fire & Police Building,Fire and Police Building
 Fire & Police Building,Police
 Fire & Police Building,Police & Fire Building
 Fire & Police Building,Police Building
+Fire & Police Building,Fire Department
 Fleet Services Central Garage Campus,Fleet Services Central Garage
+Ghausi Hall,UC Pavement Research Center
 Giedt Hall,Geidt Hall
 Green Hall,Life Sciences/Green Hall
+Green Hall,Green Hall (Life Sciences)
 Haring Hall,Harding Hall
 Head House 001,Orchard Park Greenhouse Complex
 Housing Administration,Student Housing Building
@@ -51,16 +60,18 @@ Mayra Welch Tennis Center,Mary Welch Tennis Center
 Mayra Welch Tennis Center,Marya Welch Tennis Center
 Mechanical 2,Physical Plant
 Mechanical Sewer,623 Putah Creek Lodge Drive
-Wastewater Treatment Plant Administration Building 2,Waste Water Treatment Plant
-Wastewater Treatment Plant Administration Building 2,Wastewater Treatment Plant
-Wastewater Treatment Plant Administration Building 2,Wastewater Treatment Plant Admin Bldg 2
-Wastewater Treatment Plant Administration Building 2,Wastewater Treatment Plant Administration Building
+Medical Sciences I B (Carlson Health Sciences Library),Medical Sciences 1B
+Medical Sciences I B (Carlson Health Sciences Library),Carlson Health Sciences Library
 Medical Sciences I C,Medical Sciences
+Medical Sciences I C,Medical Sciences 1C
 Memorial Union,Coffee House
 Memorial Union,Ctr for Chicanx & Latinx Academic Student Success
 Memorial Union,Memorial Union Bookstore
 Memorial Union,Memorial Union Moss Room
 Memorial Union,UC Davis Bookstore
+Memorial Union,Memorial Union Games Area
+Memorial Union,Campus Bookstore
+North Hall,Women's Resources and Research Center
 Outdoor Adventures Shop,Outdoor Adventures
 Plant & Environmental Sciences,Plant and Enviro Sciences
 Primate Laboratory,California National Primate Research Center
@@ -71,6 +82,7 @@ Primate Laboratory,UC Davis California National Primate Research
 Primate Laboratory,UC Davis California National Primate Research Cen
 Pritchard VMTH,Vet Med Teaching Hospital Small Animal Clinic
 Pritchard VMTH,VMTH
+Pritchard VMTH,Vet Med Teaching Hospital
 Recreation Pool Bath House,Rec Pool
 Roessler Hall,Roessler hall
 Russell Ranch-Shop,Russell Ranch
@@ -83,22 +95,31 @@ Segundo Dining Commons,Segundo Dining commons
 Segundo Dining Commons,Segundo Hall
 Segundo Gilmore,Gilmore Hall
 Segundo Malcolm,Malcolm Hall
+Segundo Malcolm,Malcom Hall
 Segundo Miller,Miller Hall
 Segundo North - Henry Alder Hall,Alder Hall
 Segundo North - OE Thompson Hall,Thompson Hall
 Segundo Ryerson,Ryerson Hall
 Segundo Services Center,Segundo Student Services
+Segundo Services Center,Student Housing & Dining Services
 Shasta Hall,Emerson Hall
 Shields Library,Peter J.Shields Library
+Shrem Museum of Art,Manetti Shrem Museum
 Soccer Lacrosse Field,Aggie Soccer Field
 Social Sciences & Humanities,Social Science & Humanities
 Social Sciences & Humanities,Social Sciences and Humanities
 Social Sciences & Humanities - Lecture Hall,Social Sciences Lecture Hall
+Social Sciences & Humanities - Lecture Hall,Social Sciences & Humanities Lecture Hall
 Solano 1800,Solano Park
+Storer Hall,Storer Hall Research Lab
 Student Community Center,AB540 and Undocumented Student Center
+Student Farm Greenhouse,Student Farm - Greenhouse
+Student Health & Wellness Center,Student Heath & Counseling Services
 Surge 2,Surge II
 Teaching and Learning Complex,Teaching & Learning Complex
 Teaching and Learning Complex,UC Davis Teaching & Learning Complex
+Temporary Building 009,Temporary Building 9
+Temporary Building 206,Telecom Building
 Tercero 3 Bldg 6 - Mahogany,Mahagony Hall
 Tercero 4 Bldg 2 - Redwood Hall,Tercero Redwood
 Tercero 4 Bldg 3 - Madrone Hall,Tercero Madrone
@@ -107,6 +128,8 @@ Tercero Community,Tercero Dining
 Tercero Community,Tercero Dining Commons
 Tercero Community,Tercero Services Center
 Tercero Community,Trecero Dining Commons
+Tercero Community,Tercero Admin Building
+Tercero Community,Tercero Dining Hall
 The Cannery Farm,1550 Cannery Avenue
 The Green 184 Horizon Street,The Green
 The Green 184 Horizon Street,The Green (West Village)
@@ -117,9 +140,12 @@ The Green 187 Mint Street,The Green - 187 Mint St
 The Green 2231 Jade Street,The Green - 2231 Jade St
 The Green 2231 Jade Street,The Green; 2231 Jade St.
 The Grove,The Grove (Surge III)
+The Grove,The Grove (Surge III) Lecture Hall
+The Grove,The Grove - Academic Surge 3
 Thurman Laboratory,Thurman Lab
 Toomey Weight Room,Toomey Weight Room Field
 Transportation Services,Transportation and Parking Services
+UC Davis Coffee Center,Coffee Center
 UC Davis Health Stadium East,UC Davis Health Stadium
 Unitrans Maintenance Facility,Unitrans Maintenance Shop
 University Hotel,Hyatt Place
@@ -127,41 +153,16 @@ Valley Hall,Gladys Hall
 Veg Crops Field Headqtrs A,Vegetable Crops Headquarters
 Vet Med 3A-MPT,Vet Med 3A (MPT)
 Vet Med 3A-MPT,VM Mulit-Purpose Teaching Facility
-Veterinary Medicine 2,Vet Med 2
-VMTH Ward,VMTH B Barn
-Voorhies Hall,Voorhies Hal
-Watershed Science Facility,Watershed Sciences Building
-West Village The Green 298 Horizon Street,"298 Horizon St., The Green"
-The Grove,The Grove (Surge III) Lecture Hall
-Social Sciences & Humanities - Lecture Hall,Social Sciences & Humanities Lecture Hall
-Pritchard VMTH,Vet Med Teaching Hospital
-North Hall,Women's Resources and Research Center
-CFA Mondavi,Mondavi Center - Jackson Hall
-Dutton Hall,Academic Assistance and Tutoring Center
-Student Farm Greenhouse,Student Farm - Greenhouse
-Memorial Union,Memorial Union Games Area
-Center for Health & Environment Office & Laboratory,Center for Health & Environment
-Medical Sciences I C,Medical Sciences 1C
-Segundo Malcolm,Malcom Hall
-Shrem Museum of Art,Manetti Shrem Museum
-Fire & Police Building,Fire Department
-Green Hall,Green Hall (Life Sciences)
-Medical Sciences I B (Carlson Health Sciences Library),Medical Sciences 1B
-UC Davis Coffee Center,Coffee Center
-Chemistry,Chemistry Building
-Center for Comparative Medicine,Center for Immunology & Infectious Diseases (CIID)
-Medical Sciences I B (Carlson Health Sciences Library),Carlson Health Sciences Library
-Memorial Union,Campus Bookstore
-Academic Surge Building,Academic Surge HRVIP Lab
-Storer Hall,Storer Hall Research Lab
-Student Health & Wellness Center,Student Heath & Counseling Services
-Segundo Services Center,Student Housing & Dining Services
-Temporary Building 206,Telecom Building
-Temporary Building 009,Temporary Building 9
-Tercero Community,Tercero Admin Building
-Tercero Community,Tercero Dining Hall
-The Grove,The Grove - Academic Surge 3
-Ghausi Hall,UC Pavement Research Center
 Vet Med 3A-MPT,Veterinary Medical Teaching Hospital
 Vet Med 3A-MPT,VMTH Clinical Labs
 Vet Med Student Services and Administration Center,VMTH Large Animal Clinic
+Veterinary Medicine 2,Vet Med 2
+VMTH Ward,VMTH B Barn
+Voorhies Hall,Voorhies Hal
+Wastewater Treatment Plant Administration Building 2,Waste Water Treatment Plant
+Wastewater Treatment Plant Administration Building 2,Wastewater Treatment Plant
+Wastewater Treatment Plant Administration Building 2,Wastewater Treatment Plant Admin Bldg 2
+Wastewater Treatment Plant Administration Building 2,Wastewater Treatment Plant Administration Building
+Watershed Science Facility,Watershed Sciences Building
+West Village The Green 298 Horizon Street,"298 Horizon St., The Green"
+Animal Resources Service H-1,H-Building Vet Lab
