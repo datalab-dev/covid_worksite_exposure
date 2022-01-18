@@ -92,38 +92,27 @@ for (j in 1:dim(covid_df)[1]){ #for each row in the covid_df dataframe
   }
 }
 
+
+# Checking and extracting report dates that fail to parse ------------------------
+
+
 unmatched_dates<- setNames(data.frame(matrix(ncol = 4, nrow = 0)), c("report.date", "worksite","location", "potential.exposure.dates"))
 # MAKES data frame with no rows but corresponding columns to the covid_df, used to create parsed_fail
 
 fail_parsed_rows<-which(is.na(covid_df$standard.report.date)) ##creates list of the rows that do not parse
+
 for (i in fail_parsed_rows){
   f<-as.data.frame(covid_df[i,])
+  f<-f[,1:4]
   unmatched_dates<- rbind.data.frame(f, unmatched_dates)
-  covid_df<- covid_df[-i,]
 } # extracts the dates that failed to parse report date 
+covid_df<- covid_df[!(row.names(covid_df) %in% fail_parsed_rows),] #remove the rows that did not parse from data frame
 parsed.report.date<-na.omit(parsed.report.date)
-# removes na's from parsed.report.date
-
-# for (i in 1:length(parsed.report.date)){
-#   # if (format(parsed.report.date[i], '%m') == '12'){
-#   #   parsed.report.date[i]<-parsed.report.date[i] %m+% years(2020)
-#   #   }
-#   if (format(
-#     parsed.report.date[i], '%Y') == '0000' || 
-#     format(parsed.report.date[i], '%m') == '1'){
-#     parsed.report.date[i]<-parsed.report.date[i] %m+% years(2022)
-#   }
-#   if (format(
-#     parsed.report.date[i], '%Y') == '0000' || 
-#     format(parsed.report.date[i], '%m') == '1'){
-#     parsed.report.date[i]<-parsed.report.date[i] %m+% years(2022)
-#   }
-# } # Adds year to parsed report date
+# removes na's from parsed.report.date so it still matches correct number of rows
 
 
+# Exposure Date Parsing ---------------------------------------------------
 
-
-#Exposure Date Parsing
 
 for (i in 1:length(covid_df$potential.exposure.dates)){
   if (is.na(covid_df$start[i])){
@@ -141,57 +130,36 @@ for (i in 1:length(covid_df$potential.exposure.dates)){
 
 
 
+
+#  checking for failure to parse in start and end date ----------------------------
+
 parsed.start.date<-parse_date_time(covid_df$start, possible.formats) #Parsing start date
-# checking for failure to parse in start date
+
 fail_parsed_start<-which(is.na(parsed.start.date)) ##creates list of the rows that do not parse
 for (i in fail_parsed_start){
   f<-as.data.frame(covid_df[i,])
   f<-f[,1:4]
   unmatched_dates<- rbind.data.frame(f, unmatched_dates)
-  covid_df<- covid_df[-i,]
-  parsed.report.date<-parsed.report.date[-i] # removes the corresponding non-parsed numbers from parsed.report.date
 } # extracts the dates that failed to parse start date
+covid_df<- covid_df[!(row.names(covid_df) %in% fail_parsed_start),] #remove the rows that did not parse from data frame
 parsed.start.date<-na.omit(parsed.start.date)
 # removes na's from parsed.start.date
-
-# for (i in 1:length(parsed.start.date)){
-#   if (format(parsed.start.date[i], '%m') == '12'){
-#     parsed.start.date[i]<-parsed.start.date[i] %m+% years(2020)
-#     }
-#   if (format(parsed.start.date[i], '%Y') == '0000'){
-#     parsed.start.date[i]<-parsed.start.date[i] %m+% years(2021)
-#   }
-# } # Adds year to parsed start date
 
 
 
 parsed.end.date<-parse_date_time(covid_df$end, possible.formats) #Parsing end date
-# checking for failure to parse in start date
-fail_parse_end<-which(is.na(parsed.end.date)) ##creates list of the rows that do not parse
-for (i in fail_parse_end){
+
+# checking for failure to parse in end date
+fail_parsed_end<-which(is.na(parsed.end.date)) ##creates list of the rows that do not parse
+for (i in fail_parsed_end){
   f<-as.data.frame(covid_df[i,])
   f<-f[,1:4]
   unmatched_dates<- rbind.data.frame(f, unmatched_dates)
-  covid_df<- covid_df[-i,]
-  parsed.start.date<-parsed.start.date[-i]
-  parsed.report.date<-parsed.report.date[-i]
 } # extracts the dates that failed to parse end date
+covid_df<- covid_df[!(row.names(covid_df) %in% fail_parsed_end),] #remove the rows that did not parse from data frame
 parsed.end.date<-na.omit(parsed.end.date)
 # removes na's from parsed.end.date
 
-# for (i in 1:length(parsed.end.date)){
-#   if (format(parsed.end.date[i], '%m') == '12'){
-#     parsed.end.date[i]<-parsed.end.date[i] %m+% years(2020)
-#     }
-#   if (format(parsed.end.date[i], '%Y') == '0000'){
-#     parsed.end.date[i]<-parsed.end.date[i] %m+% years(2021)
-#   }
-# } # Adds year to parsed end dates
-
-
-# covid_df$standard.report.date<-parsed.report.date
-# covid_df$start<-parsed.start.date
-# covid_df$end<-parsed.end.date
 
 unmatched_dates<-na.omit(unmatched_dates) #remove NA's at unmatched_dates that are created
 
@@ -199,17 +167,6 @@ write.csv(unmatched_dates,'./data/unmatched_dates.csv', row.names = FALSE) # wri
 
 #code should output all_exposures variable with the data de-duplicated
 all_exposures<-covid_df[!duplicated(covid_df[,c(2, 5:7)]), ]
-
-# Testing date mismatch  --------------------------------------------------
-# 
-# covid_df<-covid_df[390:414,] # Subsets covid_df to work with smaller section
-# 
-# covid_2$report.date[1]<- "Sep-13"
-# covid_2$potential.exposure.dates[2]<- "Sep-08 - Sep-10"
-# covid_2$potential.exposure.dates[3]<- "2020-Sep-14"
-# covid_2$potential.exposure.dates[24]<- "2021-09-20"
-# covid_2$potential.exposure.dates[25]<- "2021-09-17 - 2021-09-19"
-# covid_2$report.date[4]<- "2021-09-15"
 
 
 #organizes exposures by date reported
@@ -230,10 +187,6 @@ all_exposures<-all_exposures[(order(as.Date(all_exposures$standard.report.date, 
 #write the scraped exposure data to a csv without the row numbers
 write.csv(x=all_exposures, file="./data/exposures.csv", row.names = FALSE)
 
-## STEPS to scrape newest data- 1) replace the file name on the first line of this section with the correct
-# file location on your computer 2) run scrape_exposure function. 3) Use the function as written above, replacing
-# only the file destination with the correct one once again (the last variable). If anything does not run smoothly make sure that
-# the page0, page1, and file_destination are all in quotes. 
 
 
 # Name matching section ---------------------------------------------------
