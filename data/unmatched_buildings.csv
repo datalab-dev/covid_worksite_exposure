@@ -3,65 +3,70 @@
 "6","359 North Sage St.,The Green","359 North Sage St.,The Green","02-08","Davis campus","02-02
  - 02-04","2021-02-02","2021-02-04","2021-02-08",list()
 "7","8-4","8-4","08-04","Davis campus","07-28","2021-07-28","2021-07-28","2021-08-04",list()
-"463","Antenna Farm","Antenna Farm","11-10","Davis campus","11/08/2021
+"494","Alhambra Cannery","Alhambra Cannery","01-31","Off campus","01/28/2022","2022-01-28","2022-01-28","2022-01-31",list()
+"514","Antenna Farm","Antenna Farm","11-10","Davis campus","11/08/2021
  - 11/10/2021","2021-11-08","2021-11-10","2021-11-10",list()
-"999","Bixby Hall","Bixby Hall","01-12","Davis campus","01/06/2022","2022-01-06","2022-01-06","2022-01-12",list()
-"1038","CA Animal Health and Food Safety Lab, Turlock","CA Animal Health and Food Safety Lab, Turlock","22-Sep","Off campus","09-13
+"1050","Bixby Hall","Bixby Hall","01-12","Davis campus","01/06/2022","2022-01-06","2022-01-06","2022-01-12",list()
+"1089","CA Animal Health and Food Safety Lab, Turlock","CA Animal Health and Food Safety Lab, Turlock","22-Sep","Off campus","09-13
  - 09-15","2021-09-13","2021-09-15","2021-09-22",list()
-"1039","CAHFS-Turlock Laboratory","CAHFS-Turlock Laboratory","01-06","Off campus","01/03/2022","2022-01-03","2022-01-03","2022-01-06",list()
-"1040","CAHFS San Bernardino Lab","CAHFS San Bernardino Lab","08-04","Off campus","07-27
+"1090","CAHFS-Turlock Laboratory","CAHFS-Turlock Laboratory","01-06","Off campus","01/03/2022","2022-01-03","2022-01-03","2022-01-06",list()
+"1091","CAHFS San Bernardino Lab","CAHFS San Bernardino Lab","08-04","Off campus","07-27
  - 07-29","2021-07-27","2021-07-29","2021-08-04",list()
-"1041","California Animal Health & Food Safety Laboratory","California Animal Health & Food Safety Laboratory","01-28","Davis campus","01/26/2022","2022-01-26","2022-01-26","2022-01-28",list()
-"1285","Campus Store / Memorial Union","Campus Store / Memorial Union","01-18","Davis campus","01/13/2022","2022-01-13","2022-01-13","2022-01-18",list()
-"1378","Center for Mind and Brain","Center for Mind and Brain","01-21","Davis campus","01/20/2022","2022-01-20","2022-01-20","2022-01-21",list()
-"2069","Communications Resources Trailer","Communications Resources Trailer","01-21","Davis campus","01/19/2022","2022-01-19","2022-01-19","2022-01-21",list()
-"2071","Controlled Environment Facility-A","Controlled Environment Facility-A","01-14","Davis campus","01/12/2022","2022-01-12","2022-01-12","2022-01-14",list()
-"2090","Craft Center","Craft Center","01-26","Davis campus","01/23/2022
+"1092","California Animal Health & Food Safety Laboratory","California Animal Health & Food Safety Laboratory","01-28","Davis campus","01/26/2022","2022-01-26","2022-01-26","2022-01-28",list()
+"1336","Campus Store / Memorial Union","Campus Store / Memorial Union","01-18","Davis campus","01/13/2022","2022-01-13","2022-01-13","2022-01-18",list()
+"1429","Center for Mind and Brain","Center for Mind and Brain","01-21","Davis campus","01/20/2022","2022-01-20","2022-01-20","2022-01-21",list()
+"2120","Communications Resources Trailer","Communications Resources Trailer","01-21","Davis campus","01/19/2022","2022-01-19","2022-01-19","2022-01-21",list()
+"2122","Controlled Environment Facility-A","Controlled Environment Facility-A","01-14","Davis campus","01/12/2022","2022-01-12","2022-01-12","2022-01-14",list()
+"2141","Craft Center","Craft Center","01-26","Davis campus","01/23/2022
  - 01/24/2022","2022-01-23","2022-01-24","2022-01-26",list()
-"2370","Cuarto Hall","Cuarto Hall","01-12","Davis campus","01/04/2022","2022-01-04","2022-01-04","2022-01-12",list()
-"2375","Davis Shields Library","Davis Shields Library","01-24","Davis campus","01/21/2022
+"2421","Cuarto Hall","Cuarto Hall","01-12","Davis campus","01/04/2022","2022-01-04","2022-01-04","2022-01-12",list()
+"2426","Davis Shields Library","Davis Shields Library","01-24","Davis campus","01/21/2022
  - 01/23/2022","2022-01-21","2022-01-23","2022-01-24",list()
-"2376","Design & Construction Management","Design & Construction Management","01-18","Davis campus","01/18/2022","2022-01-18","2022-01-18","2022-01-18",list()
-"2524","Genome and Biomedical Sciences","Genome and Biomedical Sciences","01-21","Davis campus","01/19/2022","2022-01-19","2022-01-19","2022-01-21",list()
-"2647","Granite Canyon Laboratory, Monterey, CA","Granite Canyon Laboratory, Monterey, CA","08-05","Off campus","07-25
+"2427","Design & Construction Management","Design & Construction Management","01-18","Davis campus","01/18/2022","2022-01-18","2022-01-18","2022-01-18",list()
+"2585","Genome and Biomedical Sciences","Genome and Biomedical Sciences","01-21","Davis campus","01/19/2022","2022-01-19","2022-01-19","2022-01-21",list()
+"2708","Granite Canyon Laboratory, Monterey, CA","Granite Canyon Laboratory, Monterey, CA","08-05","Off campus","07-25
  - 08-04","2021-07-25","2021-08-04","2021-08-05",list()
-"2863","Henry Alder Hall","Henry Alder Hall","01-25","Davis campus","01/23/2022","2022-01-23","2022-01-23","2022-01-25",list()
-"6058","Medical Sciences D","Medical Sciences D","01-18","Davis campus","01/14/2022","2022-01-14","2022-01-14","2022-01-18",list()
-"8172","Paloma Hall","Paloma Hall","01-12","Davis campus","01/03/2022","2022-01-03","2022-01-03","2022-01-12",list()
-"8201","Plant and Environmental Sciences","Plant and Environmental Sciences","01-19","Davis campus","01/18/2022","2022-01-18","2022-01-18","2022-01-19",list()
-"8202","Police Department","Police Department","01-18","Davis campus","01/14/2022","2022-01-14","2022-01-14","2022-01-18",list()
-"8384","Rienda Hall","Rienda Hall","01-12","Davis campus","01/03/2022
+"2949","Henry Alder Hall","Henry Alder Hall","01-25","Davis campus","01/23/2022","2022-01-23","2022-01-23","2022-01-25",list()
+"6236","Medical Sciences D","Medical Sciences D","01-18","Davis campus","01/14/2022","2022-01-14","2022-01-14","2022-01-18",list()
+"8443","Paloma Hall","Paloma Hall","01-12","Davis campus","01/03/2022","2022-01-03","2022-01-03","2022-01-12",list()
+"8472","Plant and Environmental Sciences","Plant and Environmental Sciences","01-19","Davis campus","01/18/2022","2022-01-18","2022-01-18","2022-01-19",list()
+"8473","Police Department","Police Department","01-18","Davis campus","01/14/2022","2022-01-14","2022-01-14","2022-01-18",list()
+"8676","Rienda Hall","Rienda Hall","01-12","Davis campus","01/03/2022
  - 01/04/2022","2022-01-03","2022-01-04","2022-01-12",list()
-"8444","Sage Street Market","Sage Street Market","01-20","Davis campus","01/19/2022","2022-01-19","2022-01-19","2022-01-20",list()
-"8445","San Bernardino Lab","San Bernardino Lab","01-12","Off campus","01-05
+"8736","Sage Street Market","Sage Street Market","01-20","Davis campus","01/19/2022","2022-01-19","2022-01-19","2022-01-20",list()
+"8737","San Bernardino Lab","San Bernardino Lab","01-12","Off campus","01-05
  - 01-07","2021-01-05","2021-01-07","2021-01-12",list()
-"8446","San Bernardino Lab","San Bernardino Lab","01-25","Off campus","01-20
- - 01-21","2021-01-20","2021-01-21","2021-01-25",list()
-"8447","San Bernardino Lab","San Bernardino Lab","01-25","Off campus","01-20
- - 01-21","2021-01-20","2021-01-21","2021-01-25",list()
-"8448","San Bernardino Lab","San Bernardino Lab","01-12","Off campus","01-05
+"8738","San Bernardino Lab","San Bernardino Lab","01-12","Off campus","01-05
  - 01-07","2021-01-05","2021-01-07","2021-01-12",list()
-"8759","Scrubs Café","Scrubs Café","01-20","Davis campus","01/18/2022","2022-01-18","2022-01-18","2022-01-20",list()
-"11502","Sereno Hall","Sereno Hall","01-18","Davis campus","01/13/2022","2022-01-13","2022-01-13","2022-01-18",list()
-"14224","Tahoe Hall","Tahoe Hall","01-03","Davis campus","01/03/2022","2022-01-03","2022-01-03","2022-01-03",list()
-"14225","Tahoe Hall","Tahoe Hall","01-03","Davis campus","01/03/2022","2022-01-03","2022-01-03","2022-01-03",list()
-"14226","Tahoe Hall","Tahoe Hall","01-12","Davis campus","01/03/2022","2022-01-03","2022-01-03","2022-01-12",list()
-"14227","Tahoe Hall","Tahoe Hall","01-12","Davis campus","01/03/2022","2022-01-03","2022-01-03","2022-01-12",list()
-"14228","Talara Hall","Talara Hall","01-12","Davis campus","01/05/2022","2022-01-05","2022-01-05","2022-01-12",list()
-"14229","TANA arts facility, 1224 Lemen Av, Woodland","TANA arts facility, 1224 Lemen Av, Woodland","07-14","Off campus","07-11
+"8739","San Bernardino Lab","San Bernardino Lab","01-25","Off campus","01-20
+ - 01-21","2021-01-20","2021-01-21","2021-01-25",list()
+"8740","San Bernardino Lab","San Bernardino Lab","01-25","Off campus","01-20
+ - 01-21","2021-01-20","2021-01-21","2021-01-25",list()
+"9051","Scrubs Café","Scrubs Café","01-20","Davis campus","01/18/2022","2022-01-18","2022-01-18","2022-01-20",list()
+"9052","Scrubs Café","Scrubs Café","01-20","Davis campus","01/18/2022","2022-01-18","2022-01-18","2022-01-20",list()
+"9053","Scrubs Café","Scrubs Café","01-31","Davis campus","01/29/2022","2022-01-29","2022-01-29","2022-01-31",list()
+"9054","Scrubs Café","Scrubs Café","01-31","Davis campus","01/29/2022","2022-01-29","2022-01-29","2022-01-31",list()
+"11935","Sereno Hall","Sereno Hall","01-18","Davis campus","01/13/2022","2022-01-13","2022-01-13","2022-01-18",list()
+"14678","Tahoe Hall","Tahoe Hall","01-03","Davis campus","01/03/2022","2022-01-03","2022-01-03","2022-01-03",list()
+"14679","Tahoe Hall","Tahoe Hall","01-12","Davis campus","01/03/2022","2022-01-03","2022-01-03","2022-01-12",list()
+"14680","Tahoe Hall","Tahoe Hall","01-12","Davis campus","01/03/2022","2022-01-03","2022-01-03","2022-01-12",list()
+"14681","Tahoe Hall","Tahoe Hall","01-03","Davis campus","01/03/2022","2022-01-03","2022-01-03","2022-01-03",list()
+"14682","Talara Hall","Talara Hall","01-12","Davis campus","01/05/2022","2022-01-05","2022-01-05","2022-01-12",list()
+"14683","TANA arts facility, 1224 Lemen Av, Woodland","TANA arts facility, 1224 Lemen Av, Woodland","07-14","Off campus","07-11
  - 07-12","2021-07-11","2021-07-12","2021-07-14",list()
-"14230","TB 13","TB 13","01-12","Davis campus","01/06/2022","2022-01-06","2022-01-06","2022-01-12",list()
-"15646","Tercero Dinning Commons","Tercero Dinning Commons","01-26","Davis campus","01/25/2022","2022-01-25","2022-01-25","2022-01-26",list()
-"15647","Tercero Dinning Commons","Tercero Dinning Commons","01-26","Davis campus","01/25/2022","2022-01-25","2022-01-25","2022-01-26",list()
-"15648","Tercero Dinning Commons","Tercero Dinning Commons","01-20","Davis campus","01/20/2022","2022-01-20","2022-01-20","2022-01-20",list()
-"15649","Tercero Dinning Commons","Tercero Dinning Commons","01-20","Davis campus","01/20/2022","2022-01-20","2022-01-20","2022-01-20",list()
-"15650","Tercero Hall","Tercero Hall","01-12","Davis campus","01/04/2022","2022-01-04","2022-01-04","2022-01-12",list()
-"15836","The Green at West Village - 301 Celadon St.","The Green at West Village - 301 Celadon St.","01-13","Davis campus","01/12/2022","2022-01-12","2022-01-12","2022-01-13",list()
-"15901","Ticon II","Ticon II","01-12","Off campus","01/04/2022","2022-01-04","2022-01-04","2022-01-12",list()
-"15931","Tulare Lab","Tulare Lab","01-12","Off campus","01-03
+"14684","TB 13","TB 13","01-12","Davis campus","01/06/2022","2022-01-06","2022-01-06","2022-01-12",list()
+"16193","Tercero Dinning Commons","Tercero Dinning Commons","01-26","Davis campus","01/25/2022","2022-01-25","2022-01-25","2022-01-26",list()
+"16194","Tercero Dinning Commons","Tercero Dinning Commons","01-20","Davis campus","01/20/2022","2022-01-20","2022-01-20","2022-01-20",list()
+"16195","Tercero Dinning Commons","Tercero Dinning Commons","01-20","Davis campus","01/20/2022","2022-01-20","2022-01-20","2022-01-20",list()
+"16196","Tercero Dinning Commons","Tercero Dinning Commons","01-26","Davis campus","01/25/2022","2022-01-25","2022-01-25","2022-01-26",list()
+"16197","Tercero Hall","Tercero Hall","01-12","Davis campus","01/04/2022","2022-01-04","2022-01-04","2022-01-12",list()
+"16383","The Green at West Village - 301 Celadon St.","The Green at West Village - 301 Celadon St.","01-13","Davis campus","01/12/2022","2022-01-12","2022-01-12","2022-01-13",list()
+"16439","The Silo","The Silo","01-31","Davis campus","01/27/2022","2022-01-27","2022-01-27","2022-01-31",list()
+"16449","Ticon II","Ticon II","01-12","Off campus","01/04/2022","2022-01-04","2022-01-04","2022-01-12",list()
+"16479","Tulare Lab","Tulare Lab","01-12","Off campus","01-03
  - 01-05","2021-01-03","2021-01-05","2021-01-12",list()
-"16078","UC Davis Silo","UC Davis Silo","01-13","Davis campus","01/10/2022","2022-01-10","2022-01-10","2022-01-13",list()
-"16079","UC Davis Student Farm","UC Davis Student Farm","01-13","Davis campus","01/12/2022","2022-01-12","2022-01-12","2022-01-13",list()
-"16199","Vet Med-Tulare","Vet Med-Tulare","29-Sep","Off campus","09-24
+"16626","UC Davis Silo","UC Davis Silo","01-13","Davis campus","01/10/2022","2022-01-10","2022-01-10","2022-01-13",list()
+"16627","UC Davis Student Farm","UC Davis Student Farm","01-13","Davis campus","01/12/2022","2022-01-12","2022-01-12","2022-01-13",list()
+"16747","Vet Med-Tulare","Vet Med-Tulare","29-Sep","Off campus","09-24
  - 09-26","2021-09-24","2021-09-26","2021-09-29",list()
-"16351","Veterinary Teaching Hospital","Veterinary Teaching Hospital","01-19","Davis campus","01/16/2022","2022-01-16","2022-01-16","2022-01-19",list()
+"16922","Veterinary Teaching Hospital","Veterinary Teaching Hospital","01-19","Davis campus","01/16/2022","2022-01-16","2022-01-16","2022-01-19",list()
