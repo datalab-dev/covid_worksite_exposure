@@ -1,39 +1,35 @@
-,campus_building,worksite,report_date,location,potential_exposure_dates,start,end,standardized_exposure_dates,geometry
-2,202 Cousteau Place,202 Cousteau Place,29-Oct,Davis campus,10/28/2021,10/28/2021,10/28/2021,10/29/2021,list()
-6,"359 North Sage St.,The Green","359 North Sage St.,The Green",8-Feb,Davis campus,"02-02
- - 02-04",2/2/2021,2/4/2021,2/8/2021,list()
-7,4-Aug,4-Aug,4-Aug,Davis campus,28-Jul,7/28/2021,7/28/2021,8/4/2021,list()
-613,Alhambra Cannery,Alhambra Cannery,31-Jan,Off campus,1/28/2022,1/28/2022,1/28/2022,1/31/2022,list()
-633,Antenna Farm,Antenna Farm,10-Nov,Davis campus,"11/08/2021
- - 11/10/2021",11/8/2021,11/10/2021,11/10/2021,list()
-1342,"CA Animal Health and Food Safety Lab, Turlock","CA Animal Health and Food Safety Lab, Turlock",22-Sep,Off campus,"09-13
- - 09-15",9/13/2021,9/15/2021,9/22/2021,list()
-1343,CAHFS-Turlock Laboratory,CAHFS-Turlock Laboratory,6-Jan,Off campus,1/3/2022,1/3/2022,1/3/2022,1/6/2022,list()
-1344,CAHFS San Bernardino Lab,CAHFS San Bernardino Lab,4-Aug,Off campus,"07-27
- - 07-29",7/27/2021,7/29/2021,8/4/2021,list()
-1852,Center for Child and Family Studies,Center for Child and Family Studies,3-Feb,Davis city,2/2/2022,2/2/2022,2/2/2022,2/3/2022,list()
-1964,Center for Mind and Brain,Center for Mind and Brain,21-Jan,Davis campus,1/20/2022,1/20/2022,1/20/2022,1/21/2022,list()
-3396,Design & Construction Management,Design & Construction Management,18-Jan,Davis campus,1/18/2022,1/18/2022,1/18/2022,1/18/2022,list()
-3606,Genome and Biomedical Sciences Facility,Genome Center,14-Feb,Davis campus,2/11/2022,2/11/2022,2/11/2022,2/14/2022,list()
-3607,Genome and Biomedical Sciences Facility,Genome and Biomedical Sciences,21-Jan,Davis campus,1/19/2022,1/19/2022,1/19/2022,1/21/2022,list()
-3772,"Granite Canyon Laboratory, Monterey, CA","Granite Canyon Laboratory, Monterey, CA",5-Aug,Off campus,"07-25
- - 08-04",7/25/2021,8/4/2021,8/5/2021,list()
-11738,San Bernardino Lab,San Bernardino Lab,25-Jan,Off campus,"01-20
- - 01-21",1/20/2021,1/21/2021,1/25/2021,list()
-11739,San Bernardino Lab,San Bernardino Lab,12-Jan,Off campus,"01-05
- - 01-07",1/5/2021,1/7/2021,1/12/2021,list()
-11740,San Bernardino Lab,San Bernardino Lab,12-Jan,Off campus,"01-05
- - 01-07",1/5/2021,1/7/2021,1/12/2021,list()
-11741,San Bernardino Lab,San Bernardino Lab,25-Jan,Off campus,"01-20
- - 01-21",1/20/2021,1/21/2021,1/25/2021,list()
-16197,Sereno Hall,Sereno Hall,18-Jan,Davis campus,1/13/2022,1/13/2022,1/13/2022,1/18/2022,list()
-20166,Talara Hall,Talara Hall,12-Jan,Davis campus,1/5/2022,1/5/2022,1/5/2022,1/12/2022,list()
-20167,"TANA arts facility, 1224 Lemen Av, Woodland","TANA arts facility, 1224 Lemen Av, Woodland",14-Jul,Off campus,"07-11
- - 07-12",7/11/2021,7/12/2021,7/14/2021,list()
-22573,Ticon II,Ticon II,12-Jan,Off campus,1/4/2022,1/4/2022,1/4/2022,1/12/2022,list()
-22603,Tulare Lab,Tulare Lab,12-Jan,Off campus,"01-03
- - 01-05",1/3/2021,1/5/2021,1/12/2021,list()
-22871,Vet Med-Tulare,Vet Med-Tulare,29-Sep,Off campus,"09-24
- - 09-26",9/24/2021,9/26/2021,9/29/2021,list()
-23039,"Vet Med Teaching & Research Center, Tulare","Vet Med Teaching & Research Center, Tulare",7-Feb,Off campus,"02/04/2022
- - 02/05/2022",2/4/2022,2/5/2022,2/7/2022,list()
+"","campus_building","worksite","report_date","location","potential_exposure_dates","start","end","standardized_exposure_dates","geometry"
+"2","202 Cousteau Place","202 Cousteau Place","10-29","Davis campus","10/28/2021","2021-10-28","2021-10-28","2021-10-29",list()
+"6","359 North Sage St.,The Green","359 North Sage St.,The Green","02-08","Davis campus","02-02
+ - 02-04","2021-02-02","2021-02-04","2021-02-08",list()
+"7","8-4","8-4","08-04","Davis campus","07-28","2021-07-28","2021-07-28","2021-08-04",list()
+"613","Alhambra Cannery","Alhambra Cannery","01-31","Off campus","01/28/2022","2022-01-28","2022-01-28","2022-01-31",list()
+"633","Antenna Farm","Antenna Farm","11-10","Davis campus","11/08/2021
+ - 11/10/2021","2021-11-08","2021-11-10","2021-11-10",list()
+"1342","CA Animal Health and Food Safety Lab, Turlock","CA Animal Health and Food Safety Lab, Turlock","22-Sep","Off campus","09-13
+ - 09-15","2021-09-13","2021-09-15","2021-09-22",list()
+"1343","CAHFS-Turlock Laboratory","CAHFS-Turlock Laboratory","01-06","Off campus","01/03/2022","2022-01-03","2022-01-03","2022-01-06",list()
+"1344","CAHFS San Bernardino Lab","CAHFS San Bernardino Lab","08-04","Off campus","07-27
+ - 07-29","2021-07-27","2021-07-29","2021-08-04",list()
+"1852","Center for Child and Family Studies","Center for Child and Family Studies","02-03","Davis city","02/02/2022","2022-02-02","2022-02-02","2022-02-03",list()
+"1964","Center for Mind and Brain","Center for Mind and Brain","01-21","Davis campus","01/20/2022","2022-01-20","2022-01-20","2022-01-21",list()
+"3396","Design & Construction Management","Design & Construction Management","01-18","Davis campus","01/18/2022","2022-01-18","2022-01-18","2022-01-18",list()
+"3772","Granite Canyon Laboratory, Monterey, CA","Granite Canyon Laboratory, Monterey, CA","08-05","Off campus","07-25
+ - 08-04","2021-07-25","2021-08-04","2021-08-05",list()
+"11740","San Bernardino Lab","San Bernardino Lab","01-25","Off campus","01-20
+ - 01-21","2021-01-20","2021-01-21","2021-01-25",list()
+"11741","San Bernardino Lab","San Bernardino Lab","01-12","Off campus","01-05
+ - 01-07","2021-01-05","2021-01-07","2021-01-12",list()
+"11742","San Bernardino Lab","San Bernardino Lab","01-12","Off campus","01-05
+ - 01-07","2021-01-05","2021-01-07","2021-01-12",list()
+"11743","San Bernardino Lab","San Bernardino Lab","01-25","Off campus","01-20
+ - 01-21","2021-01-20","2021-01-21","2021-01-25",list()
+"20167","TANA arts facility, 1224 Lemen Av, Woodland","TANA arts facility, 1224 Lemen Av, Woodland","07-14","Off campus","07-11
+ - 07-12","2021-07-11","2021-07-12","2021-07-14",list()
+"22573","Ticon II","Ticon II","01-12","Off campus","01/04/2022","2022-01-04","2022-01-04","2022-01-12",list()
+"22603","Tulare Lab","Tulare Lab","01-12","Off campus","01-03
+ - 01-05","2021-01-03","2021-01-05","2021-01-12",list()
+"22871","Vet Med-Tulare","Vet Med-Tulare","29-Sep","Off campus","09-24
+ - 09-26","2021-09-24","2021-09-26","2021-09-29",list()
+"23039","Vet Med Teaching & Research Center, Tulare","Vet Med Teaching & Research Center, Tulare","02-07","Off campus","02/04/2022
+ - 02/05/2022","2022-02-04","2022-02-05","2022-02-07",list()
