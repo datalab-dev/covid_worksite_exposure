@@ -16,6 +16,7 @@ Aggie Surplus & Custodial,Building Maintenance Services
 Animal Husbandry Sheep Shed,Sheep Barn Lab
 Animal Resource Service R1,Comparative Pathology Lab
 Animal Resource Service V (AH Goat),Animal Resource Service V
+Animal Resources Service H-1,H-Building Vet Lab
 Aquatic Biology & Environmental Science Bldg,Aquatic Biology & Environmental Science building
 Atriums at La Rue 100,Atriums at La Rue Park
 Baseball Storage,Dobbins Baseball Complex
@@ -30,8 +31,11 @@ CFA Mondavi,Mondavi Center for the Performing Arts
 CFA Mondavi,Mondavi Center - Jackson Hall
 Chemistry,Chemistry Building
 Chemistry Rock Hall,Rock Hall
+Chemistry Rock Hall,Peter A. Rock Hall
 Cole A,Cole Facility
 Cruess Hall,Cruess hall
+Cuarto Dining Commons,Cuarto Hall
+Cuarto Dining Commons,Cuarto Market
 Dairy Barn 2,D Barn / Facilities Shop
 Dairy Barn 2,Dairy Barn
 Davis 1850 Research Park Drive,1850 Research Park Dr
@@ -45,11 +49,15 @@ Fire & Police Building,Police
 Fire & Police Building,Police & Fire Building
 Fire & Police Building,Police Building
 Fire & Police Building,Fire Department
+Fire & Police Building,Police Department
 Fleet Services Central Garage Campus,Fleet Services Central Garage
+Genome and Biomedical Sciences Facility,Genome and Biomedical Sciences
+Genome and Biomedical Sciences Facility,Genome Center
 Ghausi Hall,UC Pavement Research Center
 Giedt Hall,Geidt Hall
 Green Hall,Life Sciences/Green Hall
 Green Hall,Green Hall (Life Sciences)
+Green Hall,Controlled Environment Facility-A
 Haring Hall,Harding Hall
 Head House 001,Orchard Park Greenhouse Complex
 Housing Administration,Student Housing Building
@@ -64,6 +72,7 @@ Medical Sciences I B (Carlson Health Sciences Library),Medical Sciences 1B
 Medical Sciences I B (Carlson Health Sciences Library),Carlson Health Sciences Library
 Medical Sciences I C,Medical Sciences
 Medical Sciences I C,Medical Sciences 1C
+Medical Sciences I D,Medical Sciences D
 Memorial Union,Coffee House
 Memorial Union,Ctr for Chicanx & Latinx Academic Student Success
 Memorial Union,Memorial Union Bookstore
@@ -71,9 +80,11 @@ Memorial Union,Memorial Union Moss Room
 Memorial Union,UC Davis Bookstore
 Memorial Union,Memorial Union Games Area
 Memorial Union,Campus Bookstore
+Memorial Union,Campus Store / Memorial Union
 North Hall,Women's Resources and Research Center
 Outdoor Adventures Shop,Outdoor Adventures
 Plant & Environmental Sciences,Plant and Enviro Sciences
+Plant & Environmental Sciences,Plant and Environmental Sciences
 Primate Laboratory,California National Primate Research Center
 Primate Laboratory,Primate Center
 Primate Laboratory,Primate Colony
@@ -84,6 +95,11 @@ Pritchard VMTH,Vet Med Teaching Hospital Small Animal Clinic
 Pritchard VMTH,VMTH
 Pritchard VMTH,Vet Med Teaching Hospital
 Recreation Pool Bath House,Rec Pool
+Recreation Pool Bath House,Recreation Pool
+Regan Campo,Campo Hall
+Regan Paloma,Paloma Hall
+Regan Rienda,Rienda Hall
+RMI South,Robert Mondavi Institute - South
 Roessler Hall,Roessler hall
 Russell Ranch-Shop,Russell Ranch
 School of Education Building,School of Education
@@ -91,6 +107,8 @@ Sciences Lab Lecture Hall,Science Lecture Building
 Sciences Lab Lecture Hall,Sciences Lecture Hall
 Scrubs Cafe,Vet Med Admin Building
 Scrubs Cafe,Vet Med Admin Center
+Scrubs Cafe,Scrubs Café
+Segundo Bixby,Bixby Hall
 Segundo Dining Commons,Segundo Dining commons
 Segundo Dining Commons,Segundo Hall
 Segundo Gilmore,Gilmore Hall
@@ -98,13 +116,19 @@ Segundo Malcolm,Malcolm Hall
 Segundo Malcolm,Malcom Hall
 Segundo Miller,Miller Hall
 Segundo North - Henry Alder Hall,Alder Hall
+Segundo North - Henry Alder Hall,Henry Alder Hall
 Segundo North - OE Thompson Hall,Thompson Hall
 Segundo Ryerson,Ryerson Hall
 Segundo Services Center,Segundo Student Services
 Segundo Services Center,Student Housing & Dining Services
 Shasta Hall,Emerson Hall
 Shields Library,Peter J.Shields Library
+Shields Library,Davis Shields Library
 Shrem Museum of Art,Manetti Shrem Museum
+Silo,The Silo
+Silo,UC Davis Silo
+Silo South,Craft Center
+Silo South,Silo Market
 Soccer Lacrosse Field,Aggie Soccer Field
 Social Sciences & Humanities,Social Science & Humanities
 Social Sciences & Humanities,Social Sciences and Humanities
@@ -115,10 +139,12 @@ Storer Hall,Storer Hall Research Lab
 Student Community Center,AB540 and Undocumented Student Center
 Student Farm Greenhouse,Student Farm - Greenhouse
 Student Health & Wellness Center,Student Heath & Counseling Services
+Student Health & Wellness Center,Student Health and Counseling Services
 Surge 2,Surge II
 Teaching and Learning Complex,Teaching & Learning Complex
 Teaching and Learning Complex,UC Davis Teaching & Learning Complex
 Temporary Building 009,Temporary Building 9
+Temporary Building 013,TB 13
 Temporary Building 206,Telecom Building
 Tercero 3 Bldg 6 - Mahogany,Mahagony Hall
 Tercero 4 Bldg 2 - Redwood Hall,Tercero Redwood
@@ -130,6 +156,8 @@ Tercero Community,Tercero Services Center
 Tercero Community,Trecero Dining Commons
 Tercero Community,Tercero Admin Building
 Tercero Community,Tercero Dining Hall
+Tercero Community,Tercero Dinning Commons
+Tercero Community,Tercero Hall
 The Cannery Farm,1550 Cannery Avenue
 The Green 184 Horizon Street,The Green
 The Green 184 Horizon Street,The Green (West Village)
@@ -142,21 +170,29 @@ The Green 2231 Jade Street,The Green; 2231 Jade St.
 The Grove,The Grove (Surge III)
 The Grove,The Grove (Surge III) Lecture Hall
 The Grove,The Grove - Academic Surge 3
+The Grove,Communications Resources Trailer
+Thoreau Hall,Tahoe Hall
 Thurman Laboratory,Thurman Lab
+Thurman Laboratory,California Animal Health & Food Safety Laboratory
 Toomey Weight Room,Toomey Weight Room Field
 Transportation Services,Transportation and Parking Services
 UC Davis Coffee Center,Coffee Center
 UC Davis Health Stadium East,UC Davis Health Stadium
 Unitrans Maintenance Facility,Unitrans Maintenance Shop
 University Hotel,Hyatt Place
+Utilities Headquarters,Central Heating and Cooling Plant
 Valley Hall,Gladys Hall
+Veg Crops Bulb Storage House,UC Davis Student Farm
 Veg Crops Field Headqtrs A,Vegetable Crops Headquarters
 Vet Med 3A-MPT,Vet Med 3A (MPT)
 Vet Med 3A-MPT,VM Mulit-Purpose Teaching Facility
 Vet Med 3A-MPT,Veterinary Medical Teaching Hospital
 Vet Med 3A-MPT,VMTH Clinical Labs
+Vet Med 3A-MPT,Veterinary Teaching Hospital
 Vet Med Student Services and Administration Center,VMTH Large Animal Clinic
 Veterinary Medicine 2,Vet Med 2
+Veterinary Medicine 2,Vet Med II
+VMTH Feed,Vet Med C Barn
 VMTH Ward,VMTH B Barn
 Voorhies Hall,Voorhies Hal
 Wastewater Treatment Plant Administration Building 2,Waste Water Treatment Plant
@@ -165,4 +201,5 @@ Wastewater Treatment Plant Administration Building 2,Wastewater Treatment Plant 
 Wastewater Treatment Plant Administration Building 2,Wastewater Treatment Plant Administration Building
 Watershed Science Facility,Watershed Sciences Building
 West Village The Green 298 Horizon Street,"298 Horizon St., The Green"
-Animal Resources Service H-1,H-Building Vet Lab
+West Village The Green 301 Celadon Street,The Green at West Village - 301 Celadon St.
+West Village Viridian 1,Sage Street Market
