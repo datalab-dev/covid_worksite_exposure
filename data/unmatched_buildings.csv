@@ -6,65 +6,67 @@
 "9","359 North Sage St.,The Green","359 North Sage St.,The Green","02-08","Davis campus","02-02
  - 02-04","2021-02-02","2021-02-04","2021-02-08",list()
 "10","8-4","8-4","08-04","Davis campus","07-28","2021-07-28","2021-07-28","2021-08-04",list()
-"718","Air Quality Research Center (Drew Ave)","Air Quality Research Center (Drew Ave)","04-08","Davis city","04/06/2022","2022-04-06","2022-04-06","2022-04-08",list()
-"719","Alhambra Cannery","Alhambra Cannery","01-31","Off campus","01/28/2022","2022-01-28","2022-01-28","2022-01-31",list()
-"748","Antenna Farm","Antenna Farm","11-10","Davis campus","11/08/2021
+"741","Agronomy Field Headquarters","Agronomy Field Headquarters","04-18","Davis campus","04/14/2022","2022-04-14","2022-04-14","2022-04-18",list()
+"742","Air Quality Research Center (Drew Ave)","Air Quality Research Center (Drew Ave)","04-08","Davis city","04/06/2022","2022-04-06","2022-04-06","2022-04-08",list()
+"743","Alhambra Cannery","Alhambra Cannery","01-31","Off campus","01/28/2022","2022-01-28","2022-01-28","2022-01-31",list()
+"772","Antenna Farm","Antenna Farm","11-10","Davis campus","11/08/2021
  - 11/10/2021","2021-11-08","2021-11-10","2021-11-10",list()
-"1830","CA Animal Health and Food Safety Lab, Turlock","CA Animal Health and Food Safety Lab, Turlock","22-Sep","Off campus","09-13
+"1854","CA Animal Health and Food Safety Lab, Turlock","CA Animal Health and Food Safety Lab, Turlock","22-Sep","Off campus","09-13
  - 09-15","2021-09-13","2021-09-15","2021-09-22",list()
-"1831","CAHFS-Turlock Laboratory","CAHFS-Turlock Laboratory","01-06","Off campus","01/03/2022","2022-01-03","2022-01-03","2022-01-06",list()
-"1832","CAHFS San Bernardino Lab","CAHFS San Bernardino Lab","08-04","Off campus","07-27
+"1855","CAHFS-Turlock Laboratory","CAHFS-Turlock Laboratory","01-06","Off campus","01/03/2022","2022-01-03","2022-01-03","2022-01-06",list()
+"1856","CAHFS San Bernardino Lab","CAHFS San Bernardino Lab","08-04","Off campus","07-27
  - 07-29","2021-07-27","2021-07-29","2021-08-04",list()
-"2700","Center for Child and Family Studies","Center for Child and Family Studies","02-03","Davis city","02/02/2022","2022-02-02","2022-02-02","2022-02-03",list()
-"2776","Center for Mind and Brain","Center for Mind and Brain","01-21","Davis campus","01/20/2022","2022-01-20","2022-01-20","2022-01-21",list()
-"4048","Da Vinci Court","Da Vinci Court","02-23","Davis city","02/22/2022","2022-02-22","2022-02-22","2022-02-23",list()
-"4053","Design & Construction Management","Design & Construction Management","01-18","Davis campus","01/18/2022","2022-01-18","2022-01-18","2022-01-18",list()
-"4158","Energy Conservation Center","Energy Conservation Center","04-07","Davis campus","04/05/2022","2022-04-05","2022-04-05","2022-04-07",list()
-"4258","Facilities Management","Facilities Management","04-06","Davis campus","04/05/2022","2022-04-05","2022-04-05","2022-04-06",list()
-"4783","Gladys Valley Hall","Gladys Valley Hall","03-29","Davis campus","03/28/2022","2022-03-28","2022-03-28","2022-03-29",list()
-"4784","Gladys Valley Hall","Gladys Valley Hall","03-29","Davis campus","03/28/2022","2022-03-28","2022-03-28","2022-03-29",list()
-"4785","Gladys Valley Hall","Gladys Valley Hall","04-05","Davis campus","04/04/2022","2022-04-04","2022-04-04","2022-04-05",list()
-"4786","Gladys Valley Hall","Gladys Valley Hall","04-05","Davis campus","04/04/2022","2022-04-04","2022-04-04","2022-04-05",list()
-"4792","Granite Canyon Laboratory, Monterey, CA","Granite Canyon Laboratory, Monterey, CA","08-05","Off campus","07-25
+"2724","Center for Child and Family Studies","Center for Child and Family Studies","02-03","Davis city","02/02/2022","2022-02-02","2022-02-02","2022-02-03",list()
+"2800","Center for Mind and Brain","Center for Mind and Brain","01-21","Davis campus","01/20/2022","2022-01-20","2022-01-20","2022-01-21",list()
+"4077","Da Vinci Court","Da Vinci Court","02-23","Davis city","02/22/2022","2022-02-22","2022-02-22","2022-02-23",list()
+"4082","Design & Construction Management","Design & Construction Management","01-18","Davis campus","01/18/2022","2022-01-18","2022-01-18","2022-01-18",list()
+"4187","Energy Conservation Center","Energy Conservation Center","04-07","Davis campus","04/05/2022","2022-04-05","2022-04-05","2022-04-07",list()
+"4287","Facilities Management","Facilities Management","04-06","Davis campus","04/05/2022","2022-04-05","2022-04-05","2022-04-06",list()
+"4812","Gladys Valley Hall","Gladys Valley Hall","03-29","Davis campus","03/28/2022","2022-03-28","2022-03-28","2022-03-29",list()
+"4813","Gladys Valley Hall","Gladys Valley Hall","04-05","Davis campus","04/04/2022","2022-04-04","2022-04-04","2022-04-05",list()
+"4814","Gladys Valley Hall","Gladys Valley Hall","04-05","Davis campus","04/04/2022","2022-04-04","2022-04-04","2022-04-05",list()
+"4815","Gladys Valley Hall","Gladys Valley Hall","03-29","Davis campus","03/28/2022","2022-03-28","2022-03-28","2022-03-29",list()
+"4821","Granite Canyon Laboratory, Monterey, CA","Granite Canyon Laboratory, Monterey, CA","08-05","Off campus","07-25
  - 08-04","2021-07-25","2021-08-04","2021-08-05",list()
-"4806","Grove Surge 3","Grove Surge 3","04-06","Davis campus","04/05/2022","2022-04-05","2022-04-05","2022-04-06",list()
-"12883","MIND Institute","MIND Institute","04-06","Davis city","04/04/2022","2022-04-04","2022-04-04","2022-04-06",list()
-"15505","Peter A. Shields Library","Peter A. Shields Library","02-28","Davis campus","02/24/2022","2022-02-24","2022-02-24","2022-02-28",list()
-"15960","Repro Graphics (West Sacramento)","Repro Graphics (West Sacramento)","04-13","Off campus","04/11/2022","2022-04-11","2022-04-11","2022-04-13",list()
-"16085","San Bernardino Lab","San Bernardino Lab","01-25","Off campus","01-20
+"4835","Grove Surge 3","Grove Surge 3","04-06","Davis campus","04/05/2022","2022-04-05","2022-04-05","2022-04-06",list()
+"8845","Jackson Hall","Jackson Hall","04-18","Davis campus","04/14/2022","2022-04-14","2022-04-14","2022-04-18",list()
+"12948","MIND Institute","MIND Institute","04-06","Davis city","04/04/2022","2022-04-04","2022-04-04","2022-04-06",list()
+"15673","Peter A. Shields Library","Peter A. Shields Library","02-28","Davis campus","02/24/2022","2022-02-24","2022-02-24","2022-02-28",list()
+"16128","Repro Graphics (West Sacramento)","Repro Graphics (West Sacramento)","04-13","Off campus","04/11/2022","2022-04-11","2022-04-11","2022-04-13",list()
+"16253","San Bernardino Lab","San Bernardino Lab","01-25","Off campus","01-20
  - 01-21","2021-01-20","2021-01-21","2021-01-25",list()
-"16086","San Bernardino Lab","San Bernardino Lab","01-25","Off campus","01-20
+"16254","San Bernardino Lab","San Bernardino Lab","01-25","Off campus","01-20
  - 01-21","2021-01-20","2021-01-21","2021-01-25",list()
-"16087","San Bernardino Lab","San Bernardino Lab","01-12","Off campus","01-05
+"16255","San Bernardino Lab","San Bernardino Lab","01-12","Off campus","01-05
  - 01-07","2021-01-05","2021-01-07","2021-01-12",list()
-"16088","San Bernardino Lab","San Bernardino Lab","01-12","Off campus","01-05
+"16256","San Bernardino Lab","San Bernardino Lab","01-12","Off campus","01-05
  - 01-07","2021-01-05","2021-01-07","2021-01-12",list()
-"17058","Segundo Area Service Desk","Segundo Area Service Desk","03-01","Davis campus","03/01/2022","2022-03-01","2022-03-01","2022-03-01",list()
-"20884","Segundo Service Center","Segundo Service Center","03-11","Davis campus","03/08/2022","2022-03-08","2022-03-08","2022-03-11",list()
-"25994","Student Community Center Coffee House","Student Community Center Coffee House","04-15","Davis campus","04/12/2022","2022-04-12","2022-04-12","2022-04-15",list()
-"26023","Student Recruitment & Retention Center","Student Recruitment & Retention Center","04-13","Davis campus","04/11/2022","2022-04-11","2022-04-11","2022-04-13",list()
-"26024","Supply Chain Management","Supply Chain Management","02-18","Davis city","02/15/2022","2022-02-15","2022-02-15","2022-02-18",list()
-"26028","TANA arts facility, 1224 Lemen Av, Woodland","TANA arts facility, 1224 Lemen Av, Woodland","07-14","Off campus","07-11
+"17226","Segundo Area Service Desk","Segundo Area Service Desk","03-01","Davis campus","03/01/2022","2022-03-01","2022-03-01","2022-03-01",list()
+"21214","Segundo Service Center","Segundo Service Center","03-11","Davis campus","03/08/2022","2022-03-08","2022-03-08","2022-03-11",list()
+"26359","Student Community Center Coffee House","Student Community Center Coffee House","04-15","Davis campus","04/12/2022","2022-04-12","2022-04-12","2022-04-15",list()
+"26388","Student Recruitment & Retention Center","Student Recruitment & Retention Center","04-13","Davis campus","04/11/2022","2022-04-11","2022-04-11","2022-04-13",list()
+"26389","Supply Chain Management","Supply Chain Management","02-18","Davis city","02/15/2022","2022-02-15","2022-02-15","2022-02-18",list()
+"26396","TANA arts facility, 1224 Lemen Av, Woodland","TANA arts facility, 1224 Lemen Av, Woodland","07-14","Off campus","07-11
  - 07-12","2021-07-11","2021-07-12","2021-07-14",list()
-"26399","Teaching and Research Animal Care Services (TRACS)","Teaching and Research Animal Care Services (TRACS)","03-28","Davis campus","03/24/2022","2022-03-24","2022-03-24","2022-03-28",list()
-"28435","Tercero Dining Services","Tercero Dining Services","04-11","Davis campus","04/07/2022","2022-04-07","2022-04-07","2022-04-11",list()
-"28758","The Learning Center","The Learning Center","04-08","Davis campus","04/07/2022","2022-04-07","2022-04-07","2022-04-08",list()
-"28759","The Learning Center","The Learning Center","04-08","Davis campus","04/07/2022","2022-04-07","2022-04-07","2022-04-08",list()
-"28760","The Learning Center","The Learning Center","04-07","Davis campus","04/05/2022","2022-04-05","2022-04-05","2022-04-07",list()
-"28761","The Learning Center","The Learning Center","04-07","Davis campus","04/05/2022","2022-04-05","2022-04-05","2022-04-07",list()
-"28797","Ticon II","Ticon II","01-12","Off campus","01/04/2022","2022-01-04","2022-01-04","2022-01-12",list()
-"28827","Tulare Lab","Tulare Lab","01-12","Off campus","01-03
+"26767","Teaching and Research Animal Care Services (TRACS)","Teaching and Research Animal Care Services (TRACS)","03-28","Davis campus","03/24/2022","2022-03-24","2022-03-24","2022-03-28",list()
+"28803","Tercero Dining Services","Tercero Dining Services","04-11","Davis campus","04/07/2022","2022-04-07","2022-04-07","2022-04-11",list()
+"29126","The Learning Center","The Learning Center","04-07","Davis campus","04/05/2022","2022-04-05","2022-04-05","2022-04-07",list()
+"29127","The Learning Center","The Learning Center","04-08","Davis campus","04/07/2022","2022-04-07","2022-04-07","2022-04-08",list()
+"29128","The Learning Center","The Learning Center","04-07","Davis campus","04/05/2022","2022-04-05","2022-04-05","2022-04-07",list()
+"29129","The Learning Center","The Learning Center","04-08","Davis campus","04/07/2022","2022-04-07","2022-04-07","2022-04-08",list()
+"29165","Ticon II","Ticon II","01-12","Off campus","01/04/2022","2022-01-04","2022-01-04","2022-01-12",list()
+"29195","Tulare Lab","Tulare Lab","01-12","Off campus","01-03
  - 01-05","2021-01-03","2021-01-05","2021-01-12",list()
-"29229","Vet Med-Tulare","Vet Med-Tulare","29-Sep","Off campus","09-24
+"29597","Vet Med-Tulare","Vet Med-Tulare","29-Sep","Off campus","09-24
  - 09-26","2021-09-24","2021-09-26","2021-09-29",list()
-"29357","Vet Med 3A - MPT","Vet Med 3A - MPT","03-11","Davis campus","03/07/2022","2022-03-07","2022-03-07","2022-03-11",list()
-"29358","Vet Med 3A - MPT","Vet Med 3A - MPT","03-11","Davis campus","03/07/2022","2022-03-07","2022-03-07","2022-03-11",list()
-"29359","Vet Med 3A - MPT","Vet Med 3A - MPT","04-05","Davis campus","04/04/2022","2022-04-04","2022-04-04","2022-04-05",list()
-"29360","Vet Med 3A - MPT","Vet Med 3A - MPT","04-05","Davis campus","04/04/2022","2022-04-04","2022-04-04","2022-04-05",list()
-"29378","Vet Med Teaching & Research Center, Tulare","Vet Med Teaching & Research Center, Tulare","02-07","Off campus","02/04/2022
+"29725","Vet Med 3A - MPT","Vet Med 3A - MPT","03-11","Davis campus","03/07/2022","2022-03-07","2022-03-07","2022-03-11",list()
+"29726","Vet Med 3A - MPT","Vet Med 3A - MPT","03-11","Davis campus","03/07/2022","2022-03-07","2022-03-07","2022-03-11",list()
+"29727","Vet Med 3A - MPT","Vet Med 3A - MPT","04-05","Davis campus","04/04/2022","2022-04-04","2022-04-04","2022-04-05",list()
+"29728","Vet Med 3A - MPT","Vet Med 3A - MPT","04-05","Davis campus","04/04/2022","2022-04-04","2022-04-04","2022-04-05",list()
+"29746","Vet Med Teaching & Research Center, Tulare","Vet Med Teaching & Research Center, Tulare","02-07","Off campus","02/04/2022
  - 02/05/2022","2022-02-04","2022-02-05","2022-02-07",list()
-"29397","Veterinary Medicine MPT","Veterinary Medicine MPT","03-31","Davis campus","03/29/2022
+"29765","Veterinary Medicine MPT","Veterinary Medicine MPT","03-31","Davis campus","03/29/2022
  - 03/30/2022","2022-03-29","2022-03-30","2022-03-31",list()
-"29398","Veterinary Medicine VM3A","Veterinary Medicine VM3A","03-31","Davis campus","03/30/2022","2022-03-30","2022-03-30","2022-03-31",list()
-"29399","Veterinary Small Animal Clinic","Veterinary Small Animal Clinic","03-08","Davis campus","03/07/2022","2022-03-07","2022-03-07","2022-03-08",list()
-"32012","Wyatt Pavilion Theatre","Wyatt Pavilion Theatre","03-11","Davis campus","03/09/2022","2022-03-09","2022-03-09","2022-03-11",list()
+"29766","Veterinary Medicine VM3A","Veterinary Medicine VM3A","03-31","Davis campus","03/30/2022","2022-03-30","2022-03-30","2022-03-31",list()
+"29767","Veterinary Small Animal Clinic","Veterinary Small Animal Clinic","03-08","Davis campus","03/07/2022","2022-03-07","2022-03-07","2022-03-08",list()
+"32479","Wyatt Pavilion Theatre","Wyatt Pavilion Theatre","03-11","Davis campus","03/09/2022","2022-03-09","2022-03-09","2022-03-11",list()
