@@ -21,6 +21,7 @@ library(stringr)
 library(sf)
 library(readtext)
 library(lubridate)
+library(geojsonio)
 
 
 base_url<-"https://campusready.ucdavis.edu/potential-exposure"
@@ -314,8 +315,13 @@ write.csv(unmatched, "./data/unmatched_buildings.csv")
 
 
 #write to geojson to get formatting that leaflet can use
-st_write(matched, "./mapinput.geojson", delete_dsn = TRUE)
 
+#subset to the last x observations to keep the file small
+matched.subset<-tail(matched, 1000)
+
+st_write(matched.subset, "./mapinput.geojson", delete_dsn = TRUE)
+#topojson_write(input=matched, file="./mapinput.topojson", overwrite = TRUE) #GDAL can't write topojson right now?
+#st_write(matched, "./mapinput.fgb", delete_dsn = TRUE, driver="FlatGeobuf")
 
 #convert to txt file so we can edit the raw text
 file.rename("./mapinput.geojson", "./mapinput.txt")
