@@ -316,8 +316,8 @@ write.csv(unmatched, "./data/unmatched_buildings.csv")
 
 #write to geojson to get formatting that leaflet can use
 
-#subset to the last x observations to keep the file small
-matched.subset<-tail(matched, 1000)
+#subset observations to keep the file small
+matched.subset<-matched[as.Date(matched$start, format="%Y-%m-%d")>"2022-01-01",]
 
 st_write(matched.subset, "./mapinput.geojson", delete_dsn = TRUE)
 #topojson_write(input=matched, file="./mapinput.topojson", overwrite = TRUE) #GDAL can't write topojson right now?
@@ -331,6 +331,7 @@ txt <- readtext("./mapinput.txt")
 
 #adds javascript formatting
 js <- paste0("var exposures = ", txt$text)
+#js<-jsonlite::minify(js) #minify the text
 
 #write to js file
 #writeLines(js, "~/GitHub/covid_worksite_exposure/docs/exposure_data.js")
