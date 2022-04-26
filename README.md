@@ -7,6 +7,8 @@ Project Links:
 
 - [Interactive Web Map](https://datalab-dev.github.io/covid_worksite_exposure/) - use the map in your full browser
 
+**NOTE:** The interactive web map and the spatial data currently only display data for the last 6 months (due to file size issues), but the `exposures.csv` file contains all of the data scraped from the UC Davis Potential Worksite Exposure Reporting (AB 685) website.
+
 # Team
 
 **Coding:**
