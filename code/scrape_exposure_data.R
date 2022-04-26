@@ -21,7 +21,7 @@ library(stringr)
 library(sf)
 library(readtext)
 library(lubridate)
-library(geojsonio)
+#library(geojsonio)
 
 
 base_url<-"https://campusready.ucdavis.edu/potential-exposure"
@@ -317,7 +317,8 @@ write.csv(unmatched, "./data/unmatched_buildings.csv")
 #write to geojson to get formatting that leaflet can use
 
 #subset observations to keep the file small
-matched.subset<-matched[as.Date(matched$start, format="%Y-%m-%d")>"2022-01-01",]
+six.months<-Sys.Date()-months(6)
+matched.subset<-matched[as.Date(matched$start, format="%Y-%m-%d")>six.months,]
 
 st_write(matched.subset, "./mapinput.geojson", delete_dsn = TRUE)
 #topojson_write(input=matched, file="./mapinput.topojson", overwrite = TRUE) #GDAL can't write topojson right now?
