@@ -318,11 +318,11 @@ write.csv(unmatched, "./data/unmatched_buildings.csv")
 
 
 
-#write to geojson to get formatting that leaflet can use
-
-#subset observations to keep the file small
-three.months<-Sys.Date()-months(3)
-matched.subset<-matched[as.Date(matched$start, format="%Y-%m-%d")>three.months,]
+# #write to geojson to get formatting that leaflet can use
+# 
+# #subset observations to keep the file small
+# three.months<-Sys.Date()-months(3)
+# matched.subset<-matched[as.Date(matched$start, format="%Y-%m-%d")>three.months,]
 
 st_write(matched, "./mapinput.geojson", delete_dsn = TRUE)
 #topojson_write(input=matched, file="./mapinput.topojson", overwrite = TRUE) #GDAL can't write topojson right now?
