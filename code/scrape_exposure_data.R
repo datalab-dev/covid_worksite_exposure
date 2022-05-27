@@ -21,7 +21,10 @@ library(stringr)
 library(sf)
 library(readtext)
 library(lubridate)
-#library(geojsonio)
+library(geojsonio)
+library(rmapshaper)
+library(rgbif)
+library(sf)
 
 
 base_url<-"https://campusready.ucdavis.edu/potential-exposure"
@@ -314,15 +317,40 @@ unmatched <- combined[st_is_empty(combined$geometry) == TRUE, ]
 write.csv(unmatched, "./data/unmatched_buildings.csv")
 
 
+
 #write to geojson to get formatting that leaflet can use
 
 #subset observations to keep the file small
 three.months<-Sys.Date()-months(3)
 matched.subset<-matched[as.Date(matched$start, format="%Y-%m-%d")>three.months,]
 
-st_write(matched.subset, "./mapinput.geojson", delete_dsn = TRUE)
+st_write(matched, "./mapinput.geojson", delete_dsn = TRUE)
 #topojson_write(input=matched, file="./mapinput.topojson", overwrite = TRUE) #GDAL can't write topojson right now?
 #st_write(matched, "./mapinput.fgb", delete_dsn = TRUE, driver="FlatGeobuf")
+
+# Experimenting with simplifying the geojson using rmapshaper ------------------------------
+
+mapinput_geojson<-read_sf("./mapinput.geojson")#reads the geojson as a sf file
+
+matched_simplify<-ms_simplify(
+  mapinput_geojson,
+  keep = 0.05,
+  method = NULL,
+  weighting = 0.7,
+  keep_shapes = FALSE,
+  no_repair = FALSE,
+  snap = TRUE,
+  explode = FALSE,
+  force_FC = FALSE,
+  drop_null_geometries = TRUE,
+  snap_interval = NULL,
+  sys = FALSE,
+  sys_mem = 8
+) #it's supposed to make the file smaller
+ 
+st_write(matched_simplify, "./mapinput.geojson", delete_dsn = TRUE)
+
+# Resuming inital code ----------------------------------------------------
 
 #convert to txt file so we can edit the raw text
 file.rename("./mapinput.geojson", "./mapinput.txt")
