@@ -7,7 +7,7 @@ on:
     #           - cron:  '30 5,17 * * *'
     #           triggers the workflow every day at 5:30 and 17:30 UTC:
     # POSIX cron syntax: https://pubs.opengroup.org/onlinepubs/9699919799/utilities/crontab.html#tag_20_25_07
-    - cron:  '00 18,23 * * *' #run at 11:00am and 4:00pm pacific time
+    - cron:  '30 19,23 * * *' #run at 12:30am and 4:00pm pacific time
 
 jobs:
   build:
@@ -20,7 +20,7 @@ jobs:
           Rscript -e "install.packages(c('httr', 'jsonlite', 'xml2', 'rvest','stringr','readtext', 'lubridate', 'geojsonio', 'rmapshaper', 'rgbif', 's2'))"
       - name: Install packages from binary #install packages that need to be installed from source
         run:
-          Rscript -e "install.packages('sf', type="win.binary")"
+          Rscript -e "install.packages('sf', type='win.binary')"
       - name: Run Scraping Code File #Job 2: run the code that scrapes the workplace exposure site
         run:
           Rscript -e "source('code/scrape_exposure_data.R')"
