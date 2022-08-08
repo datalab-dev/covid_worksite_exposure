@@ -4,8 +4,8 @@ on:
     schedule:
     # * is a special character in YAML so you have to quote this string
     # Example: 
-    #           - cron:  '30 5,17 * * *'
-    #           triggers the workflow every day at 5:30 and 17:30 UTC:
+    #           - cron:  '00 5,20 * * *'
+    #           triggers the workflow every day at 5:00 and 20:00 UTC:
     # POSIX cron syntax: https://pubs.opengroup.org/onlinepubs/9699919799/utilities/crontab.html#tag_20_25_07
     - cron:  '30 19,23 * * *' #run at 12:30am and 4:00pm pacific time
 
