@@ -7,7 +7,7 @@ on:
     #           - cron:  '30 5,20 * * *'
     #           triggers the workflow every day at 5:30 and 17:30 UTC:
     # POSIX cron syntax: https://pubs.opengroup.org/onlinepubs/9699919799/utilities/crontab.html#tag_20_25_07
-    - cron:  '15 15,20 * * *' #run at 8:15am and 1:15pm pacific time
+    - cron:  '45 15,20 * * *' #run at 8:45am and 1:45pm pacific time
 
 jobs:
   build:
@@ -17,7 +17,7 @@ jobs:
       - uses: r-lib/actions/setup-r@v1 #set up the R environment
       - name: Install packages from binary #install packages that need to be installed from source
         run:
-          Rscript -e "install.packages('sf', 'V8', type='win.binary')"
+          Rscript -e "install.packages(c('sf', 'V8'), type='win.binary')"
       - name: Install packages #Job 1: install packages the next step will need
         run:
           Rscript -e "install.packages(c('httr', 'jsonlite', 'xml2', 'rvest','stringr','readtext', 'lubridate', 'geojsonio', 'rmapshaper', 'rgbif', 's2'))"
