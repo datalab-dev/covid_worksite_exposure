@@ -3,11 +3,11 @@ Scraping and visualizing the UC Davis Potential Worksite Exposure Reporting (AB 
 
 Project Links:
 
-- DataLab Post: [Unlocking Insights from Public Data: A Case Study with COVID-19 Exposure Data](https://datalab.ucdavis.edu/2021/09/23/unlocking-insights-from-public-data-a-case-study-with-covid-19-exposure-data/)
-
 - [Interactive Web Map](https://datalab-dev.github.io/covid_worksite_exposure/) - use the map in your full browser
 
-**NOTE:** The interactive web map and the spatial data currently only display data for the last 6 months (due to file size issues), but the `exposures.csv` file contains all of the data scraped from the UC Davis Potential Worksite Exposure Reporting (AB 685) website.
+- DataLab Post: [Unlocking Insights from Public Data: A Case Study with COVID-19 Exposure Data](https://datalab.ucdavis.edu/2021/09/23/unlocking-insights-from-public-data-a-case-study-with-covid-19-exposure-data/)
+
+
 
 # Team
 
@@ -17,7 +17,7 @@ Project Links:
 
 [Elijah Stockwell](https://github.com/elistockwell), DataLab Student Employee
 
-[Erika Lopez](https://github.com/erklopez), DataLab Student Employee
+[Sebastian Lopez](https://github.com/erklopez), DataLab Student Employee
 
 [Jared Joseph](https://github.com/Epsian), DataLab Graduate Student Researcher
 
