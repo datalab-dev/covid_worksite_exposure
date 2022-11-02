@@ -11,7 +11,7 @@ Project Links:
 
 # Team
 
-**Coding:**
+**Coding & Data Processing:**
 
 [Michele Tobias](https://github.com/MicheleTobias), DataLab Geospatial Data Scientist
 
@@ -20,6 +20,8 @@ Project Links:
 [Sebastian Lopez](https://github.com/erklopez), DataLab Student Employee
 
 [Jared Joseph](https://github.com/Epsian), DataLab Graduate Student Researcher
+
+[Danaee Felix](https://github.com/dfel13), DataLab Student Intern
 
 
 **Documentation Editing:**
