@@ -19,6 +19,8 @@ Animal Husbandry Sheep Shed,Sheep Barn Lab
 Animal Resource Service R1,Comparative Pathology Lab
 Animal Resource Service V (AH Goat),Animal Resource Service V
 Animal Resources Service H-1,H-Building Vet Lab
+Animal Resource Service,Animal Resources Service
+Animal Resource Service,Animal Resources Service H-3 Trailer
 Aquatic Biology & Environmental Science Bldg,Aquatic Biology & Environmental Science building
 Atriums at La Rue 100,Atriums at La Rue Park
 Baseball Storage,Dobbins Baseball Complex
@@ -27,6 +29,7 @@ Center for Comparative Medicine,Center for Immunology & Infectious Diseases (CII
 Center for Health & Environment Office & Laboratory,Center for Health & Environment
 Center for Health & Environment Office & Laboratory,Center for Health and the Environment
 Center for Neuroscience,Center for Neuroscience - CNS
+Center for Neuroscience,Center for Mind and Brain
 CFA Mondavi,Modavi Center
 CFA Mondavi,Mondavi
 CFA Mondavi,Mondavi Center
@@ -47,6 +50,8 @@ Dutton Hall,Academic Assistance and Tutoring Center
 Dutton Hall,Dutton Hall, Room 1200
 Earth and Physical Sciences Building,Earth and Physical Sciences
 Earth and Physical Sciences Building,Earth and Physical Sciences Building
+Earth and Physical Sciences Building,Earth & Physical Sciences
+Earth and Physical Sciences Building,Earth & Physical Science Building
 Equestrian Center Covered Arena,Equestrian Center
 Fire & Police Building,Fire & Police
 Fire & Police Building,Fire and Police Building
@@ -56,6 +61,7 @@ Fire & Police Building,Police Building
 Fire & Police Building,Fire Department
 Fire & Police Building,Police Department
 Fleet Services Central Garage Campus,Fleet Services Central Garage
+Fleet Services Central Carage Campus,Fleet Services
 Genome & Biomedical Sciences Facility,Genome and Biomedical Sciences
 Genome & Biomedical Sciences Facility,Genome Center
 Ghausi Hall,UC Pavement Research Center
@@ -67,6 +73,7 @@ Haring Hall,Harding Hall
 Head House 001,Orchard Park Greenhouse Complex
 Housing Administration,Student Housing Building
 Hutchison Child Development Center,Hutchinson Child Development Center
+Hutchison Hall,Hutchinson Hall
 IET Communications Resources,3213 Apiary drive
 Latitude Dining Commons,Latitude Dining Hall
 Mayra Welch Tennis Center,Mary Welch Tennis Center
@@ -79,6 +86,8 @@ Medical Sciences I C,Medical Sciences
 Medical Sciences I C,Medical Sciences 1C
 Medical Sciences I D,Medical Sciences D
 Memorial Union,Coffee House
+Memorial Union,Coffee House (COHO)
+Memorial Union,Memorial Union Coffee House
 Memorial Union,Ctr for Chicanx & Latinx Academic Student Success
 Memorial Union,Memorial Union Bookstore
 Memorial Union,Memorial Union Moss Room
@@ -106,6 +115,7 @@ Pritchard VMTH,Vet Med Teaching Hospital
 Recreation Pool Bath House,Rec Pool
 Recreation Pool Bath House,Recreation Pool
 Recreation Pool Bath House,Rec Pool/Recreation Pool
+Recreation Pool Bath House,Rec Pool / Recreation Pool 
 Regan Campo,Campo Hall
 Regan Paloma,Paloma Hall
 Regan Rienda,Rienda Hall
@@ -186,6 +196,7 @@ The Green 2231 Jade Street,The Green; 2231 Jade St.
 The Grove,The Grove (Surge III)
 The Grove,The Grove (Surge III) Lecture Hall
 The Grove,The Grove - Academic Surge 3
+The Grove,Grove Surge 3
 The Grove,Communications Resources Trailer
 Thoreau Hall,Tahoe Hall
 Thurman Laboratory,Thurman Lab
@@ -194,9 +205,11 @@ Toomey Weight Room,Toomey Weight Room Field
 Transportation Services,Transportation and Parking Services
 UC Davis Coffee Center,Coffee Center
 UC Davis Health Stadium East,UC Davis Health Stadium
+UC Davis Health Stadium East,Health Stadium
 Unitrans Maintenance Facility,Unitrans Maintenance Shop
 University Hotel,Hyatt Place
 Utilities Headquarters,Central Heating and Cooling Plant
+Utilities Headquarters,Central Heating & Cooling Plant
 Valley Hall,Gladys Hall
 Veg Crops Bulb Storage House,UC Davis Student Farm
 Veg Crops Field Headqtrs A,Vegetable Crops Headquarters
