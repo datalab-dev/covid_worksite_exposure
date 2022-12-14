@@ -20,7 +20,7 @@ jobs:
           Rscript -e "install.packages(c('sf', 'V8'), type='win.binary')"
       - name: Install packages #Job 1: install packages the next step will need
         run:
-          Rscript -e "install.packages(c('httr', 'jsonlite', 'xml2', 'rvest','stringr','readtext', 'lubridate', 'geojsonio', 'rmapshaper', 'rgbif', 's2'))"
+          Rscript -e "install.packages(c('httr', 'jsonlite', 'xml2', 'rvest','stringr','readtext', 'lubridate', 'rgeos', 'geojsonio', 'rmapshaper', 'rgbif', 's2'))"
 
       - name: Run Scraping Code File #Job 2: run the code that scrapes the workplace exposure site
         run:
