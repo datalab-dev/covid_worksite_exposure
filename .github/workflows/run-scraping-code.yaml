@@ -18,12 +18,6 @@ jobs:
       - name: Install packages from binary #install packages that need to be installed from source
         run:
           Rscript -e "install.packages(c('sf', 'V8'), type='win.binary')"
-      - name: Install devtools #install devtools
-      run:
-          Rscript -e "install.packages('devtools')"
-      - name: Install specific rgeos version #install rgeos
-        run: 
-          Rscript -e "devtools::install_version('rgeos', version = '0.5-8')"
       - name: Install packages #Job 1: install packages the next step will need
         run:
           Rscript -e "install.packages(c('httr', 'jsonlite', 'xml2', 'rvest','stringr','readtext', 'lubridate', 'rgeos', 'geojsonio', 'rmapshaper', 'rgbif', 's2'))"
