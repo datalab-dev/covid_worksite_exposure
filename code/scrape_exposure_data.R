@@ -341,7 +341,7 @@ matched_simplify<-ms_simplify(
   no_repair = FALSE,
   snap = TRUE,
   explode = FALSE,
-  force_FC = FALSE,
+  #force_FC = FALSE,
   drop_null_geometries = TRUE,
   snap_interval = NULL,
   sys = FALSE,
