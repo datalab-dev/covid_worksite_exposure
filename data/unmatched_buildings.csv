@@ -1,9 +1,9 @@
 "","campus_building","worksite","report_date","location","potential_exposure_dates","start","end","standardized_exposure_dates","geometry"
 "1","Scrubs Café","Scrubs Café","01-20","Davis campus","01/18/2022","2022-01-18","2022-01-18","2022-01-20",list()
 "2","Scrubs Café","Scrubs Café","01-31","Davis campus","01/29/2022","2022-01-29","2022-01-29","2022-01-31",list()
-"3","Scrubs Café","Scrubs Café","01-31","Davis campus","01/29/2022","2022-01-29","2022-01-29","2022-01-31",list()
+"3","Scrubs Café","Scrubs Café","01-20","Davis campus","01/18/2022","2022-01-18","2022-01-18","2022-01-20",list()
 "4","100 Dairy Road","100 Dairy Road","01-03","Davis campus","12/29/2022","2022-12-29","2022-12-29","2023-01-03",list()
-"5","Scrubs Café","Scrubs Café","01-20","Davis campus","01/18/2022","2022-01-18","2022-01-18","2022-01-20",list()
+"5","Scrubs Café","Scrubs Café","01-31","Davis campus","01/29/2022","2022-01-29","2022-01-29","2022-01-31",list()
 "7","112 A Street","112 A Street","07-15","Davis city","07/11/2022","2022-07-11","2022-07-11","2022-07-15",list()
 "8","1333 Research Park Drive","1333 Research Park Drive","11-01","Davis city","10/31/2022","2022-10-31","2022-10-31","2022-11-01",list()
 "9","1333 Research Park Drive","1333 Research Park Drive","11-01","Davis city","10/31/2022","2022-10-31","2022-10-31","2022-11-01",list()
@@ -242,10 +242,10 @@
  - 07/08/2022","2022-07-06","2022-07-08","2022-07-12",list()
 "326","267 Cousteau Place","267 Cousteau Place","07-12","Davis city","07/06/2022
  - 07/08/2022","2022-07-06","2022-07-08","2022-07-12",list()
-"327","2795 2nd Street","2795 2nd Street","07-15","Davis city","07/11/2022","2022-07-11","2022-07-11","2022-07-15",list()
+"327","2795 2nd Street","2795 2nd Street","05-26","Davis city","05/26/2022","2022-05-26","2022-05-26","2022-05-26",list()
 "328","2795 2nd Street","2795 2nd Street","07-15","Davis city","07/11/2022","2022-07-11","2022-07-11","2022-07-15",list()
 "329","2795 2nd Street","2795 2nd Street","07-15","Davis city","07/11/2022","2022-07-11","2022-07-11","2022-07-15",list()
-"330","2795 2nd Street","2795 2nd Street","05-26","Davis city","05/26/2022","2022-05-26","2022-05-26","2022-05-26",list()
+"330","2795 2nd Street","2795 2nd Street","07-15","Davis city","07/11/2022","2022-07-11","2022-07-11","2022-07-15",list()
 "331","2795 2nd Street","2795 2nd Street","05-26","Davis city","05/26/2022","2022-05-26","2022-05-26","2022-05-26",list()
 "332","2795 2nd Street","2795 2nd Street","05-26","Davis city","05/26/2022","2022-05-26","2022-05-26","2022-05-26",list()
 "333","2795 2nd Street","2795 2nd Street","07-20","Davis city","07/19/2022","2022-07-19","2022-07-19","2022-07-20",list()
@@ -283,30 +283,29 @@
 "8583","Bodega Marine Laboratory","Bodega Marine Laboratory","04-27","Off campus","04/21/2023","2023-04-21","2023-04-21","2023-04-27",list()
 "8584","Bodega Marine Laboratory","Bodega Marine Laboratory","04-27","Off campus","04/21/2023","2023-04-21","2023-04-21","2023-04-27",list()
 "8585","Bodega Marine Laboratory","Bodega Marine Laboratory","04-27","Off campus","04/21/2023","2023-04-21","2023-04-21","2023-04-27",list()
-"8586","Bodega Marine Laboratory","Bodega Marine Laboratory","10-03","Off campus","10/27/2022
- - 10/28/2022","2022-10-27","2022-10-28","2022-10-03",list()
+"8586","Bodega Marine Laboratory","Bodega Marine Laboratory","04-27","Off campus","04/21/2023","2023-04-21","2023-04-21","2023-04-27",list()
 "8587","Bodega Marine Laboratory","Bodega Marine Laboratory","10-03","Off campus","10/27/2022
  - 10/28/2022","2022-10-27","2022-10-28","2022-10-03",list()
-"8588","Bodega Marine Laboratory","Bodega Marine Laboratory","02-17","Off campus","02/15/2023","2023-02-15","2023-02-15","2023-02-17",list()
+"8588","Bodega Marine Laboratory","Bodega Marine Laboratory","10-03","Off campus","10/27/2022
+ - 10/28/2022","2022-10-27","2022-10-28","2022-10-03",list()
 "8589","Bodega Marine Laboratory","Bodega Marine Laboratory","02-17","Off campus","02/15/2023","2023-02-15","2023-02-15","2023-02-17",list()
-"8590","Bodega Marine Laboratory","Bodega Marine Laboratory","11-15","Off campus","11/14/2022","2022-11-14","2022-11-14","2022-11-15",list()
-"8591","Bodega Marine Laboratory","Bodega Marine Laboratory","07-25","Off campus","07/18/2022
+"8590","Bodega Marine Laboratory","Bodega Marine Laboratory","02-17","Off campus","02/15/2023","2023-02-15","2023-02-15","2023-02-17",list()
+"8591","Bodega Marine Laboratory","Bodega Marine Laboratory","11-15","Off campus","11/14/2022","2022-11-14","2022-11-14","2022-11-15",list()
+"8592","Bodega Marine Laboratory","Bodega Marine Laboratory","11-15","Off campus","11/14/2022","2022-11-14","2022-11-14","2022-11-15",list()
+"8593","Bodega Marine Laboratory","Bodega Marine Laboratory","10-03","Off campus","09/27/2022
+ - 09/28/2022","2022-09-27","2022-09-28","2022-10-03",list()
+"8594","Bodega Marine Laboratory","Bodega Marine Laboratory","07-25","Off campus","07/18/2022
  - 07/21/2022","2022-07-18","2022-07-21","2022-07-25",list()
-"8592","Bodega Marine Laboratory","Bodega Marine Laboratory","04-27","Off campus","04/21/2023","2023-04-21","2023-04-21","2023-04-27",list()
-"8593","Bodega Marine Laboratory","Bodega Marine Laboratory","11-28","Off campus","11/23/2022","2022-11-23","2022-11-23","2022-11-28",list()
-"8594","Bodega Marine Laboratory","Bodega Marine Laboratory","07-26","Off campus","07/22/2022","2022-07-22","2022-07-22","2022-07-26",list()
-"8595","Bodega Marine Laboratory","Bodega Marine Laboratory","07-26","Off campus","07/22/2022","2022-07-22","2022-07-22","2022-07-26",list()
-"8596","Bodega Marine Laboratory","Bodega Marine Laboratory","11-15","Off campus","11/14/2022","2022-11-14","2022-11-14","2022-11-15",list()
-"8597","Bodega Marine Laboratory","Bodega Marine Laboratory","11-15","Off campus","11/14/2022","2022-11-14","2022-11-14","2022-11-15",list()
-"8598","Bodega Marine Laboratory","Bodega Marine Laboratory","11-15","Off campus","11/14/2022","2022-11-14","2022-11-14","2022-11-15",list()
-"8599","Bodega Marine Laboratory","Bodega Marine Laboratory","10-03","Off campus","09/27/2022
- - 09/28/2022","2022-09-27","2022-09-28","2022-10-03",list()
-"8600","Bodega Marine Laboratory","Bodega Marine Laboratory","10-03","Off campus","09/27/2022
- - 09/28/2022","2022-09-27","2022-09-28","2022-10-03",list()
+"8595","Bodega Marine Laboratory","Bodega Marine Laboratory","11-28","Off campus","11/23/2022","2022-11-23","2022-11-23","2022-11-28",list()
+"8596","Bodega Marine Laboratory","Bodega Marine Laboratory","11-28","Off campus","11/23/2022","2022-11-23","2022-11-23","2022-11-28",list()
+"8597","Bodega Marine Laboratory","Bodega Marine Laboratory","07-26","Off campus","07/22/2022","2022-07-22","2022-07-22","2022-07-26",list()
+"8598","Bodega Marine Laboratory","Bodega Marine Laboratory","07-26","Off campus","07/22/2022","2022-07-22","2022-07-22","2022-07-26",list()
+"8599","Bodega Marine Laboratory","Bodega Marine Laboratory","11-15","Off campus","11/14/2022","2022-11-14","2022-11-14","2022-11-15",list()
+"8600","Bodega Marine Laboratory","Bodega Marine Laboratory","11-15","Off campus","11/14/2022","2022-11-14","2022-11-14","2022-11-15",list()
 "8601","Bodega Marine Laboratory","Bodega Marine Laboratory","10-03","Off campus","09/27/2022
  - 09/28/2022","2022-09-27","2022-09-28","2022-10-03",list()
-"8602","Bodega Marine Laboratory","Bodega Marine Laboratory","07-25","Off campus","07/18/2022
- - 07/21/2022","2022-07-18","2022-07-21","2022-07-25",list()
+"8602","Bodega Marine Laboratory","Bodega Marine Laboratory","10-03","Off campus","09/27/2022
+ - 09/28/2022","2022-09-27","2022-09-28","2022-10-03",list()
 "8603","Bodega Marine Laboratory","Bodega Marine Laboratory","07-25","Off campus","07/18/2022
  - 07/21/2022","2022-07-18","2022-07-21","2022-07-25",list()
 "8604","Bodega Marine Laboratory","Bodega Marine Laboratory","04-27","Off campus","04/21/2023","2023-04-21","2023-04-21","2023-04-27",list()
@@ -316,7 +315,7 @@
 "8608","Bodega Marine Laboratory","Bodega Marine Laboratory","11-28","Off campus","11/23/2022","2022-11-23","2022-11-23","2022-11-28",list()
 "8609","Bodega Marine Laboratory","Bodega Marine Laboratory","11-28","Off campus","11/23/2022","2022-11-23","2022-11-23","2022-11-28",list()
 "8610","Bodega Marine Laboratory","Bodega Marine Laboratory","11-28","Off campus","11/23/2022","2022-11-23","2022-11-23","2022-11-28",list()
-"8611","Bodega Marine Laboratory","Bodega Marine Laboratory","11-28","Off campus","11/23/2022","2022-11-23","2022-11-23","2022-11-28",list()
+"8611","Bodega Marine Laboratory","Bodega Marine Laboratory","02-17","Off campus","02/15/2023","2023-02-15","2023-02-15","2023-02-17",list()
 "8612","Bodega Marine Laboratory","Bodega Marine Laboratory","11-28","Off campus","11/23/2022","2022-11-23","2022-11-23","2022-11-28",list()
 "8613","Bodega Marine Laboratory","Bodega Marine Laboratory","07-26","Off campus","07/22/2022","2022-07-22","2022-07-22","2022-07-26",list()
 "8614","Bodega Marine Laboratory","Bodega Marine Laboratory","07-26","Off campus","07/22/2022","2022-07-22","2022-07-22","2022-07-26",list()
@@ -356,7 +355,8 @@
  - 07/21/2022","2022-07-18","2022-07-21","2022-07-25",list()
 "8634","Bodega Marine Laboratory","Bodega Marine Laboratory","07-25","Off campus","07/18/2022
  - 07/21/2022","2022-07-18","2022-07-21","2022-07-25",list()
-"8635","Bodega Marine Laboratory","Bodega Marine Laboratory","02-17","Off campus","02/15/2023","2023-02-15","2023-02-15","2023-02-17",list()
+"8635","Bodega Marine Laboratory","Bodega Marine Laboratory","07-25","Off campus","07/18/2022
+ - 07/21/2022","2022-07-18","2022-07-21","2022-07-25",list()
 "8636","Bodega Marine Laboratory","Bodega Marine Laboratory","02-17","Off campus","02/15/2023","2023-02-15","2023-02-15","2023-02-17",list()
 "8637","Bodega Marine Laboratory","Bodega Marine Laboratory","02-17","Off campus","02/15/2023","2023-02-15","2023-02-15","2023-02-17",list()
 "8638","Bodega Marine Laboratory","Bodega Marine Laboratory","02-17","Off campus","02/15/2023","2023-02-15","2023-02-15","2023-02-17",list()
@@ -435,9 +435,9 @@
  - 06/30/2022","2022-06-29","2022-06-30","2022-07-05",list()
 "11595","Center for Aquatic Biology and Aquaculture","Center for Aquatic Biology and Aquaculture","07-05","Davis campus","06/29/2022
  - 06/30/2022","2022-06-29","2022-06-30","2022-07-05",list()
-"11596","Center for Aquatic Biology and Aquaculture","Center for Aquatic Biology and Aquaculture","07-05","Davis campus","06/29/2022
+"11596","Center for Aquatic Biology and Aquaculture","Center for Aquatic Biology and Aquaculture","09-02","Davis campus","09/01/2022","2022-09-01","2022-09-01","2022-09-02",list()
+"11597","Center for Aquatic Biology and Aquaculture","Center for Aquatic Biology and Aquaculture","07-05","Davis campus","06/29/2022
  - 06/30/2022","2022-06-29","2022-06-30","2022-07-05",list()
-"11597","Center for Aquatic Biology and Aquaculture","Center for Aquatic Biology and Aquaculture","09-02","Davis campus","09/01/2022","2022-09-01","2022-09-01","2022-09-02",list()
 "11598","Center for Aquatic Biology and Aquaculture","Center for Aquatic Biology and Aquaculture","09-02","Davis campus","09/01/2022","2022-09-01","2022-09-01","2022-09-02",list()
 "11599","Center for Aquatic Biology and Aquaculture","Center for Aquatic Biology and Aquaculture","04-25","Davis campus","04/20/2022","2022-04-20","2022-04-20","2022-04-25",list()
 "11600","Center for Aquatic Biology and Aquaculture","Center for Aquatic Biology and Aquaculture","04-25","Davis campus","04/20/2022","2022-04-20","2022-04-20","2022-04-25",list()
@@ -479,14 +479,14 @@
 "16616","Earth & Physical Sciences Building","Earth & Physical Sciences Building","10-31","Davis campus","10/26/2022","2022-10-26","2022-10-26","2022-10-31",list()
 "16617","Earth & Physical Sciences Building","Earth & Physical Sciences Building","05-16","Davis campus","05/10/2022","2022-05-10","2022-05-10","2022-05-16",list()
 "16618","Earth & Physical Sciences Building","Earth & Physical Sciences Building","10-31","Davis campus","10/26/2022","2022-10-26","2022-10-26","2022-10-31",list()
-"16619","Earth & Physical Sciences Building","Earth & Physical Sciences Building","09-26","Davis campus","09/22/2022","2022-09-22","2022-09-22","2022-09-26",list()
+"16619","Earth & Physical Sciences Building","Earth & Physical Sciences Building","06-28","Davis campus","06/22/2022
+ - 06/23/2022","2022-06-22","2022-06-23","2022-06-28",list()
 "16620","Earth & Physical Sciences Building","Earth & Physical Sciences Building","09-26","Davis campus","09/22/2022","2022-09-22","2022-09-22","2022-09-26",list()
 "16621","Earth & Physical Sciences Building","Earth & Physical Sciences Building","09-26","Davis campus","09/22/2022","2022-09-22","2022-09-22","2022-09-26",list()
-"16622","Earth & Physical Sciences Building","Earth & Physical Sciences Building","06-28","Davis campus","06/22/2022
+"16622","Earth & Physical Sciences Building","Earth & Physical Sciences Building","09-26","Davis campus","09/22/2022","2022-09-22","2022-09-22","2022-09-26",list()
+"16623","Earth & Physical Sciences Building","Earth & Physical Sciences Building","09-26","Davis campus","09/22/2022","2022-09-22","2022-09-22","2022-09-26",list()
+"16624","Earth & Physical Sciences Building","Earth & Physical Sciences Building","06-28","Davis campus","06/22/2022
  - 06/23/2022","2022-06-22","2022-06-23","2022-06-28",list()
-"16623","Earth & Physical Sciences Building","Earth & Physical Sciences Building","06-28","Davis campus","06/22/2022
- - 06/23/2022","2022-06-22","2022-06-23","2022-06-28",list()
-"16624","Earth & Physical Sciences Building","Earth & Physical Sciences Building","09-26","Davis campus","09/22/2022","2022-09-22","2022-09-22","2022-09-26",list()
 "16625","Earth & Physical Sciences Building","Earth & Physical Sciences Building","06-28","Davis campus","06/22/2022
  - 06/23/2022","2022-06-22","2022-06-23","2022-06-28",list()
 "16626","Earth & Planetary Sciences","Earth & Planetary Sciences","06-14","Davis campus","06/13/2022","2022-06-13","2022-06-13","2022-06-14",list()
@@ -496,8 +496,8 @@
 "17778","Edwards Family Athletics Center","Edwards Family Athletics Center","11-22","Davis campus","11/21/2022","2022-11-21","2022-11-21","2022-11-22",list()
 "17779","Edwards Family Athletics Center","Edwards Family Athletics Center","11-22","Davis campus","11/21/2022","2022-11-21","2022-11-21","2022-11-22",list()
 "17780","Edwards Family Athletics Center","Edwards Family Athletics Center","04-12","Davis campus","04/10/2023","2023-04-10","2023-04-10","2023-04-12",list()
-"17781","Edwards Family Athletics Center","Edwards Family Athletics Center","04-20","Davis campus","04/19/2022","2022-04-19","2022-04-19","2022-04-20",list()
-"17782","Edwards Family Athletics Center","Edwards Family Athletics Center","04-12","Davis campus","04/10/2023","2023-04-10","2023-04-10","2023-04-12",list()
+"17781","Edwards Family Athletics Center","Edwards Family Athletics Center","04-12","Davis campus","04/10/2023","2023-04-10","2023-04-10","2023-04-12",list()
+"17782","Edwards Family Athletics Center","Edwards Family Athletics Center","04-20","Davis campus","04/19/2022","2022-04-19","2022-04-19","2022-04-20",list()
 "17783","Edwards Family Athletics Center","Edwards Family Athletics Center","04-20","Davis campus","04/19/2022","2022-04-19","2022-04-19","2022-04-20",list()
 "17784","Edwards Family Athletics Center","Edwards Family Athletics Center","04-20","Davis campus","04/19/2022","2022-04-19","2022-04-19","2022-04-20",list()
 "17785","Edwards Family Athletics Center","Edwards Family Athletics Center","04-12","Davis campus","04/10/2023","2023-04-10","2023-04-10","2023-04-12",list()
@@ -507,70 +507,70 @@
 "17861","Environmental Services Facility","Environmental Services Facility","08-01","Davis campus","07/22/2022","2022-07-22","2022-07-22","2022-08-01",list()
 "17862","Environmental Services Facility","Environmental Services Facility","06-07","Davis campus","06/05/2022
  - 06/06/2022","2022-06-05","2022-06-06","2022-06-07",list()
-"17863","Environmental Services Facility","Environmental Services Facility","12-01","Davis campus","11/29/2022","2022-11-29","2022-11-29","2022-12-01",list()
+"17863","Environmental Services Facility","Environmental Services Facility","06-07","Davis campus","06/05/2022
+ - 06/06/2022","2022-06-05","2022-06-06","2022-06-07",list()
 "17864","Environmental Services Facility","Environmental Services Facility","12-01","Davis campus","11/29/2022","2022-11-29","2022-11-29","2022-12-01",list()
 "17865","Environmental Services Facility","Environmental Services Facility","12-01","Davis campus","11/29/2022","2022-11-29","2022-11-29","2022-12-01",list()
-"17866","Environmental Services Facility","Environmental Services Facility","08-01","Davis campus","07/22/2022","2022-07-22","2022-07-22","2022-08-01",list()
-"17867","Environmental Services Facility","Environmental Services Facility","06-07","Davis campus","06/05/2022
- - 06/06/2022","2022-06-05","2022-06-06","2022-06-07",list()
+"17866","Environmental Services Facility","Environmental Services Facility","12-01","Davis campus","11/29/2022","2022-11-29","2022-11-29","2022-12-01",list()
+"17867","Environmental Services Facility","Environmental Services Facility","08-01","Davis campus","07/22/2022","2022-07-22","2022-07-22","2022-08-01",list()
 "17868","Environmental Services Facility","Environmental Services Facility","06-07","Davis campus","06/05/2022
  - 06/06/2022","2022-06-05","2022-06-06","2022-06-07",list()
 "17869","Environmental Services Facility","Environmental Services Facility","05-25","Davis campus","05/22/2023","2023-05-22","2023-05-22","2023-05-25",list()
 "17870","Environmental Services Facility","Environmental Services Facility","05-25","Davis campus","05/22/2023","2023-05-22","2023-05-22","2023-05-25",list()
 "17871","Environmental Services Facility","Environmental Services Facility","05-25","Davis campus","05/22/2023","2023-05-22","2023-05-22","2023-05-25",list()
-"17872","Environmental Services Facility","Environmental Services Facility","05-25","Davis campus","05/22/2023","2023-05-22","2023-05-22","2023-05-25",list()
-"17873","Environmental Services Facility","Environmental Services Facility","12-01","Davis campus","11/29/2022","2022-11-29","2022-11-29","2022-12-01",list()
-"17874","Environmental Services Facility","Environmental Services Facility","06-07","Davis campus","06/05/2022
+"17872","Environmental Services Facility","Environmental Services Facility","12-01","Davis campus","11/29/2022","2022-11-29","2022-11-29","2022-12-01",list()
+"17873","Environmental Services Facility","Environmental Services Facility","06-07","Davis campus","06/05/2022
  - 06/06/2022","2022-06-05","2022-06-06","2022-06-07",list()
+"17874","Environmental Services Facility","Environmental Services Facility","05-25","Davis campus","05/22/2023","2023-05-22","2023-05-22","2023-05-25",list()
 "18182","Facilities Maintenance Building","Facilities Maintenance Building","07-15","Davis campus","07/14/2022","2022-07-14","2022-07-14","2022-07-15",list()
 "18183","Facilities Maintenance Building","Facilities Maintenance Building","07-15","Davis campus","07/14/2022","2022-07-14","2022-07-14","2022-07-15",list()
-"18184","Facilities Maintenance Building","Facilities Maintenance Building","01-25","Davis campus","01/24/2023","2023-01-24","2023-01-24","2023-01-25",list()
-"18185","Facilities Maintenance Building","Facilities Maintenance Building","07-15","Davis campus","07/14/2022","2022-07-14","2022-07-14","2022-07-15",list()
-"18186","Facilities Maintenance Building","Facilities Maintenance Building","10-24","Davis campus","10/21/2022","2022-10-21","2022-10-21","2022-10-24",list()
-"18187","Facilities Maintenance Building","Facilities Maintenance Building","07-14","Davis campus","07/12/2022","2022-07-12","2022-07-12","2022-07-14",list()
-"18188","Facilities Maintenance Building","Facilities Maintenance Building","07-15","Davis campus","07/14/2022","2022-07-14","2022-07-14","2022-07-15",list()
-"18189","Facilities Maintenance Building","Facilities Maintenance Building","01-25","Davis campus","01/24/2023","2023-01-24","2023-01-24","2023-01-25",list()
-"18190","Facilities Maintenance Building","Facilities Maintenance Building","10-24","Davis campus","10/21/2022","2022-10-21","2022-10-21","2022-10-24",list()
+"18184","Facilities Maintenance Building","Facilities Maintenance Building","10-24","Davis campus","10/21/2022","2022-10-21","2022-10-21","2022-10-24",list()
+"18185","Facilities Maintenance Building","Facilities Maintenance Building","07-14","Davis campus","07/12/2022","2022-07-12","2022-07-12","2022-07-14",list()
+"18186","Facilities Maintenance Building","Facilities Maintenance Building","01-25","Davis campus","01/24/2023","2023-01-24","2023-01-24","2023-01-25",list()
+"18187","Facilities Maintenance Building","Facilities Maintenance Building","01-25","Davis campus","01/24/2023","2023-01-24","2023-01-24","2023-01-25",list()
+"18188","Facilities Maintenance Building","Facilities Maintenance Building","01-25","Davis campus","01/24/2023","2023-01-24","2023-01-24","2023-01-25",list()
+"18189","Facilities Maintenance Building","Facilities Maintenance Building","07-15","Davis campus","07/14/2022","2022-07-14","2022-07-14","2022-07-15",list()
+"18190","Facilities Maintenance Building","Facilities Maintenance Building","07-15","Davis campus","07/14/2022","2022-07-14","2022-07-14","2022-07-15",list()
 "18191","Facilities Maintenance Building","Facilities Maintenance Building","01-25","Davis campus","01/24/2023","2023-01-24","2023-01-24","2023-01-25",list()
 "18192","Facilities Maintenance Building","Facilities Maintenance Building","10-24","Davis campus","10/21/2022","2022-10-21","2022-10-21","2022-10-24",list()
-"18193","Facilities Maintenance Building","Facilities Maintenance Building","01-25","Davis campus","01/24/2023","2023-01-24","2023-01-24","2023-01-25",list()
+"18193","Facilities Maintenance Building","Facilities Maintenance Building","10-24","Davis campus","10/21/2022","2022-10-21","2022-10-21","2022-10-24",list()
 "18194","Facilities Maintenance Building","Facilities Maintenance Building","07-14","Davis campus","07/12/2022","2022-07-12","2022-07-12","2022-07-14",list()
 "18195","Facilities Maintenance Building","Facilities Maintenance Building","10-24","Davis campus","10/21/2022","2022-10-21","2022-10-21","2022-10-24",list()
 "18196","Facilities Maintenance Building","Facilities Maintenance Building","07-14","Davis campus","07/12/2022","2022-07-12","2022-07-12","2022-07-14",list()
 "18197","Facilities Maintenance Building","Facilities Maintenance Building","07-14","Davis campus","07/12/2022","2022-07-12","2022-07-12","2022-07-14",list()
 "18198","Facilities Management","Facilities Management","04-06","Davis campus","04/05/2022","2022-04-05","2022-04-05","2022-04-06",list()
 "18199","Facilities Management","Facilities Management","04-06","Davis campus","04/05/2022","2022-04-05","2022-04-05","2022-04-06",list()
-"18200","Facilities Management","Facilities Management","04-06","Davis campus","04/05/2022","2022-04-05","2022-04-05","2022-04-06",list()
-"18201","Facilities Management","Facilities Management","04-06","Davis campus","04/05/2022","2022-04-05","2022-04-05","2022-04-06",list()
-"18202","Facilities Management","Facilities Management","04-29","Davis campus","04/26/2022
+"18200","Facilities Management","Facilities Management","04-29","Davis campus","04/26/2022
  - 04/28/2022","2022-04-26","2022-04-28","2022-04-29",list()
+"18201","Facilities Management","Facilities Management","04-06","Davis campus","04/05/2022","2022-04-05","2022-04-05","2022-04-06",list()
+"18202","Facilities Management","Facilities Management","10-28","Davis campus","10/26/2022
+ - 10/27/2022","2022-10-26","2022-10-27","2022-10-28",list()
 "18203","Facilities Management","Facilities Management","03-03","Davis campus","02/28/2023","2023-02-28","2023-02-28","2023-03-03",list()
 "18204","Facilities Management","Facilities Management","04-29","Davis campus","04/26/2022
  - 04/28/2022","2022-04-26","2022-04-28","2022-04-29",list()
-"18205","Facilities Management","Facilities Management","04-29","Davis campus","04/26/2022
- - 04/28/2022","2022-04-26","2022-04-28","2022-04-29",list()
-"18206","Facilities Management","Facilities Management","10-28","Davis campus","10/26/2022
- - 10/27/2022","2022-10-26","2022-10-27","2022-10-28",list()
+"18205","Facilities Management","Facilities Management","04-06","Davis campus","04/05/2022","2022-04-05","2022-04-05","2022-04-06",list()
+"18206","Facilities Management","Facilities Management","03-03","Davis campus","02/28/2023","2023-02-28","2023-02-28","2023-03-03",list()
 "18207","Facilities Management","Facilities Management","04-29","Davis campus","04/26/2022
  - 04/28/2022","2022-04-26","2022-04-28","2022-04-29",list()
-"18208","Facilities Management","Facilities Management","03-03","Davis campus","02/28/2023","2023-02-28","2023-02-28","2023-03-03",list()
-"18209","Facilities Management","Facilities Management","10-28","Davis campus","10/26/2022
+"18208","Facilities Management","Facilities Management","10-28","Davis campus","10/26/2022
  - 10/27/2022","2022-10-26","2022-10-27","2022-10-28",list()
+"18209","Facilities Management","Facilities Management","04-29","Davis campus","04/26/2022
+ - 04/28/2022","2022-04-26","2022-04-28","2022-04-29",list()
 "18210","Facilities Management","Facilities Management","10-28","Davis campus","10/26/2022
  - 10/27/2022","2022-10-26","2022-10-27","2022-10-28",list()
-"18211","Facilities Management","Facilities Management","03-03","Davis campus","02/28/2023","2023-02-28","2023-02-28","2023-03-03",list()
-"18212","Facilities Management","Facilities Management","10-28","Davis campus","10/26/2022
+"18211","Facilities Management","Facilities Management","10-28","Davis campus","10/26/2022
  - 10/27/2022","2022-10-26","2022-10-27","2022-10-28",list()
+"18212","Facilities Management","Facilities Management","03-03","Davis campus","02/28/2023","2023-02-28","2023-02-28","2023-03-03",list()
 "18213","Facilities Management","Facilities Management","03-03","Davis campus","02/28/2023","2023-02-28","2023-02-28","2023-03-03",list()
 "18214","Facilities Management Building","Facilities Management Building","06-28","Davis campus","06/27/2022","2022-06-27","2022-06-27","2022-06-28",list()
 "18215","Facilities Management Building","Facilities Management Building","06-28","Davis campus","06/27/2022","2022-06-27","2022-06-27","2022-06-28",list()
 "18216","Facilities Management Building","Facilities Management Building","06-01","Davis campus","05/31/2022","2022-05-31","2022-05-31","2022-06-01",list()
 "18217","Facilities Management Building","Facilities Management Building","06-01","Davis campus","05/31/2022","2022-05-31","2022-05-31","2022-06-01",list()
-"18218","Facilities Management Building","Facilities Management Building","06-07","Davis campus","06/07/2022","2022-06-07","2022-06-07","2022-06-07",list()
-"18219","Facilities Management Building","Facilities Management Building","06-28","Davis campus","06/27/2022","2022-06-27","2022-06-27","2022-06-28",list()
+"18218","Facilities Management Building","Facilities Management Building","06-28","Davis campus","06/27/2022","2022-06-27","2022-06-27","2022-06-28",list()
+"18219","Facilities Management Building","Facilities Management Building","06-07","Davis campus","06/07/2022","2022-06-07","2022-06-07","2022-06-07",list()
 "18220","Facilities Management Building","Facilities Management Building","06-07","Davis campus","06/07/2022","2022-06-07","2022-06-07","2022-06-07",list()
-"18221","Facilities Management Building","Facilities Management Building","06-07","Davis campus","06/07/2022","2022-06-07","2022-06-07","2022-06-07",list()
-"18222","Facilities Management Building","Facilities Management Building","06-01","Davis campus","05/31/2022","2022-05-31","2022-05-31","2022-06-01",list()
+"18221","Facilities Management Building","Facilities Management Building","06-01","Davis campus","05/31/2022","2022-05-31","2022-05-31","2022-06-01",list()
+"18222","Facilities Management Building","Facilities Management Building","06-07","Davis campus","06/07/2022","2022-06-07","2022-06-07","2022-06-07",list()
 "18257","Facilities Services Building","Facilities Services Building","01-30","Davis campus","01/26/2023","2023-01-26","2023-01-26","2023-01-30",list()
 "18258","Facilities Services Building","Facilities Services Building","01-30","Davis campus","01/26/2023","2023-01-26","2023-01-26","2023-01-30",list()
 "18259","Facilities Services Building","Facilities Services Building","01-30","Davis campus","01/26/2023","2023-01-26","2023-01-26","2023-01-30",list()
@@ -596,17 +596,17 @@
 "18464","Fleet Services Central Carage Campus","Fleet Services","07-14","Davis campus","07/13/2022","2022-07-13","2022-07-13","2022-07-14",list()
 "18465","Fleet Services Central Carage Campus","Fleet Services","07-14","Davis campus","07/13/2022","2022-07-13","2022-07-13","2022-07-14",list()
 "18466","Fleet Services Central Carage Campus","Fleet Services","09-29","Davis campus","09/23/2022","2022-09-23","2022-09-23","2022-09-29",list()
-"18467","Fleet Services Central Carage Campus","Fleet Services","04-07","Davis campus","04/04/2023
- - 04/05/2023","2023-04-04","2023-04-05","2023-04-07",list()
+"18467","Fleet Services Central Carage Campus","Fleet Services","09-29","Davis campus","09/23/2022","2022-09-23","2022-09-23","2022-09-29",list()
 "18468","Fleet Services Central Carage Campus","Fleet Services","04-07","Davis campus","04/04/2023
  - 04/05/2023","2023-04-04","2023-04-05","2023-04-07",list()
 "18469","Fleet Services Central Carage Campus","Fleet Services","04-07","Davis campus","04/04/2023
  - 04/05/2023","2023-04-04","2023-04-05","2023-04-07",list()
-"18470","Fleet Services Central Carage Campus","Fleet Services","09-29","Davis campus","09/23/2022","2022-09-23","2022-09-23","2022-09-29",list()
+"18470","Fleet Services Central Carage Campus","Fleet Services","04-07","Davis campus","04/04/2023
+ - 04/05/2023","2023-04-04","2023-04-05","2023-04-07",list()
 "18472","Foundation Plant Sciences","Foundation Plant Sciences","03-06","Davis campus","03/01/2023","2023-03-01","2023-03-01","2023-03-06",list()
 "18473","Foundation Plant Services","Foundation Plant Services","05-23","Davis campus","05/20/2022","2022-05-20","2022-05-20","2022-05-23",list()
-"18474","Foundation Plant Services","Foundation Plant Services","05-23","Davis campus","05/20/2022","2022-05-20","2022-05-20","2022-05-23",list()
-"18475","Foundation Plant Services","Foundation Plant Services","01-31","Davis campus","01/27/2023","2023-01-27","2023-01-27","2023-01-31",list()
+"18474","Foundation Plant Services","Foundation Plant Services","01-31","Davis campus","01/27/2023","2023-01-27","2023-01-27","2023-01-31",list()
+"18475","Foundation Plant Services","Foundation Plant Services","05-23","Davis campus","05/20/2022","2022-05-20","2022-05-20","2022-05-23",list()
 "18476","Foundation Plant Services","Foundation Plant Services","01-31","Davis campus","01/27/2023","2023-01-27","2023-01-27","2023-01-31",list()
 "18477","Freeborn Hall - Lower","Freeborn Hall - Lower","05-18","Davis campus","05/18/2022","2022-05-18","2022-05-18","2022-05-18",list()
 "18478","Freeborn Hall, Lower","Freeborn Hall, Lower","01-20","Davis campus","01/16/2023
@@ -699,8 +699,8 @@
 "108063","South Silo","South Silo","03-27","Davis campus","03/24/2023","2023-03-24","2023-03-24","2023-03-27",list()
 "108155","Stadium: Bruce Edwards Club Room","Stadium: Bruce Edwards Club Room","09-02","Davis campus","08/31/2022","2022-08-31","2022-08-31","2022-09-02",list()
 "108156","Stadium: Bruce Edwards Club Room","Stadium: Bruce Edwards Club Room","08-31","Davis campus","08/30/2022","2022-08-30","2022-08-30","2022-08-31",list()
-"108157","Stadium: Bruce Edwards Club Room","Stadium: Bruce Edwards Club Room","08-31","Davis campus","08/30/2022","2022-08-30","2022-08-30","2022-08-31",list()
-"108158","Stadium: Bruce Edwards Club Room","Stadium: Bruce Edwards Club Room","09-02","Davis campus","08/31/2022","2022-08-31","2022-08-31","2022-09-02",list()
+"108157","Stadium: Bruce Edwards Club Room","Stadium: Bruce Edwards Club Room","09-02","Davis campus","08/31/2022","2022-08-31","2022-08-31","2022-09-02",list()
+"108158","Stadium: Bruce Edwards Club Room","Stadium: Bruce Edwards Club Room","08-31","Davis campus","08/30/2022","2022-08-30","2022-08-30","2022-08-31",list()
 "109324","Student Community Center Coffee House","Student Community Center Coffee House","04-15","Davis campus","04/12/2022","2022-04-12","2022-04-12","2022-04-15",list()
 "109656","Student Housing Admin Building","Student Housing Admin Building","11-21","Davis campus","11/21/2022","2022-11-21","2022-11-21","2022-11-21",list()
 "109657","Student Housing/Dining","Student Housing/Dining","04-19","Davis campus","04/19/2023","2023-04-19","2023-04-19","2023-04-19",list()
@@ -712,14 +712,14 @@
  - 07-12","2021-07-11","2021-07-12","2021-07-14",list()
 "109674","TB-1","TB-1","05-09","Davis campus","05/02/2022","2022-05-02","2022-05-02","2022-05-09",list()
 "109675","Teaching & Research Animal Care Services","Teaching & Research Animal Care Services","09-16","Davis campus","09/13/2022","2022-09-13","2022-09-13","2022-09-16",list()
-"109676","Teaching & Research Animal Care Services","Teaching & Research Animal Care Services","09-16","Davis campus","09/13/2022","2022-09-13","2022-09-13","2022-09-16",list()
-"109677","Teaching & Research Animal Care Services","Teaching & Research Animal Care Services","11-02","Davis campus","10/31/2022","2022-10-31","2022-10-31","2022-11-02",list()
+"109676","Teaching & Research Animal Care Services","Teaching & Research Animal Care Services","11-02","Davis campus","10/31/2022","2022-10-31","2022-10-31","2022-11-02",list()
+"109677","Teaching & Research Animal Care Services","Teaching & Research Animal Care Services","09-16","Davis campus","09/13/2022","2022-09-13","2022-09-13","2022-09-16",list()
 "109678","Teaching & Research Animal Care Services","Teaching & Research Animal Care Services","11-02","Davis campus","10/31/2022","2022-10-31","2022-10-31","2022-11-02",list()
 "113040","Teaching and Research Animal Care Services","Teaching and Research Animal Care Services","01-26","Davis campus","01/23/2023
  - 01/24/2023","2023-01-23","2023-01-24","2023-01-26",list()
-"113041","Teaching and Research Animal Care Services","Teaching and Research Animal Care Services","01-26","Davis campus","01/23/2023
+"113041","Teaching and Research Animal Care Services","Teaching and Research Animal Care Services","10-11","Davis campus","10/10/2022","2022-10-10","2022-10-10","2022-10-11",list()
+"113042","Teaching and Research Animal Care Services","Teaching and Research Animal Care Services","01-26","Davis campus","01/23/2023
  - 01/24/2023","2023-01-23","2023-01-24","2023-01-26",list()
-"113042","Teaching and Research Animal Care Services","Teaching and Research Animal Care Services","10-11","Davis campus","10/10/2022","2022-10-10","2022-10-10","2022-10-11",list()
 "113043","Teaching and Research Animal Care Services","Teaching and Research Animal Care Services","10-11","Davis campus","10/10/2022","2022-10-10","2022-10-10","2022-10-11",list()
 "113044","Teaching and Research Animal Care Services (TRACS)","Teaching and Research Animal Care Services (TRACS)","03-28","Davis campus","03/24/2022","2022-03-24","2022-03-24","2022-03-28",list()
 "113053","Temporary Building 2","Temporary Building 2","04-27","Davis campus","04/21/2023","2023-04-21","2023-04-21","2023-04-27",list()
@@ -736,56 +736,57 @@
 "121976","UC Davis Police Annex","UC Davis Police Annex","03-17","Off campus","03/15/2023","2023-03-15","2023-03-15","2023-03-17",list()
 "121977","UCU Center","UCU Center","09-19","Davis campus","09/18/2022","2022-09-18","2022-09-18","2022-09-19",list()
 "121978","Unitrans Facility","Unitrans Facility","04-27","Davis campus","04/21/2023","2023-04-21","2023-04-21","2023-04-27",list()
-"122248","University Services Building/1441 Research Park","University Services Building/1441 Research Park","05-16","Davis city","05/12/2022","2022-05-12","2022-05-12","2022-05-16",list()
-"122249","Upward Bound - Siskiyou Office","Upward Bound - Siskiyou Office","08-29","Off campus","08/26/2022","2022-08-26","2022-08-26","2022-08-29",list()
-"122250","Utilities Division","Utilities Division","01-05","Davis campus","01/03/2023","2023-01-03","2023-01-03","2023-01-05",list()
-"122890","Vegetable Crop Greenhouse","Vegetable Crop Greenhouse","07-19","Davis campus","07/18/2022","2022-07-18","2022-07-18","2022-07-19",list()
-"123060","Vet Med-Tulare","Vet Med-Tulare","29-Sep","Off campus","09-24
+"122079","University Center","University Center","06-08","Davis campus","06/05/2023","2023-06-05","2023-06-05","2023-06-08",list()
+"122249","University Services Building/1441 Research Park","University Services Building/1441 Research Park","05-16","Davis city","05/12/2022","2022-05-12","2022-05-12","2022-05-16",list()
+"122250","Upward Bound - Siskiyou Office","Upward Bound - Siskiyou Office","08-29","Off campus","08/26/2022","2022-08-26","2022-08-26","2022-08-29",list()
+"122251","Utilities Division","Utilities Division","01-05","Davis campus","01/03/2023","2023-01-03","2023-01-03","2023-01-05",list()
+"122891","Vegetable Crop Greenhouse","Vegetable Crop Greenhouse","07-19","Davis campus","07/18/2022","2022-07-18","2022-07-18","2022-07-19",list()
+"123061","Vet Med-Tulare","Vet Med-Tulare","29-Sep","Off campus","09-24
  - 09-26","2021-09-24","2021-09-26","2021-09-29",list()
-"124161","Vet Med Multi-Purpose Teaching Facility","Vet Med Multi-Purpose Teaching Facility","05-19","Davis campus","05/17/2022","2022-05-17","2022-05-17","2022-05-19",list()
-"124163","Vet Med Teaching & Research Center, Tulare","Vet Med Teaching & Research Center, Tulare","02-07","Off campus","02/04/2022
+"124162","Vet Med Multi-Purpose Teaching Facility","Vet Med Multi-Purpose Teaching Facility","05-19","Davis campus","05/17/2022","2022-05-17","2022-05-17","2022-05-19",list()
+"124164","Vet Med Teaching & Research Center, Tulare","Vet Med Teaching & Research Center, Tulare","02-07","Off campus","02/04/2022
  - 02/05/2022","2022-02-04","2022-02-05","2022-02-07",list()
-"124164","Vet Med Teaching Facility","Vet Med Teaching Facility","02-13","Davis campus","02/09/2023
+"124165","Vet Med Teaching Facility","Vet Med Teaching Facility","02-13","Davis campus","02/09/2023
  - 02/11/2023","2023-02-09","2023-02-11","2023-02-13",list()
-"124165","Vet Med Teaching Hospital - Small Animal Clinic","Vet Med Teaching Hospital - Small Animal Clinic","02-07","Davis campus","02/06/2023","2023-02-06","2023-02-06","2023-02-07",list()
-"124166","Vet Med Teaching Hospital B Barn","Vet Med Teaching Hospital B Barn","05-17","Davis campus","05/14/2023","2023-05-14","2023-05-14","2023-05-17",list()
-"124167","Vet Med Teaching Hospital C Barn","Vet Med Teaching Hospital C Barn","05-17","Davis campus","05/14/2023","2023-05-14","2023-05-14","2023-05-17",list()
-"124168","Vet Met Teaching Hospital","Vet Met Teaching Hospital","07-05","Davis campus","06/28/2022
+"124166","Vet Med Teaching Hospital - Small Animal Clinic","Vet Med Teaching Hospital - Small Animal Clinic","02-07","Davis campus","02/06/2023","2023-02-06","2023-02-06","2023-02-07",list()
+"124167","Vet Med Teaching Hospital B Barn","Vet Med Teaching Hospital B Barn","05-17","Davis campus","05/14/2023","2023-05-14","2023-05-14","2023-05-17",list()
+"124168","Vet Med Teaching Hospital C Barn","Vet Med Teaching Hospital C Barn","05-17","Davis campus","05/14/2023","2023-05-14","2023-05-14","2023-05-17",list()
+"124169","Vet Met Teaching Hospital","Vet Met Teaching Hospital","07-05","Davis campus","06/28/2022
  - 06/29/2022","2022-06-28","2022-06-29","2022-07-05",list()
-"124169","Veterinary Genetics Lab","Veterinary Genetics Lab","05-11","Davis campus","05/09/2022","2022-05-09","2022-05-09","2022-05-11",list()
 "124170","Veterinary Genetics Lab","Veterinary Genetics Lab","05-11","Davis campus","05/09/2022","2022-05-09","2022-05-09","2022-05-11",list()
 "124171","Veterinary Genetics Lab","Veterinary Genetics Lab","05-11","Davis campus","05/09/2022","2022-05-09","2022-05-09","2022-05-11",list()
-"124172","Veterinary Genetics Lab","Veterinary Genetics Lab","06-28","Davis campus","06/24/2022","2022-06-24","2022-06-24","2022-06-28",list()
+"124172","Veterinary Genetics Lab","Veterinary Genetics Lab","05-11","Davis campus","05/09/2022","2022-05-09","2022-05-09","2022-05-11",list()
 "124173","Veterinary Genetics Lab","Veterinary Genetics Lab","06-28","Davis campus","06/24/2022","2022-06-24","2022-06-24","2022-06-28",list()
 "124174","Veterinary Genetics Lab","Veterinary Genetics Lab","06-28","Davis campus","06/24/2022","2022-06-24","2022-06-24","2022-06-28",list()
-"124175","Veterinary Genetics Lab","Veterinary Genetics Lab","11-17","Davis campus","11/15/2022","2022-11-15","2022-11-15","2022-11-17",list()
+"124175","Veterinary Genetics Lab","Veterinary Genetics Lab","06-28","Davis campus","06/24/2022","2022-06-24","2022-06-24","2022-06-28",list()
 "124176","Veterinary Genetics Lab","Veterinary Genetics Lab","11-17","Davis campus","11/15/2022","2022-11-15","2022-11-15","2022-11-17",list()
 "124177","Veterinary Genetics Lab","Veterinary Genetics Lab","11-17","Davis campus","11/15/2022","2022-11-15","2022-11-15","2022-11-17",list()
-"124178","Veterinary Genetics Laboratory","Veterinary Genetics Laboratory","08-01","Davis campus","07/29/2022","2022-07-29","2022-07-29","2022-08-01",list()
+"124178","Veterinary Genetics Lab","Veterinary Genetics Lab","11-17","Davis campus","11/15/2022","2022-11-15","2022-11-15","2022-11-17",list()
 "124179","Veterinary Genetics Laboratory","Veterinary Genetics Laboratory","08-01","Davis campus","07/29/2022","2022-07-29","2022-07-29","2022-08-01",list()
-"124180","Veterinary Genetics Laboratory","Veterinary Genetics Laboratory","02-06","Davis campus","01/30/2023
- - 01/31/2023","2023-01-30","2023-01-31","2023-02-06",list()
+"124180","Veterinary Genetics Laboratory","Veterinary Genetics Laboratory","08-01","Davis campus","07/29/2022","2022-07-29","2022-07-29","2022-08-01",list()
 "124181","Veterinary Genetics Laboratory","Veterinary Genetics Laboratory","02-06","Davis campus","01/30/2023
  - 01/31/2023","2023-01-30","2023-01-31","2023-02-06",list()
-"124182","Veterinary Medecine 2","Vet Met 2","06-23","Davis campus","06/21/2022","2022-06-21","2022-06-21","2022-06-23",list()
-"124355","Veterinary Medicine MPT","Veterinary Medicine MPT","03-31","Davis campus","03/29/2022
+"124182","Veterinary Genetics Laboratory","Veterinary Genetics Laboratory","02-06","Davis campus","01/30/2023
+ - 01/31/2023","2023-01-30","2023-01-31","2023-02-06",list()
+"124183","Veterinary Medecine 2","Vet Met 2","06-23","Davis campus","06/21/2022","2022-06-21","2022-06-21","2022-06-23",list()
+"124356","Veterinary Medicine MPT","Veterinary Medicine MPT","03-31","Davis campus","03/29/2022
  - 03/30/2022","2022-03-29","2022-03-30","2022-03-31",list()
-"124356","Veterinary Medicine Teaching Hospital","Veterinary Medicine Teaching Hospital","06-01","Davis campus","05/25/2022","2022-05-25","2022-05-25","2022-06-01",list()
-"124357","Veterinary Medicine Teaching Hospital","Veterinary Medicine Teaching Hospital","06-02","Davis campus","05/31/2022","2022-05-31","2022-05-31","2022-06-02",list()
-"124358","Veterinary Medicine Teaching Hospital","Veterinary Medicine Teaching Hospital","06-02","Davis campus","05/31/2022","2022-05-31","2022-05-31","2022-06-02",list()
+"124357","Veterinary Medicine Teaching Hospital","Veterinary Medicine Teaching Hospital","06-01","Davis campus","05/25/2022","2022-05-25","2022-05-25","2022-06-01",list()
+"124358","Veterinary Medicine Teaching Hospital","Veterinary Medicine Teaching Hospital","06-01","Davis campus","05/25/2022","2022-05-25","2022-05-25","2022-06-01",list()
 "124359","Veterinary Medicine Teaching Hospital","Veterinary Medicine Teaching Hospital","06-02","Davis campus","05/31/2022","2022-05-31","2022-05-31","2022-06-02",list()
-"124360","Veterinary Medicine Teaching Hospital","Veterinary Medicine Teaching Hospital","06-01","Davis campus","05/29/2022","2022-05-29","2022-05-29","2022-06-01",list()
-"124361","Veterinary Medicine Teaching Hospital","Veterinary Medicine Teaching Hospital","06-01","Davis campus","05/25/2022","2022-05-25","2022-05-25","2022-06-01",list()
+"124360","Veterinary Medicine Teaching Hospital","Veterinary Medicine Teaching Hospital","06-02","Davis campus","05/31/2022","2022-05-31","2022-05-31","2022-06-02",list()
+"124361","Veterinary Medicine Teaching Hospital","Veterinary Medicine Teaching Hospital","06-02","Davis campus","05/31/2022","2022-05-31","2022-05-31","2022-06-02",list()
 "124362","Veterinary Medicine Teaching Hospital","Veterinary Medicine Teaching Hospital","06-01","Davis campus","05/25/2022","2022-05-25","2022-05-25","2022-06-01",list()
 "124363","Veterinary Medicine Teaching Hospital","Veterinary Medicine Teaching Hospital","06-01","Davis campus","05/29/2022","2022-05-29","2022-05-29","2022-06-01",list()
 "124364","Veterinary Medicine Teaching Hospital","Veterinary Medicine Teaching Hospital","06-01","Davis campus","05/29/2022","2022-05-29","2022-05-29","2022-06-01",list()
-"124365","Veterinary Medicine VM3A","Veterinary Medicine VM3A","03-31","Davis campus","03/30/2022","2022-03-30","2022-03-30","2022-03-31",list()
-"124366","Veterinary Small Animal Clinic","Veterinary Small Animal Clinic","03-08","Davis campus","03/07/2022","2022-03-07","2022-03-07","2022-03-08",list()
-"126166","Walter A. Robinson Welcome Center","Walter A. Robinson Welcome Center","10-26","Davis campus","10/24/2022","2022-10-24","2022-10-24","2022-10-26",list()
-"126167","Wastewater Treatment Plant Administration Building","Wastewater Treatment Plant Building","06-27","Davis campus","06/23/2022","2022-06-23","2022-06-23","2022-06-27",list()
-"132960","West Village - 1715 Tilia Street","West Village - 1715 Tilia Street","08-17","Davis campus","08/15/2022","2022-08-15","2022-08-15","2022-08-17",list()
-"132961","West Village 215 Sage Street","West Village 215 Sage Street","06-23","Davis campus","06/20/2022","2022-06-20","2022-06-20","2022-06-23",list()
-"132962","West Village Square & Community College","West Village Square & Community College","09-06","Davis campus","09/03/2022","2022-09-03","2022-09-03","2022-09-06",list()
-"132968","Western Cooling Efficiency Center","Western Cooling Efficiency Center","08-24","Davis campus","08/18/2022
+"124365","Veterinary Medicine Teaching Hospital","Veterinary Medicine Teaching Hospital","06-01","Davis campus","05/29/2022","2022-05-29","2022-05-29","2022-06-01",list()
+"124366","Veterinary Medicine VM3A","Veterinary Medicine VM3A","03-31","Davis campus","03/30/2022","2022-03-30","2022-03-30","2022-03-31",list()
+"124367","Veterinary Small Animal Clinic","Veterinary Small Animal Clinic","03-08","Davis campus","03/07/2022","2022-03-07","2022-03-07","2022-03-08",list()
+"126167","Walter A. Robinson Welcome Center","Walter A. Robinson Welcome Center","10-26","Davis campus","10/24/2022","2022-10-24","2022-10-24","2022-10-26",list()
+"126168","Wastewater Treatment Plant Administration Building","Wastewater Treatment Plant Building","06-27","Davis campus","06/23/2022","2022-06-23","2022-06-23","2022-06-27",list()
+"132961","West Village - 1715 Tilia Street","West Village - 1715 Tilia Street","08-17","Davis campus","08/15/2022","2022-08-15","2022-08-15","2022-08-17",list()
+"132962","West Village 215 Sage Street","West Village 215 Sage Street","06-23","Davis campus","06/20/2022","2022-06-20","2022-06-20","2022-06-23",list()
+"132963","West Village Square & Community College","West Village Square & Community College","09-06","Davis campus","09/03/2022","2022-09-03","2022-09-03","2022-09-06",list()
+"132969","Western Cooling Efficiency Center","Western Cooling Efficiency Center","08-24","Davis campus","08/18/2022
  - 08/19/2022","2022-08-18","2022-08-19","2022-08-24",list()
-"133276","Wyatt Pavilion Theatre","Wyatt Pavilion Theatre","03-11","Davis campus","03/09/2022","2022-03-09","2022-03-09","2022-03-11",list()
+"133277","Wyatt Pavilion Theatre","Wyatt Pavilion Theatre","03-11","Davis campus","03/09/2022","2022-03-09","2022-03-09","2022-03-11",list()
