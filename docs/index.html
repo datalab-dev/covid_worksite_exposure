@@ -121,7 +121,7 @@
 			}
   });
 			
-
+		/*
 		//add the base map = Stamen Toner tile layer
 		var Stamen_Toner = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.{ext}', {
 		attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
@@ -131,6 +131,13 @@
 		ext: 'png'
 		});
 		map.addLayer(Stamen_Toner);
+		*/
+
+		// use OSM tiles
+		var tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    			maxZoom: 20,
+    			attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+		}).addTo(map);
 		
 		//add custom campus labels
 			//Quad: 38.541162, -121.749371
