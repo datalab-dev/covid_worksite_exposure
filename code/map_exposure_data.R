@@ -154,17 +154,26 @@ write.csv(x=all_exposures, file="./data/exposures.csv", row.names = FALSE)
 building_dictionary<-read.csv("./data/building_dictionary.csv", sep=",")
 
 # make a table of campus name variants
-#building_footprints <- st_read("./data/UC_Davis_Building_Footprints_2021-08-18.geojson")
-building_footprints <- st_read("./data/UC_Davis_Building_Footprints_2024-02-09.geojson")
+building_footprints <- st_read("./data/UC_Davis_Building_Footprints_2021-08-18.geojson")
+#building_footprints <- st_read("./data/UC_Davis_Building_Footprints_2024-02-09.geojson")
 
-campus_target_names<-building_footprints$FullBldgNa
+campus_target_names<-building_footprints$arcgisDBObase_bldg_database_12_2017Building_Name
 
 campus_name_variants<-c(
-  building_footprints$FullBldgNa,
-  building_footprints$ShortBldgN
+  building_footprints$arcgisDBObase_bldg_database_12_2017Official_Long,
+  building_footprints$arcgisDBObase_bldg_database_12_2017Abbrev_Short,
+  building_footprints$arcgisDBObase_bldg_database_12_2017FDX_Code,
+  building_footprints$arcgisDBObase_building_footprintsNAME_LC
+)
+
+#campus_target_names<-building_footprints$FullBldgNa
+
+#campus_name_variants<-c(
+#  building_footprints$FullBldgNa,
+#  building_footprints$ShortBldgN
   #building_footprints$FullAddres,
   #building_footprints$StreetAddr
-)
+#)
 
 #a dataframe with the name variations and what the targe (official) name should be
 campus_names<-cbind.data.frame(
@@ -257,13 +266,16 @@ names(all_exposures)<-c("worksite", "report_date", "location", "potential_exposu
 #The "campus_building" column in the exposure dataframe should match the "arcgisDBObase_bldg_database_12_2017Building_Name" column in the campus building dataset. There are many building name variations in the campus layer, so make sure you match on the correct one.
 
 #read geojson
-footprints <- st_read("./data/UC_Davis_Building_Footprints_2024-02-09.geojson")
+#footprints <- st_read("./data/UC_Davis_Building_Footprints_2024-02-09.geojson")
+footprints <- st_read("./data/UC_Davis_Building_Footprints_2021-08-18.geojson")
 
 #isolate building names and geometries
-geom <- footprints[,c("FullBldgNa", "geometry")]
+#geom <- footprints[,c("FullBldgNa", "geometry")]
+geom <- footprints[,c("arcgisDBObase_bldg_database_12_2017Building_Name", "geometry")]
 
 #merge geometries onto all_exposures, all.x=TRUE so we keep all the exposures but unmatched building names have empty geometry 
-combined <- merge.data.frame(all_exposures, geom, by.x = "campus_building", by.y = "FullBldgNa", all.x = TRUE)
+#combined <- merge.data.frame(all_exposures, geom, by.x = "campus_building", by.y = "FullBldgNa", all.x = TRUE)
+combined <- merge.data.frame(all_exposures, geom, by.x = "campus_building", by.y = "arcgisDBObase_bldg_database_12_2017Building_Name", all.x = TRUE)
 
 #separate into matched and unmatched building names
 matched <- combined[st_is_empty(combined$geometry) == FALSE, ]
@@ -286,27 +298,23 @@ st_write(matched, "./mapinput.geojson", delete_dsn = TRUE)
 
 # Experimenting with simplifying the geojson using rmapshaper ------------------------------
 
-#mapinput_geojson<-read_sf("./mapinput.geojson")#reads the geojson as a sf file
+mapinput_geojson<-read_sf("./mapinput.geojson")#reads the geojson as a sf file
 
-#matched_simplify<-ms_simplify(
-#  mapinput_geojson,
-#  keep = 0.05,
-#  method = NULL,
-#  weighting = 0.7,
-#  keep_shapes = FALSE,
-#  no_repair = FALSE,
-#  snap = TRUE,
-#  explode = FALSE,
-  #force_FC = FALSE,
-#  drop_null_geometries = TRUE,
-#  snap_interval = NULL,
-#  sys = FALSE,
-#  sys_mem = 8
-#) #it's supposed to make the file smaller
+# Simplify the GeoJSON file
+matched_simplify <- ms_simplify(
+  mapinput_geojson,
+  keep = 0.05,            # Proportion of points to retain (0.05 = 5%)
+  weighting = 0.7,        # Simplification weighting
+  keep_shapes = FALSE,    # Whether to retain shape of the features
+  no_repair = FALSE,      # Whether to skip repair of topologically invalid geometries
+  snap = TRUE,            # Whether to snap together vertices that are within a small distance threshold
+  explode = FALSE,        # Whether to explode multipart geometries
+  drop_null_geometries = TRUE # Drop geometries that become empty after simplification
+)
 
-#st_write(matched_simplify, "./mapinput.geojson", delete_dsn = TRUE)
+st_write(matched_simplify, "./mapinput.geojson", delete_dsn = TRUE)
 
-# Resuming inital code ----------------------------------------------------
+# Resuming initial code ----------------------------------------------------
 
 #convert to txt file so we can edit the raw text
 file.rename("./mapinput.geojson", "./mapinput.txt")
@@ -329,3 +337,4 @@ paste0(
   dim(unmatched)[1]
 )
 unmatched[, c(2,4)]
+
